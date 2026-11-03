@@ -1,0 +1,19 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:24:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_burst_receiver/xsim_script.tcl
+# xsim {tb_burst_receiver} -wdb {tb_burst_receiver.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_burst_receiver: RTL TX/ADC replay, traditional=30/256 CRC=1 AI=0/256 CRC=0
+$finish called at time : 1062130050 ns : File "F:/version4_fix_ai_tone/sim/tb_burst_receiver.sv" Line 43
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:41 . Memory (MB): peak = 237.113 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 21304 KB (Peak: 21304 KB), Simulation CPU Usage: 40639 ms
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:25:10 2026...

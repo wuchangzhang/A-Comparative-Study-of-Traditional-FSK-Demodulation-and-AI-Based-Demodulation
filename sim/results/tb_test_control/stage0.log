@@ -1,0 +1,62 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/control_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/ad7606_spi_rx.sv" into library work
+INFO: [VRFC 10-311] analyzing module ad7606_spi_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/ai_mlp.sv" into library work
+INFO: [VRFC 10-311] analyzing module ai_mlp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/amplitude_scale.v" into library work
+INFO: [VRFC 10-311] analyzing module amplitude_scale
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/bias_scale.v" into library work
+INFO: [VRFC 10-311] analyzing module bias_scale
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/button_event.v" into library work
+INFO: [VRFC 10-311] analyzing module button_event
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/command_engine.sv" into library work
+INFO: [VRFC 10-311] analyzing module command_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/control_core.sv" into library work
+INFO: [VRFC 10-311] analyzing module control_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/dac0832_driver.v" into library work
+INFO: [VRFC 10-311] analyzing module dac0832_driver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/dds_display.v" into library work
+INFO: [VRFC 10-311] analyzing module dds_display
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/ego1_control_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module ego1_control_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/fsk_correlator.sv" into library work
+INFO: [VRFC 10-311] analyzing module fsk_correlator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/fsk_frame_tx.sv" into library work
+INFO: [VRFC 10-311] analyzing module fsk_frame_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/fsk_receiver.sv" into library work
+INFO: [VRFC 10-311] analyzing module fsk_receiver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/knob_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module knob_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/packet_codec.sv" into library work
+INFO: [VRFC 10-311] analyzing module packet_rx
+INFO: [VRFC 10-311] analyzing module packet_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/parameter_manager.sv" into library work
+INFO: [VRFC 10-311] analyzing module parameter_manager
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/phase_acc_ce.v" into library work
+INFO: [VRFC 10-311] analyzing module phase_acc_ce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/report_history.sv" into library work
+INFO: [VRFC 10-311] analyzing module report_history
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/rom_sawtooth.v" into library work
+INFO: [VRFC 10-311] analyzing module rom_sawtooth
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/rom_sin.v" into library work
+INFO: [VRFC 10-311] analyzing module rom_sin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/rom_square.v" into library work
+INFO: [VRFC 10-311] analyzing module rom_square
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/rom_triangle.v" into library work
+INFO: [VRFC 10-311] analyzing module rom_triangle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/sample_path.sv" into library work
+INFO: [VRFC 10-311] analyzing module sample_path
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/sample_tick.v" into library work
+INFO: [VRFC 10-311] analyzing module sample_tick
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/statistics.sv" into library work
+INFO: [VRFC 10-311] analyzing module statistics
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/telemetry.sv" into library work
+INFO: [VRFC 10-311] analyzing module telemetry
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/tone_jammer.sv" into library work
+INFO: [VRFC 10-311] analyzing module tone_jammer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/uart_bytes.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/rtl/xadc_knob.sv" into library work
+INFO: [VRFC 10-311] analyzing module xadc_knob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/version4_fix_ai_tone/sim/tb_test_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_test_control

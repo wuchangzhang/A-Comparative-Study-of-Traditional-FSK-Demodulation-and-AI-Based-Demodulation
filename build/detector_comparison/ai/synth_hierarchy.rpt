@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 12:06:12 2026
+| Host         : WIN-QAKJSN8CL1I running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file F:/ego1_fsk_submission_20261102/build/detector_comparison/ai/synth_hierarchy.rpt
+| Design       : detector_benchmark
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------+----------------+------------+------------+---------+------+-----+--------+--------+------------+
+|        Instance        |     Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------+----------------+------------+------------+---------+------+-----+--------+--------+------------+
+| detector_benchmark     |          (top) |       1208 |       1184 |      24 |    0 | 730 |      0 |      2 |         17 |
+|   (detector_benchmark) |          (top) |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|   ai.core              |         ai_mlp |        400 |        376 |      24 |    0 | 272 |      0 |      0 |          1 |
+|   corr                 | fsk_correlator |        808 |        808 |       0 |    0 | 458 |      0 |      2 |         16 |
++------------------------+----------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

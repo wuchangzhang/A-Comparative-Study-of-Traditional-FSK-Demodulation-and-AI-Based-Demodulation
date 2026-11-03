@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:58:54 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_uart_system/xsim_script.tcl
+# xsim {tb_uart_system} -wdb {tb_uart_system.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_uart_system: wire CRC, length, timeout, retry, reconnect, five keys, pending test start, target stop, DDS restore
+$finish called at time : 5418520 ns : File "F:/version4_fix_ai_tone/sim/tb_uart_system.sv" Line 158
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:58:58 2026...

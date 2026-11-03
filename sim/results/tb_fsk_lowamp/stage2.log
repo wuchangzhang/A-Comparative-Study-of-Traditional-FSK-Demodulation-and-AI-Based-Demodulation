@@ -1,0 +1,19 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:11:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_fsk_lowamp/xsim_script.tcl
+# xsim {tb_fsk_lowamp} -wdb {tb_fsk_lowamp.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_fsk_lowamp: 18-code sine rejected by search floor, peak=17 reported
+$finish called at time : 972686560 ns : File "F:/version4_fix_ai_tone/sim/tb_fsk_lowamp.sv" Line 73
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:53 . Memory (MB): peak = 237.211 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 21400 KB (Peak: 21400 KB), Simulation CPU Usage: 52859 ms
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:12:38 2026...

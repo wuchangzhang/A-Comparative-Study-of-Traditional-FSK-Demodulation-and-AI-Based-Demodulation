@@ -1,0 +1,20 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:07:46 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_phase_reset/xsim_script.tcl
+# xsim {tb_phase_reset} -wdb {tb_phase_reset.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance tb_phase_reset.board.u_knob.u_xadc was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+PASS tb_phase_reset: clocked board reset, synchronous ROM address reset, baseline mode retained, recovery increment
+$finish called at time : 12186 ns : File "F:/version4_fix_ai_tone/sim/tb_phase_reset.sv" Line 41
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:07:55 2026...

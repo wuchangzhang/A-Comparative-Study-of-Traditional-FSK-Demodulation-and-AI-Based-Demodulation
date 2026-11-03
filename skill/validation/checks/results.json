@@ -1,0 +1,404 @@
+{
+  "status": "pass",
+  "scope": "offline_skill_and_selected_file_integrity",
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "tests": 79,
+  "structure": {
+    "markdown_files": 21,
+    "atom_contracts": 14,
+    "valid_local_links": 49,
+    "links": [
+      {
+        "source": "atoms/s01.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s02.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s03.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s03.md",
+        "target": "../references/timing-recovery.md"
+      },
+      {
+        "source": "atoms/s04.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s04.md",
+        "target": "../references/usage.md"
+      },
+      {
+        "source": "atoms/s04.md",
+        "target": "../references/timing-recovery.md"
+      },
+      {
+        "source": "atoms/s05.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s05.md",
+        "target": "../references/timing-recovery.md"
+      },
+      {
+        "source": "atoms/s06.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s07.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s07.md",
+        "target": "../references/timing-recovery.md"
+      },
+      {
+        "source": "atoms/s08.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s08.md",
+        "target": "../knowledge/README.md"
+      },
+      {
+        "source": "atoms/s09.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s10.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s10.md",
+        "target": "../references/timing-recovery.md"
+      },
+      {
+        "source": "atoms/s11.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s12.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s13.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "atoms/s14.md",
+        "target": "../runtime-contract.md"
+      },
+      {
+        "source": "references/usage.md",
+        "target": "receiving.md"
+      },
+      {
+        "source": "references/usage.md",
+        "target": "timing-recovery.md"
+      },
+      {
+        "source": "runtime-contract.md",
+        "target": "references/receiving.md"
+      },
+      {
+        "source": "runtime-contract.md",
+        "target": "references/timing-recovery.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "profiles/ego1.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "runtime-contract.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/usage.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/timing-recovery.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/receiving.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s01.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s02.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s03.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s04.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s05.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s06.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s07.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s08.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s09.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s10.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s11.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s12.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s13.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "atoms/s14.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/timing-recovery.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/receiving.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "runtime-contract.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/usage.md"
+      },
+      {
+        "source": "SKILL.md",
+        "target": "references/timing-recovery.md"
+      }
+    ],
+    "entry_sha256": "470e6bfd1fc5a1eb61310cd10b6195212b8ed749d3acc667f86375f766fd344c"
+  },
+  "selected_file_count": 76,
+  "selected_bytes": 11838512,
+  "zip_crc": "all selected members passed",
+  "selected_manifest_sha256": "ff62e3190798ea6871a2a70efc50c829e017ff7bf2c6d6c54005275e4dda93c2",
+  "commands": [
+    {
+      "name": "regression",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:27.951182+00:00",
+      "finished_at": "2026-11-02T14:57:29.849465+00:00",
+      "returncode": 0,
+      "log": "regression.log",
+      "log_sha256": "50b17976d215153f069a88f309990c0f27f8950a099a7a261ae28e92eff2836b"
+    },
+    {
+      "name": "official_structure",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\51734\\.codex\\skills\\.system\\skill-creator\\scripts\\quick_validate.py",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:29.858545+00:00",
+      "finished_at": "2026-11-02T14:57:30.009618+00:00",
+      "returncode": 0,
+      "log": "official_structure.log",
+      "log_sha256": "6cf9e7f0d34ccd36dbd28f270cd28dd04277b2e1516bd4333ce7bb501d7b18d4"
+    },
+    {
+      "name": "received_project",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\receive_check.py",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:30.058786+00:00",
+      "finished_at": "2026-11-02T14:57:30.332034+00:00",
+      "returncode": 0,
+      "log": "received_project.log",
+      "log_sha256": "3c1b4a404a1e5707834892c6693667bc2ab4f88bb2639b986c631513c6c293af"
+    },
+    {
+      "name": "inventory",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\workflow.py",
+        "inventory",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:30.341034+00:00",
+      "finished_at": "2026-11-02T14:57:30.493963+00:00",
+      "returncode": 0,
+      "log": "inventory.log",
+      "log_sha256": "773bdf1d2be4f101e7eea8ada0b3c9c5276e4c42b492f111d0014bcd728c6d7e"
+    },
+    {
+      "name": "manifest",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\evidence.py",
+        "manifest",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+        "--out",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\validation\\checks\\selected_files.jsonl",
+        "--select",
+        "src",
+        "--select",
+        "board/constraints",
+        "--select",
+        "board/burst_v7",
+        "--select",
+        "skill/amd-fpga-embedded-dev-workflow"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:30.502495+00:00",
+      "finished_at": "2026-11-02T14:57:30.779367+00:00",
+      "returncode": 0,
+      "log": "manifest.log",
+      "log_sha256": "94638a7eb18a7db145678e9d9a6e999923f05b2698e887d392311c59be4f717f"
+    },
+    {
+      "name": "verify_directory",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\evidence.py",
+        "verify",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\validation\\checks\\selected_files.jsonl"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:30.784377+00:00",
+      "finished_at": "2026-11-02T14:57:30.996042+00:00",
+      "returncode": 0,
+      "log": "verify_directory.log",
+      "log_sha256": "0717425ccc1ff38f988e8dcfa201d8f0c05114bfca64a2472e2f8d7e638d60c4"
+    },
+    {
+      "name": "manifest_recheck",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\evidence.py",
+        "manifest",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+        "--out",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\validation\\checks\\selected_files_recheck.jsonl",
+        "--select",
+        "src",
+        "--select",
+        "board/constraints",
+        "--select",
+        "board/burst_v7",
+        "--select",
+        "skill/amd-fpga-embedded-dev-workflow"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:30.998042+00:00",
+      "finished_at": "2026-11-02T14:57:31.279165+00:00",
+      "returncode": 0,
+      "log": "manifest_recheck.log",
+      "log_sha256": "94638a7eb18a7db145678e9d9a6e999923f05b2698e887d392311c59be4f717f"
+    },
+    {
+      "name": "compare",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\evidence.py",
+        "compare",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\validation\\checks\\selected_files.jsonl",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\validation\\checks\\selected_files_recheck.jsonl"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:31.281161+00:00",
+      "finished_at": "2026-11-02T14:57:31.421937+00:00",
+      "returncode": 0,
+      "log": "compare.log",
+      "log_sha256": "dfa195c9232e1fbb013f8f3daaff9d373d307cfd9f0a753deb18a464dbd0b9b6"
+    },
+    {
+      "name": "verify_zip",
+      "argv": [
+        "C:\\Users\\51734\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\amd-fpga-embedded-dev-workflow\\scripts\\evidence.py",
+        "verify-zip",
+        "C:\\Users\\51734\\AppData\\Local\\Temp\\ego1_skill_nh7xhhck\\selected.zip",
+        "F:\\嵌赛\\outputs\\submission_review_20261102\\stage\\skill\\validation\\checks\\selected_files.jsonl"
+      ],
+      "cwd": "F:\\嵌赛\\outputs\\submission_review_20261102\\stage",
+      "started_at": "2026-11-02T14:57:31.807684+00:00",
+      "finished_at": "2026-11-02T14:57:31.990524+00:00",
+      "returncode": 0,
+      "log": "verify_zip.log",
+      "log_sha256": "ba2a15f5e2bdbf98f2e1cc3c876039e3f3f9c51ca9301c25f47b84ac4f36dca2"
+    }
+  ]
+}

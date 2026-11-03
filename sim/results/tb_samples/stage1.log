@@ -1,0 +1,21 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe -debug typical --timescale 1ns/1ps -s tb_samples work.tb_samples -L unisims_ver 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.control_pkg
+Compiling module work.rom_sawtooth
+Compiling module work.rom_sin
+Compiling module work.tone_jammer
+Compiling module work.phase_acc_ce(SYNC_RESET=1)
+Compiling module work.rom_square
+Compiling module work.rom_triangle
+Compiling module work.sample_path
+Compiling module work.tb_samples
+Built simulation snapshot tb_samples

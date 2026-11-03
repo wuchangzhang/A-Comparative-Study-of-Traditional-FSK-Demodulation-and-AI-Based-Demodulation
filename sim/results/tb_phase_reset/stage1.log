@@ -1,0 +1,48 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe -debug typical --timescale 1ns/1ps -s tb_phase_reset work.tb_phase_reset -L unisims_ver work.glbl 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'adc_busy' is not connected on this instance [F:/version4_fix_ai_tone/sim/tb_phase_reset.sv:7]
+WARNING: [VRFC 10-3645] port 'uart_tx' remains unconnected for this instance [F:/version4_fix_ai_tone/sim/tb_phase_reset.sv:7]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.control_pkg
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.XADC(INIT_41=16'b010000000000000...
+Compiling module work.xadc_knob
+Compiling module work.button_event_default
+Compiling module work.sample_tick_default
+Compiling module work.knob_control(UPDATE_CLKS=2000000...
+Compiling module work.parameter_manager
+Compiling module work.fsk_frame_tx
+Compiling module work.rom_sin
+Compiling module work.tone_jammer
+Compiling module work.phase_acc_ce(SYNC_RESET=1)
+Compiling module work.rom_square
+Compiling module work.rom_triangle
+Compiling module work.rom_sawtooth
+Compiling module work.sample_path
+Compiling module work.uart_bytes_default
+Compiling module work.packet_rx
+Compiling module work.command_engine
+Compiling module work.statistics
+Compiling module work.report_history_default
+Compiling module work.telemetry
+Compiling module work.packet_tx
+Compiling module work.control_core_default
+Compiling module work.ad7606_spi_rx_default
+Compiling module work.fsk_correlator
+Compiling module work.ai_mlp
+Compiling module work.fsk_receiver_default
+Compiling module work.dac0832_driver_default
+Compiling module work.dds_display
+Compiling module work.ego1_control_top
+Compiling module work.phase_acc_ce_default
+Compiling module work.tb_phase_reset
+Compiling module work.glbl
+Built simulation snapshot tb_phase_reset

@@ -1,0 +1,114 @@
+[
+  {
+    "cell": "1020Hz_x0.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1020Hz_x3.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1020Hz_x4.0",
+    "bits": 2400,
+    "traditional": 325,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1020Hz_x5.0",
+    "bits": 2400,
+    "traditional": 589,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1100Hz_x0.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1100Hz_x3.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1100Hz_x4.0",
+    "bits": 2400,
+    "traditional": 269,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1100Hz_x5.0",
+    "bits": 2400,
+    "traditional": 229,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1850Hz_x0.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1850Hz_x3.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1850Hz_x4.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1850Hz_x5.0",
+    "bits": 2400,
+    "traditional": 196,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1980Hz_x0.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1980Hz_x3.0",
+    "bits": 2400,
+    "traditional": 0,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1980Hz_x4.0",
+    "bits": 2400,
+    "traditional": 221,
+    "majority": 0,
+    "ai": 0
+  },
+  {
+    "cell": "1980Hz_x5.0",
+    "bits": 2400,
+    "traditional": 610,
+    "majority": 0,
+    "ai": 0
+  }
+]

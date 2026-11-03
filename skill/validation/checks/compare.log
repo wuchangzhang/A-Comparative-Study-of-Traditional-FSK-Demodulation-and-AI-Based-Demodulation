@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "exit_code": 0,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "unexpected_changes": [],
+  "allowed_change_paths": [],
+  "scope": "selected_files_only; not a simulation or implementation admission"
+}

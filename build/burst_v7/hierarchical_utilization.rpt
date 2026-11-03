@@ -1,0 +1,50 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Nov  1 00:54:26 2026
+| Host         : WIN-QAKJSN8CL1I running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file F:/version4_fix_ai_tone/build/burst_v7/hierarchical_utilization.rpt
+| Design       : ego1_control_top
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------+-------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|       Instance       |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------------+-------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| ego1_control_top     |             (top) |      12945 |      12513 |     432 |    0 | 10747 |     35 |      9 |         21 |
+|   (ego1_control_top) |             (top) |          2 |          2 |       0 |    0 |    16 |      0 |      0 |          0 |
+|   u_adc              |     ad7606_spi_rx |        287 |        287 |       0 |    0 |   184 |      0 |      0 |          0 |
+|   u_core             |      control_core |       8803 |       8395 |     408 |    0 |  7878 |      3 |      5 |          4 |
+|     (u_core)         |      control_core |        327 |        327 |       0 |    0 |    35 |      0 |      0 |          0 |
+|     u_commands       |    command_engine |        738 |        330 |     408 |    0 |   786 |      0 |      0 |          0 |
+|     u_frame          |      fsk_frame_tx |        156 |        156 |       0 |    0 |   124 |      0 |      0 |          0 |
+|     u_history        |    report_history |       3664 |       3664 |       0 |    0 |  3290 |      0 |      0 |          0 |
+|     u_knob           |      knob_control |        200 |        200 |       0 |    0 |   167 |      0 |      0 |          1 |
+|     u_manager        | parameter_manager |        459 |        459 |       0 |    0 |   334 |      0 |      0 |          0 |
+|     u_rx             |         packet_rx |        710 |        710 |       0 |    0 |   619 |      0 |      0 |          0 |
+|     u_samples        |       sample_path |        328 |        328 |       0 |    0 |   201 |      3 |      5 |          3 |
+|       (u_samples)    |       sample_path |        292 |        292 |       0 |    0 |   168 |      3 |      1 |          1 |
+|     u_stats          |        statistics |        629 |        629 |       0 |    0 |   617 |      0 |      0 |          0 |
+|     u_telemetry      |         telemetry |       1090 |       1090 |       0 |    0 |   975 |      0 |      0 |          0 |
+|     u_tx             |         packet_tx |        197 |        197 |       0 |    0 |   467 |      0 |      0 |          0 |
+|     u_uart           |        uart_bytes |        167 |        167 |       0 |    0 |   103 |      0 |      0 |          0 |
+|   u_display          |       dds_display |         47 |         47 |       0 |    0 |    88 |      0 |      0 |          0 |
+|   u_receiver         |      fsk_receiver |       3791 |       3767 |      24 |    0 |  2546 |     32 |      4 |         17 |
+|     (u_receiver)     |      fsk_receiver |       2702 |       2702 |       0 |    0 |  1681 |     32 |      2 |          0 |
+|     u_ai             |            ai_mlp |        406 |        382 |      24 |    0 |   276 |      0 |      0 |          1 |
+|     u_mac            |    fsk_correlator |        684 |        684 |       0 |    0 |   589 |      0 |      2 |         16 |
++----------------------+-------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

@@ -1,0 +1,335 @@
+{
+  "model": "00070001",
+  "evidence_scope": "digital_build_and_simulation",
+  "scope": "Payload burst; clean preamble/sync; existing full-window traditional baseline",
+  "frame_test": {
+    "attempted": 96,
+    "captured": 96,
+    "bits": 24576,
+    "traditional": 2173,
+    "ai": 0,
+    "majority": 0,
+    "traditional_crc_failures": 47,
+    "ai_crc_failures": 0
+  },
+  "limitation": "Quarter-window majority also succeeds; continuous-channel AI regression is documented",
+  "timing": {
+    "wns_ns": 0.0,
+    "tns_ns": 0.0,
+    "whs_ns": 0.038,
+    "ths_ns": 0.0
+  },
+  "drc_errors": 0,
+  "drc_critical_warnings": 0,
+  "baseline_resources": {
+    "ego1_control_top": {
+      "lut": 12827,
+      "logic_lut": 12395,
+      "lutram": 432,
+      "srl": 0,
+      "ff": 10715,
+      "ramb36": 35,
+      "ramb18": 9,
+      "dsp": 21
+    },
+    "u_receiver": {
+      "lut": 3806,
+      "logic_lut": 3782,
+      "lutram": 24,
+      "srl": 0,
+      "ff": 2554,
+      "ramb36": 32,
+      "ramb18": 4,
+      "dsp": 17
+    },
+    "u_ai": {
+      "lut": 430,
+      "logic_lut": 406,
+      "lutram": 24,
+      "srl": 0,
+      "ff": 280,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 1
+    },
+    "u_mac": {
+      "lut": 684,
+      "logic_lut": 684,
+      "lutram": 0,
+      "srl": 0,
+      "ff": 593,
+      "ramb36": 0,
+      "ramb18": 2,
+      "dsp": 16
+    }
+  },
+  "resources": {
+    "ego1_control_top": {
+      "lut": 12945,
+      "logic_lut": 12513,
+      "lutram": 432,
+      "srl": 0,
+      "ff": 10747,
+      "ramb36": 35,
+      "ramb18": 9,
+      "dsp": 21
+    },
+    "u_receiver": {
+      "lut": 3791,
+      "logic_lut": 3767,
+      "lutram": 24,
+      "srl": 0,
+      "ff": 2546,
+      "ramb36": 32,
+      "ramb18": 4,
+      "dsp": 17
+    },
+    "u_ai": {
+      "lut": 406,
+      "logic_lut": 382,
+      "lutram": 24,
+      "srl": 0,
+      "ff": 276,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 1
+    },
+    "u_mac": {
+      "lut": 684,
+      "logic_lut": 684,
+      "lutram": 0,
+      "srl": 0,
+      "ff": 589,
+      "ramb36": 0,
+      "ramb18": 2,
+      "dsp": 16
+    }
+  },
+  "total_resource_delta": {
+    "lut": 118,
+    "logic_lut": 118,
+    "lutram": 0,
+    "srl": 0,
+    "ff": 32,
+    "ramb36": 0,
+    "ramb18": 0,
+    "dsp": 0
+  },
+  "bitstream": "F:\\version4_fix_ai_tone\\build\\burst_v7\\ego1_control_v3_jammer.bit",
+  "bitstream_sha256": "49b01e1e3a146384246fb4b714988e47766c0f0fb7e4ac291a6d64325f0ca761",
+  "baseline_bitstream_sha256": "12045b3f42778376b36a694e279ac2af251fe2b23357b998c0184c283944e755",
+  "tests": {
+    "tb_frame": {
+      "sha256": "9726411029266028a4f723fffb406949c587150286e33a0ba63279351c3007cf",
+      "result": "PASS tb_frame: 3 independent golden frames, gap, boundary-safe exit"
+    },
+    "tb_parameters": {
+      "sha256": "4dfff286836f4ea4464e6789b8d8c59e1c2544a135c5c8b82c68ee7d74bf00ed",
+      "result": "PASS tb_parameters: arbitration, atomic rejection, sample/frame commits, restore, jammer"
+    },
+    "tb_knob": {
+      "sha256": "744535b3ced71f163d79da275958d025555608890a6ce863bbbc37a8e07e9d76",
+      "result": "PASS tb_knob: mapping, deadzone, crossing, software/mode pickup"
+    },
+    "tb_uart_system": {
+      "sha256": "69a4533fa51507aa357138dd353b6d386b7a42a7427422c2e83bebaa67a04f58",
+      "result": "PASS tb_uart_system: wire CRC, length, timeout, retry, reconnect, five keys, pending test start, target stop, DDS restore"
+    },
+    "tb_statistics": {
+      "sha256": "9aa5a2fad456f5639090e16329645e0b6a2976f82edfea9174e17b0bc9db409f",
+      "result": "PASS tb_statistics: delayed branches, stale tags, target stop, config reset"
+    },
+    "tb_samples": {
+      "sha256": "933b3ff491bbfb7ee438527d968b978ccc5b1f9c2cd36cbd608f57b0dba9b6c4",
+      "result": "PASS tb_samples: four waves, sawtooth values/wrap/in-flight metadata, idle, noise gate, saturation, signed FCW"
+    },
+    "tb_telemetry": {
+      "sha256": "289f34c648e6a166848862fb98320de5be797c81e0a7b9fb2d3d7e228f4ddf1b",
+      "result": "PASS tb_telemetry: frozen pages, concurrent final configuration, final flag, backpressure"
+    },
+    "tb_dac": {
+      "sha256": "bfab17b4b66aea4632858fec0109a4016ea4dad7a51d9e2ec487edde39786d21",
+      "result": "PASS tb_dac: 100 MHz / 100 kSPS, 100 complete DAC writes, 1 us strobes, no overrun"
+    },
+    "tb_arithmetic": {
+      "sha256": "db5762ae2bca8ca659e2639cd21542e828c8b6bfca97214b998d5fa0fb802326",
+      "result": "PASS tb_arithmetic: all FCWs, 66048 amplitude/bias pairs, all knob codes, decimal display wrap"
+    },
+    "tb_history": {
+      "sha256": "590363d0b978c1558057d9dc299caa625c4ebfcc42574fc2738eddb34b9989e0",
+      "result": "PASS tb_history: delayed old tags, independent branches, frozen measurements, timeout, four-slot FIFO, reservation, dedupe, simultaneous push/pop"
+    },
+    "tb_noise": {
+      "sha256": "1df22b7f8a2ec33136628fa4e40897618162b752f3f490fef2bfb9b08de2f70d",
+      "result": "PASS tb_noise: all 256 LUT entries at 0/1/256/2560, symmetric nearest rounding, zero DC bias"
+    },
+    "tb_jammer": {
+      "sha256": "f978527fe63f0c4cbefe33caec3dfd6d927af6e2a602de7e74dcc90ff8740008",
+      "result": "PASS tb_jammer: 1500/1000/2100 Hz tones, amplitude and gate verified, no DC bias"
+    },
+    "tb_test_control": {
+      "sha256": "0e639200a1c34eafc3464cf8c99fd0f1b7021401914015963dcef979e51b2159",
+      "result": "PASS tb_test_control: pending START/CLEAR BUSY, boundary STOP, cancellation, local exit"
+    },
+    "tb_frame_gate": {
+      "sha256": "0817399b2ab1017996058a17fca12d1d763ff5a3a31a64871e3ec73434aae50b",
+      "result": "PASS tb_frame_gate: full queue holds DC gap, running frame completes, exit stays available"
+    },
+    "tb_phase_reset": {
+      "sha256": "3b52479c6fb8e74e2c9447a50d8f17c6f33344ccacf14324c6b99ea3b40bb504",
+      "result": "PASS tb_phase_reset: clocked board reset, synchronous ROM address reset, baseline mode retained, recovery increment"
+    },
+    "tb_ad7606_spi": {
+      "sha256": "a47d1a6371247616aa7d295f04f6e3c23db46c535035f724fb5aa8bebd195868",
+      "result": "PASS tb_ad7606_spi: 50 kSPS, 128 clocks, signed codes, delayed DOUT, clip, missing/stuck BUSY recovery"
+    },
+    "tb_ai_mlp": {
+      "sha256": "bc3410cfc6473390584066efb59f58554d3dc5f2eebdd49c9a9c0ce2c04df240",
+      "result": "PASS tb_ai_mlp: 64 golden vectors x2, availability, model version"
+    },
+    "tb_ai_features": {
+      "sha256": "e28852569f22efad5946575850c732cd30c548d35121b7b5fca1c3c4de538795",
+      "result": "PASS tb_ai_features: 4 synthetic windows, 10-dim features and full powers match golden (both modes)"
+    },
+    "tb_fsk_receiver": {
+      "sha256": "90b082fc250f9106176bb07d0f298d165a5d43cdc0590e41d83d23ec57067db0",
+      "result": "PASS tb_fsk_receiver: offsets, AGC, 18 dB noise, +/-100 ppm, sync tolerance/rejection, CRC, true BER, loss, statistics, tags"
+    },
+    "tb_fsk_lowamp": {
+      "sha256": "60f28e812aba71993ac1cc0d2e1a3205d49a8a137d24b90324016c210d7a4af9",
+      "result": "PASS tb_fsk_lowamp: 18-code sine rejected by search floor, peak=17 reported"
+    },
+    "tb_capture_jammer": {
+      "sha256": "80f336c38bb8efbf7c320101d1a812ac9bfb3127bca7d473a5836bc46111a020",
+      "result": "PASS tb_capture_jammer: diagnosis complete (see [diag] lines)"
+    },
+    "tb_dc_tail": {
+      "sha256": "1c17dfe9021d9c914c713d1774502427cbd9ad0893675702d5b19f66d0dea2fe",
+      "result": "PASS tb_dc_tail: 40k-sample DC segment produced no preamble candidate"
+    },
+    "tb_burst_tx": {
+      "sha256": "10fb320045b69cb686b89373632fec9b01814a2b8a18a598fe0522d3668d2f54",
+      "result": "PASS tb_burst_tx: 212000 ADC samples, gate=32250, four slots exercised, no DAC clipping"
+    },
+    "tb_burst_receiver": {
+      "sha256": "fa0fa73c38d411deb022b0c05adf3774532a93ba1938dea2d580938dd7b66b06",
+      "result": "PASS tb_burst_receiver: RTL TX/ADC replay, traditional=30/256 CRC=1 AI=0/256 CRC=0"
+    }
+  },
+  "sources": {
+    "ai\\model.npz": "d8765349f2eed039389b32b3819bc5a28979fe0ac8f41a83abf988d485cc9507",
+    "ai\\model.py": "3e9606bd8fbe99d6588a0ba0371071e9f226bd779cce6a5d064a7148fe6ad846",
+    "ai\\reference.py": "39729f63cb1371709a9a152c919340a1e0121d7d6a3dd550799b6a0c1abc7bab",
+    "constraints\\board.xdc": "1b499b51b25f2028abd5510fe2e270c274a9f10c80487590a8ecc60630b89912",
+    "docs\\BURST_PAYLOAD_V7.md": "b3e748903c33f3508b91a6e7d94e93a09031a4e817ceacef5ebbaf2daf134820",
+    "host\\cli.py": "920cb628a88285e5f79b72b617bf99bf5e4cfc69074c83f59e5c626428c79349",
+    "host\\client.py": "593f02163de8072c6e2a71715a1ee58cbe0f2665bda97f953a2ef3daa8be83a9",
+    "host\\gui.py": "b42733675839d96e43828eac00ab8eb9869367b631a9195a1126f2671c244921",
+    "host\\protocol.py": "fd0e19a9596e87b63a6e93ea1ebd6b258586e7039365a0fca0163eab00f440e8",
+    "host\\reference.py": "008719e99caa00afb24cc18a5565c98e6a9db72978ffdaf2e09f0c6ae9df2a10",
+    "rtl\\ad7606_spi_rx.sv": "c43eb53fe4c565eee5addaad2ab482d7599ec2bead4920df7a85a9c9febfe825",
+    "rtl\\ai_mlp.mem": "faec9bfb8b4a0fc030127e3749b4c2b0f63c3fcf506cbb9eeaa41f6227956b81",
+    "rtl\\ai_mlp.sv": "2337615f25583a70655a47eb537bff5162135eaf7907e64337b8da372124cef0",
+    "rtl\\amplitude_scale.v": "28208fd5166119d8b394f40ee3caf4ab9c7139a7d49a6fd18af630d4324588a3",
+    "rtl\\bias_scale.v": "0be59b397dc64055522987d85ae711b35a7f076e8c84a09ab2a11e0090e1fd1a",
+    "rtl\\button_event.v": "add865d6120516233359649de5e5ff61768f9dfac3f020e3b471b44d8d5e554d",
+    "rtl\\command_engine.sv": "af79a1709c74d8e94fb89e50bea1c5c0c477fc7773c9aafff203b2ac29b6c2f2",
+    "rtl\\control_core.sv": "1777f9d2bca83a13433dc80427b086cc2085055944059db5e5a2ad7037f86a49",
+    "rtl\\control_pkg.sv": "2c0bfbabdf24507b187ba5d8ab362e821e23b877cafda4b072711c586216f58a",
+    "rtl\\dac0832_driver.v": "ed1ec2abfed7d9ab8a706843ba3b75df2389fcfe1e8675614aa5bd7cc05ba76e",
+    "rtl\\dds_display.v": "6fc30d2e1b69d28a7181d972409cd776b1d28e517f267c51e47cb354112a897f",
+    "rtl\\ego1_control_top.sv": "ea46937d4b1fc60bb34a62078ba93e6a72cc1da36a74b042ab69ec8171c6b746",
+    "rtl\\fcw_100ksps.mem": "ef4aa972e676549a0b80e1c607841683498b368814fe774a10f78e7f1c9ceecb",
+    "rtl\\fsk_correlator.sv": "c038bc41d1c5f774bc549599862f07dc5f5de7b460a3c389b0853bacd5bbdd4a",
+    "rtl\\fsk_frame_tx.sv": "21e1cf9b89ba2b586019270a1c2cd49baebf0cacee25a9d0d10a1373df2104ab",
+    "rtl\\fsk_receiver.sv": "4a9e459faf548f958d21ca818d580c6ee48ced312011900834c0edfd3edfd1fc",
+    "rtl\\gaussian_q8.mem": "442d7bec019d3988bcf01c563e296703fc3860e7f46b990da8174c3af65ca096",
+    "rtl\\knob_control.sv": "cfc41cd9150dcf623d2a85da22dd2ce67a18d08d81fedaa6481ab83ffd9be701",
+    "rtl\\packet_codec.sv": "abf3e8815b32d2f4376da8deed5d6d58dacd216fe4ac46d9bfaad156b1d92d78",
+    "rtl\\parameter_manager.sv": "77ecd0760f6d44559306094bbff29afccca97fdc208a9e4df8a2bbfe8e16284e",
+    "rtl\\phase_acc_ce.v": "f1ac912ec9213989d7913f51167e60c876695498977c3a56518a4c4e8ddb5956",
+    "rtl\\report_history.sv": "463a3c93afcf168c7aac253bb56b82041fc6799afbcf24ab058a087ca8f35032",
+    "rtl\\rom_sawtooth.v": "39c9baab3dce156d501b5e7c58cd4a0d3c6db83bb9ec6801ace0d1b35ef56f79",
+    "rtl\\rom_sin.v": "64a8c26db3653bd05851463f195ca6b3f99301a1b40a5c105bae61c39b873fbe",
+    "rtl\\rom_square.v": "11cfd17e2c8465531fc937bf52b9bcc71d1906446c54e2b50e63f9739c989f62",
+    "rtl\\rom_triangle.v": "806c7594fd705ed1e8aad4ca38655fc7ec6bcd44b5b7e103b8fc1701b515f4ef",
+    "rtl\\rx_sine.mem": "ba197dc70df7f40a7e617f5317e4cb340126328b9a2fa72ee226fadaa835312c",
+    "rtl\\rx_steps.mem": "ddb3847818f3683fda059dc3426ea1eb1079560953fcf9b1158fe7b6011b97b0",
+    "rtl\\sample_path.sv": "3cc3a13a79c7e5a56cae2c110c773aea9130c4ceca374a7550c1b94b540b9655",
+    "rtl\\sample_tick.v": "049fb48456c294f49f4dafef175d5fabf75957d2e28aaa7d523dc4cf6c54e362",
+    "rtl\\statistics.sv": "51fb17dc04724d29a3329486772deb3295bb6bd232ac285785aa9113cb90be5e",
+    "rtl\\telemetry.sv": "80d18954fa9b9909d7622f788d1a41c304db57d84372c70cd3e4d4bec7d0504f",
+    "rtl\\tone_jammer.sv": "d3dd47fc428cf12b9c9374bb5ee641fb094ae307a656d83a3207e3906c935cb0",
+    "rtl\\uart_bytes.sv": "03c1f9b824ad9f68901f39d9c27f3b8cfc7c3c7a48410700191d015ca936330f",
+    "rtl\\xadc_knob.sv": "c30579a2c9eace20fc9e58dc446f25f6a93431e20409c79f6bd16663e09c160f",
+    "scripts\\audit_fcw.tcl": "a2cac7410d14748fb1cbc423acc5d6a6996778ee5cfcb51b037c3a282a8a742b",
+    "scripts\\audit_host.py": "5cb2e17abbb873553945311a934004d02806f5b7eef4c39455a7655730208ccd",
+    "scripts\\audit_outputs.tcl": "ecdb081ec6659bed70d29ba16f3b286c8db17ffa84c77a1b3a2d340ec10f0de2",
+    "scripts\\audit_resources.tcl": "422b04c2b1a45e7f4e32787d693dac6292432b97686e95b52c01fe1752b16bae",
+    "scripts\\build.tcl": "8590912925ff8fbe0fd82827a4366523ffa8ca24a416b781f75315b6d65e6fc8",
+    "scripts\\build_burst.tcl": "01e852353077fb8fc9754f41562cc575fd75f8ab592013041378bf21561bd1f8",
+    "scripts\\build_jammer.tcl": "ea0964af3f3dab202ccaf1bca01af7dd6a3f749518989542c72e322ff9b64bc8",
+    "scripts\\build_timing.tcl": "85def446c05f131cc94874bb5ee5a3af49fbd73b1f524cdbff3325d963da2576",
+    "scripts\\burst_experiment.py": "818caee0385bda16bf2cf9b070c01a9c1225953a6c51c1acf5a5506756b763fe",
+    "scripts\\check_ai_reference.py": "08f7d3d416b869c2585a946683c39f1d6ddf7faa6a2b66350e25cbaea2bf0c5f",
+    "scripts\\check_burst_host.py": "e0c4ebd867fd5d77aebd634d51e1b44fc5cc49518d44af5379203dbf3daddbaf",
+    "scripts\\check_gui.py": "633c3c1b5462537ece3f59f7b6359bfe97c89497af6d6f158562c98f3c619c19",
+    "scripts\\check_receiver_reference.py": "883b94f48c625a361a6834e5fcd51dca22c5ae3418c9baa0564c1ba49e8706d4",
+    "scripts\\check_serial_host.py": "f78048fc7a24ba3d383c9b0bc71f13cf193c5280f8ec6c72c15f51166e7d0fd8",
+    "scripts\\check_uart_capture.py": "1901ace12feb5b4e4623f6bc38442b782b8f4cb10405cad6330a013f38f3add8",
+    "scripts\\common.tcl": "0c7f4e517ff5c3be3964b5875371336a9694a1a98127a2fc72d4012e902b3131",
+    "scripts\\compare_ai_models.py": "4612501b003c52ba5ee8f9391c4a1336098fb48dad3949a5204d2347f27d4de0",
+    "scripts\\compile.tcl": "8a5b1f97473a8173f9974cec5aeef22e38226090d021481d5dc1175edadd3335",
+    "scripts\\create_project.tcl": "7a59b91655a5e1c8ae072eb02b01548aff33914f89d16ba6108f0a7fb1f1c2a5",
+    "scripts\\diag_timing.tcl": "6129252ad17b592993d61a8a155bca1e316ae00711c4e211d9fde794fc992d29",
+    "scripts\\diagnose_feature_capacity.py": "910f63c729db7b2ca0d8642a76a9e33260e55a6838570e9f5538ea7db82228f1",
+    "scripts\\export_ai_features.py": "3c46a143b71b1215af6dd923f8a5c7b7ac5b1185c14ab465b935b89e41211a13",
+    "scripts\\export_ai_golden.py": "c038c3f46b010a79f434392584ef202265a06e1498a9d6d94995bda21d4d53ea",
+    "scripts\\finish_burst.tcl": "938ac10cb08b3ad5f1da6937f4d721622e28c7d61cdac12dab3d753c3562005e",
+    "scripts\\generate_receiver_tables.py": "c6c59b6ed72ac45b7b0a0e051873f552075f1789d599fc5d9f94ffd4bbbb0826",
+    "scripts\\generate_vectors.py": "98db2050847465a19f73977206a50f1260d6c38d09c23bc2090def0337cf62f9",
+    "scripts\\receiver_timing.tcl": "de4effe667ab49bda3a7d623f0e2959f4dc4394d29463e0fbffc4936717cd2ff",
+    "scripts\\release_manifest.py": "55b78a15b715de4ec91ea199334fe0274f8a1b4c339c46c86958175c24cb04e7",
+    "scripts\\report_burst.py": "5c3be314f8c1f0d790359250090ec1244293678647880fb115085953e7579636",
+    "scripts\\review_release.tcl": "b9eaa2199027c92caa37dadc0b42dc4dd3ea454170161a4bd74900c2d13d20f3",
+    "scripts\\run_audit_rtl.py": "ab49efe8df8e637e23ad64a5c34c19e93ba492dd9adf4e3d079ca3974d52e52d",
+    "scripts\\run_checks.py": "7fd97bff39101259699ff695650e74f6abc5d0f27e14a6be9e6830604c92a8a9",
+    "scripts\\simulate.tcl": "281a955ef8ca041cbdc80b19633959e6928209b92dde3b5dbadcbe144d9bb42c",
+    "scripts\\sweep_ai_shifts.py": "f925f959914172834387cac1336118150c7c383ae803b95efd8d0139501d1675",
+    "scripts\\timing_detail.tcl": "e66f21cb5030c371005fd4dbaa233d9b3b057630a75b06e8ebea91f7ba3d25db",
+    "scripts\\train_ai_model.py": "9d312a434fcae77af1bf339ca3636962d5b44786a8623b2004513c01bfaed438",
+    "scripts\\verify_host.py": "a2425f15157440ff3bee74717de2b26c13e3438e6af1fb18d0a2d35439687cfe",
+    "sim\\ai_feature_golden.txt": "0d09430e2cdf9ad7697f998130841052eb52214de373da7a33cfb97b614abbbd",
+    "sim\\ai_golden.txt": "6f4ee8c8ff4d80140e9010cdf992ad7e6c0373b160d0e5a39079961ae19840b4",
+    "sim\\audit_fcw_equivalence.sv": "08390752933bdd04ed43cae07b29f2f6068be31068594a7a06203c522dd066f7",
+    "sim\\audit_fcw_rom.sv": "307bf13c0bf4d85bf4b663234348a4e05f2c7cfab56da1c76185f531be08ffd2",
+    "sim\\audit_final_queue.sv": "d26704ac36ef920d72f000b54e0e5bb0ffd683edf6b8153ffb1b0f1321548947",
+    "sim\\audit_statistics.sv": "d5593e7c58950e26842181957769666cdc48605034c4bf07ed17099106320344",
+    "sim\\audit_test_commands.sv": "e51ff4fa557d05429d38bd632a7459d6024916f330fd1a92bbef20f871e5f67c",
+    "sim\\frames.mem": "9bbd72dd6c49a0313132029e4cefa1e57ac91b8868746b344494bbc603742492",
+    "sim\\tb_ad7606_spi.sv": "f892df5dc436a1ef10d7b4f736cd9e9f4d4596cc8a2307e7bbb7c43499d49547",
+    "sim\\tb_ai_features.sv": "5202472450940c6b60e9ed11758f0fa57e94aab4cade5a65a9f16a46c5378968",
+    "sim\\tb_ai_mlp.sv": "62c6e02190e929c6a40e1036803ba284d93b99b273786a8e8cdb41e27b4f90eb",
+    "sim\\tb_arithmetic.sv": "c4cb4befc7f8f78c92dc1b06d3c10ed3b57185edf65e2134b6cba529a38fbbe9",
+    "sim\\tb_burst_receiver.sv": "3e3777c3d744cc6949c32af96948bab9da4a5f3afb42d9a4a4edbc5e9365dbc4",
+    "sim\\tb_burst_tx.sv": "c487673419516622cbe9449aa08ec0b6f517f5e063268e11e099a2dc4863f002",
+    "sim\\tb_capture_jammer.sv": "f6919c55bd71662205627d5db02887f2b0e521cffa5587d9111e7eff847f0c7d",
+    "sim\\tb_dac.sv": "c1b205d87f8c8397bdda4361905e3ccc8abfb29a22c66bd5389c23be4ad93a6f",
+    "sim\\tb_dc_tail.sv": "f8563c22406937bd274da5e483366b04647671310869eebcce9a90ec6792c78b",
+    "sim\\tb_frame.sv": "fec9920db984344d82acfcc23162c2951ef7a50c2f5bb7d04eecc07aabc747a7",
+    "sim\\tb_frame_gate.sv": "13e99c0a36516c0480546af05ec1ed3756f1bbefe3c05b574a14a807a39fe60b",
+    "sim\\tb_fsk_lowamp.sv": "1b4f7752c2b258ca752714d1d7fad8761d844e94e60807c57161e55d914fdd0d",
+    "sim\\tb_fsk_receiver.sv": "8a08c1b80544f2e931582c8e22a3141b3a905c17573589e30409487f4296485d",
+    "sim\\tb_history.sv": "0d9f8fe5df84e87fd65cefa4f2db6f6e73d5656a619ce836292212c97fddb365",
+    "sim\\tb_jammer.sv": "fe0804299f70288387826b4a2dfc84e2c5cfdea3d119cd7eb21526d3236f71d0",
+    "sim\\tb_knob.sv": "4b85462b87ab75940d04a6b91866c4da6e71d60aa916f3493d5d160e2bad97e3",
+    "sim\\tb_noise.sv": "37eeb7148739c78a294a8866714bb498c8718827cf4a947b435286378035526e",
+    "sim\\tb_parameters.sv": "7de19b717caa437c415c5b50635b16226276fa768fa6567e3e9db9fe4c292cfc",
+    "sim\\tb_phase_reset.sv": "c3df1f3d18354198c0361be7630559d23876c6944f5346ac00b1674d1c6a1e1e",
+    "sim\\tb_samples.sv": "d6159ae3738a1508a31747d9ae4e55a98219656e84ba09510c2d01fa430d8cb2",
+    "sim\\tb_statistics.sv": "9aa169debf78bc51d7c3cfbadc68331ffb380f16aae4fe59602e7028a351a8c5",
+    "sim\\tb_telemetry.sv": "7a31b61ad86f4037320279a8a73d43395f073eb52db54bebdbccd17bd99a5bd2",
+    "sim\\tb_test_control.sv": "687fe0f77eadb3942c1a7881ffda78831d8a5ab1ec9fc465c40b4e271f76742b",
+    "sim\\tb_uart_system.sv": "9f2bd2a5383e15670ac5e5df9d501861b84b41c87fa8c7397a72ab2f06a33246"
+  }
+}

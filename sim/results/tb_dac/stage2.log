@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 22:59:31 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_dac/xsim_script.tcl
+# xsim {tb_dac} -wdb {tb_dac.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_dac: 100 MHz / 100 kSPS, 100 complete DAC writes, 1 us strobes, no overrun
+$finish called at time : 1003405 ns : File "F:/version4_fix_ai_tone/sim/tb_dac.sv" Line 36
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 22:59:55 2026...

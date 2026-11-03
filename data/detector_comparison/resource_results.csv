@@ -1,0 +1,5 @@
+method,lut,ff,dsp,ramb36,ramb18,wns_ns,tns_ns,whs_ns,ths_ns,drc_error_or_critical_rule_rows,processing_cycles,processing_us,timing_met
+full,488,402,12,0,2,3.105,0.0,0.159,0.0,0,3504,35.04,True
+majority,742,526,16,0,2,2.797,0.0,0.218,0.0,0,3512,35.12,True
+trim_max,839,519,16,0,2,1.621,0.0,0.205,0.0,0,3517,35.17,True
+ai,1038,731,17,0,2,-0.529,-9.479,0.152,0.0,0,4147,41.47,False

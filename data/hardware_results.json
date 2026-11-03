@@ -1,0 +1,160 @@
+{
+  "status": "board_and_instrument_results_included",
+  "evidence_type": "analog_loopback_and_instrument_measurements",
+  "report": "report/design_report.pdf",
+  "report_page_numbers": "PDF pages counted from 1",
+  "standalone_raw_measurement_files": "data/hardware/evidence_manifest.json",
+  "dds": {
+    "pages": [
+      35,
+      36
+    ],
+    "figures": [
+      24,
+      25
+    ],
+    "coverage": "Four waveforms; frequency, amplitude and bias adjustment; FSK waveform",
+    "measurement_table": "data/hardware/dds_measurements.csv",
+    "measurements": 12,
+    "waveforms_measured_at_four_frequencies": [
+      "sine",
+      "square",
+      "triangle"
+    ],
+    "applicability": "submitted_design",
+    "measurement_conditions": {
+      "instrument": "RIGOL DHO814",
+      "input_impedance": "1 Mohm",
+      "measurement_point": "J2 / DAC OUT",
+      "rc_filter": false
+    },
+    "fourth_waveform_evidence": "data/hardware/four_waveforms.png",
+    "scope_images": "data/hardware/dds/",
+    "report_section": "3.3.1"
+  },
+  "experiments": [
+    {
+      "id": "burst_1050_final",
+      "pages": [
+        37
+      ],
+      "report_state": "Final",
+      "signal_amplitude_code": 32,
+      "bias_code": 0,
+      "common_frequency_offset_hz": 0,
+      "gaussian_strength": 0,
+      "interference": {
+        "mode": "Payload burst",
+        "frequency_hz": 1050,
+        "amplitude_code": 80
+      },
+      "frames": 100,
+      "traditional": {
+        "captured": 100,
+        "lost": 0,
+        "errors": 4061,
+        "bits": 25600,
+        "crc_failures": 100
+      },
+      "ai": {
+        "captured": 100,
+        "lost": 0,
+        "errors": 0,
+        "bits": 25600,
+        "crc_failures": 0
+      },
+      "adc_errors": 0,
+      "adc_clips": 0,
+      "dac_clips": 0,
+      "dropped_reports": 0
+    },
+    {
+      "id": "burst_1900_live",
+      "pages": [
+        37
+      ],
+      "figure": 26,
+      "report_state": "Live",
+      "signal_amplitude_code": 32,
+      "interference": {
+        "mode": "Payload burst",
+        "frequency_hz": 1900,
+        "amplitude_code": 80
+      },
+      "configuration_evidence_note": "GUI status describes the current DDS state; the results panel retains the identified FSK run. Experiment settings follow the report experiment record; result counters follow the run panel.",
+      "frames_observed": 200,
+      "traditional": {
+        "captured": 200,
+        "lost": 0,
+        "errors": 16290,
+        "bits": 51200,
+        "crc_failures": 200
+      },
+      "ai": {
+        "captured": 200,
+        "lost": 0,
+        "errors": 0,
+        "bits": 51200,
+        "crc_failures": 0
+      },
+      "evidence": "data/hardware/tone_200_frames.png"
+    },
+    {
+      "id": "continuous_1020_final",
+      "pages": [
+        42
+      ],
+      "report_state": "Final",
+      "signal_amplitude_code": 64,
+      "interference": {
+        "mode": "continuous",
+        "frequency_hz": 1020,
+        "amplitude_code": 32
+      },
+      "frames": 100,
+      "traditional": {
+        "captured": 100,
+        "errors": 0,
+        "bits": 25600
+      },
+      "ai": {
+        "captured": 100,
+        "errors": 4443,
+        "bits": 25600,
+        "crc_failures": 100
+      }
+    },
+    {
+      "id": "burst_1050_live_205_frames",
+      "evidence": "data/hardware/burst_1050_live_205_frames.png",
+      "report_state": "Live",
+      "report_config_id": 3,
+      "report_run_id": 4,
+      "target_frames": 300,
+      "tx_frames_observed": 205,
+      "traditional": {
+        "captured": 205,
+        "lost": 0,
+        "errors": 8266,
+        "bits": 52480,
+        "crc_failures": 205
+      },
+      "ai": {
+        "captured": 205,
+        "lost": 0,
+        "errors": 0,
+        "bits": 52480,
+        "crc_failures": 0
+      },
+      "adc_errors": 0,
+      "adc_clips": 0,
+      "dac_clips": 0,
+      "dropped_reports": 0,
+      "configuration_evidence_note": "GUI status describes the current DDS state; the results panel retains the identified FSK run. Experiment settings follow the report experiment record; result counters follow the run panel.",
+      "pages": [
+        38
+      ]
+    }
+  ],
+  "interpretation": "Keep experiments and Live/Final denominators separate. Zero observed errors is a finite-sample observation, not proof of zero BER. Digital amplitude codes are not measured voltage ratios or SNR."
+}

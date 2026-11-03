@@ -1,0 +1,621 @@
+{
+  "seeds": [
+    82001,
+    83001,
+    84001
+  ],
+  "symbols_per_seed_cell": 256,
+  "cells": [
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1020,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1020,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1020,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1050,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1050,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1050,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1100,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1100,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1100,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1850,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1850,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1850,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1900,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1900,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1900,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1950,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1950,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 1950,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 2000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 2000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "aligned_quarter",
+      "frequency_hz": 2000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1020,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1020,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1020,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1050,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1050,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1050,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1100,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1100,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1100,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1850,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1850,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1850,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1900,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1900,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1900,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1950,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1950,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 1950,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 2000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 2000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_quarter",
+      "frequency_hz": 2000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1020,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1020,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1020,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1050,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1050,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1050,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1100,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1100,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1100,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1850,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1850,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1850,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1900,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1900,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1900,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1950,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1950,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 1950,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 2000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 2000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "shifted_half",
+      "frequency_hz": 2000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1020,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1020,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1020,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1050,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1050,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1050,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1100,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1100,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1100,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1850,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1850,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1850,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1900,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1900,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1900,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1950,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1950,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 1950,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 2000,
+      "jammer_ratio": 2.5,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 2000,
+      "jammer_ratio": 4.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "continuous",
+      "frequency_hz": 2000,
+      "jammer_ratio": 5.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "clean_awgn",
+      "frequency_hz": 1000,
+      "jammer_ratio": 0.0,
+      "noise_sigma_ratio": 0.0
+    },
+    {
+      "profile": "clean_awgn",
+      "frequency_hz": 1000,
+      "jammer_ratio": 0.0,
+      "noise_sigma_ratio": 0.15
+    },
+    {
+      "profile": "clean_awgn",
+      "frequency_hz": 1000,
+      "jammer_ratio": 0.0,
+      "noise_sigma_ratio": 0.5
+    },
+    {
+      "profile": "clean_awgn",
+      "frequency_hz": 1000,
+      "jammer_ratio": 0.0,
+      "noise_sigma_ratio": 1.0
+    },
+    {
+      "profile": "clean_awgn",
+      "frequency_hz": 1000,
+      "jammer_ratio": 0.0,
+      "noise_sigma_ratio": 2.0
+    }
+  ],
+  "model_sha256": "d8765349f2eed039389b32b3819bc5a28979fe0ac8f41a83abf988d485cc9507",
+  "model_version": "00070001",
+  "assumptions": "Synthetic 16-bit ADC samples; known symbol boundaries; exact shared offset; gain from clean signal; no DAC/analog distortion or capture evaluation.",
+  "rules": "Frozen fixed-point AI weights; no test tuning. Majority ties use raw full-window decision. Trim removes earliest highest quantized P0+P1 window; ties in final energy choose bit 0.",
+  "resource_scope": "Complete symbol correlator plus decision core; shared acquisition/history/UART excluded. Quantized subfeatures identical for AI and robust traditional detectors."
+}

@@ -1,0 +1,93 @@
+{
+  "tool": "Vivado 2026.1 build 6511674",
+  "part": "xc7a35tcsg324-1",
+  "clock_mhz": 100,
+  "scope": "Out-of-context symbol correlator plus detector; no ADC, history RAM, acquisition, UART or board IO. Routed timing covers constrained internal register paths; input/output delays are unspecified.",
+  "drc_scope": "Out-of-context DRC; warnings are retained. This is not full-board DRC signoff.",
+  "source_files": {
+    "src/rtl/fsk_correlator.sv": "c038bc41d1c5f774bc549599862f07dc5f5de7b460a3c389b0853bacd5bbdd4a",
+    "src/rtl/ai_mlp.sv": "2337615f25583a70655a47eb537bff5162135eaf7907e64337b8da372124cef0",
+    "src/rtl/rx_sine.mem": "ba197dc70df7f40a7e617f5317e4cb340126328b9a2fa72ee226fadaa835312c",
+    "src/rtl/ai_mlp.mem": "faec9bfb8b4a0fc030127e3749b4c2b0f63c3fcf506cbb9eeaa41f6227956b81",
+    "src/ai/model.npz": "d8765349f2eed039389b32b3819bc5a28979fe0ac8f41a83abf988d485cc9507",
+    "src/ai/model.py": "3e9606bd8fbe99d6588a0ba0371071e9f226bd779cce6a5d064a7148fe6ad846",
+    "src/ai/reference.py": "39729f63cb1371709a9a152c919340a1e0121d7d6a3dd550799b6a0c1abc7bab",
+    "sim/detector_comparison/detector_benchmark.sv": "fbb8bc6626eb5ee156800661c22b6cdc12dfd4dca5edcb618e7f3cc27daf47d5",
+    "sim/detector_comparison/tb_detector_benchmark.sv": "08dc4cefa26581027ca0e5f459f6547293a45ae0c7348ef7fe9638acaf047991",
+    "build/scripts/compare_detectors.py": "20b6ace02549ae5082eeaa15087d2ea3f91bd46e6bffa0d97753f4c8187f35f6",
+    "build/scripts/compare_detector_resources.tcl": "7b6aa712deb12d9b46cdb447e925653e462c4cd76797c7d545ad691c2d2c6fcf"
+  },
+  "resources": [
+    {
+      "method": "full",
+      "lut": 488,
+      "ff": 402,
+      "dsp": 12,
+      "ramb36": 0,
+      "ramb18": 2,
+      "wns_ns": 3.105,
+      "tns_ns": 0.0,
+      "whs_ns": 0.159,
+      "ths_ns": 0.0,
+      "drc_error_or_critical_rule_rows": 0,
+      "processing_cycles": 3504,
+      "processing_us": 35.04,
+      "timing_met": true
+    },
+    {
+      "method": "majority",
+      "lut": 742,
+      "ff": 526,
+      "dsp": 16,
+      "ramb36": 0,
+      "ramb18": 2,
+      "wns_ns": 2.797,
+      "tns_ns": 0.0,
+      "whs_ns": 0.218,
+      "ths_ns": 0.0,
+      "drc_error_or_critical_rule_rows": 0,
+      "processing_cycles": 3512,
+      "processing_us": 35.12,
+      "timing_met": true
+    },
+    {
+      "method": "trim_max",
+      "lut": 839,
+      "ff": 519,
+      "dsp": 16,
+      "ramb36": 0,
+      "ramb18": 2,
+      "wns_ns": 1.621,
+      "tns_ns": 0.0,
+      "whs_ns": 0.205,
+      "ths_ns": 0.0,
+      "drc_error_or_critical_rule_rows": 0,
+      "processing_cycles": 3517,
+      "processing_us": 35.17,
+      "timing_met": true
+    },
+    {
+      "method": "ai",
+      "lut": 1038,
+      "ff": 731,
+      "dsp": 17,
+      "ramb36": 0,
+      "ramb18": 2,
+      "wns_ns": -0.529,
+      "tns_ns": -9.479,
+      "whs_ns": 0.152,
+      "ths_ns": 0.0,
+      "drc_error_or_critical_rule_rows": 0,
+      "processing_cycles": 4147,
+      "processing_us": 41.47,
+      "timing_met": false
+    }
+  ],
+  "numeric_diagnostics": {
+    "adc_clipped_samples": 0,
+    "gain_clipped_samples": 1,
+    "saturated_features": 18725
+  },
+  "fixed_baselines": "Majority and trim use identical 16-bit features to AI; raw-power sensitivity counts are also supplied in symbol_results.csv and summary.json.",
+  "reproduction": "Run compare_detectors.py, run_detector_checks.py, Vivado compare_detector_resources.tcl, then summarize_detector_comparison.py; no training required."
+}

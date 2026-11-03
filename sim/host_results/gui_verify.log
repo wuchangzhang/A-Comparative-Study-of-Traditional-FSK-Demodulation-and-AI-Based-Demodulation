@@ -1,0 +1,5 @@
+PASS GUI sawtooth selection encodes wave=3
+PASS GUI readback fills untouched fields, drafts survive status/older ACK, DDS/FSK/noise ACKs clear accepted drafts
+PASS GUI reconnect carries prior session records into the new Worker
+PASS GUI 980x740: telemetry render, bounds, independent branch BER
+PASS GUI 800x640: telemetry render, bounds, independent branch BER

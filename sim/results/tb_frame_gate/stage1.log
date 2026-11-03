@@ -1,0 +1,14 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe -debug typical --timescale 1ns/1ps -s tb_frame_gate work.tb_frame_gate -L unisims_ver 
+Multi-threading is on. Using 18 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.fsk_frame_tx(SAMPLES_PER_BIT=1,G...
+Compiling module work.tb_frame_gate
+Built simulation snapshot tb_frame_gate

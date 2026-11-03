@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/ego1_fsk_submission_20261102/src/rtl/fsk_correlator.sv" into library work
+INFO: [VRFC 10-311] analyzing module fsk_correlator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/ego1_fsk_submission_20261102/src/rtl/ai_mlp.sv" into library work
+INFO: [VRFC 10-311] analyzing module ai_mlp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/ego1_fsk_submission_20261102/sim/detector_comparison/detector_benchmark.sv" into library work
+INFO: [VRFC 10-311] analyzing module detector_benchmark
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/ego1_fsk_submission_20261102/sim/detector_comparison/tb_detector_benchmark.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_detector_benchmark

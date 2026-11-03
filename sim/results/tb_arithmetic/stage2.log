@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:00:55 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_arithmetic/xsim_script.tcl
+# xsim {tb_arithmetic} -wdb {tb_arithmetic.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_arithmetic: all FCWs, 66048 amplitude/bias pairs, all knob codes, decimal display wrap
+$finish called at time : 2830 ns : File "F:/version4_fix_ai_tone/sim/tb_arithmetic.sv" Line 40
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:01:14 2026...

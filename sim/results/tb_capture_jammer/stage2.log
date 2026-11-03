@@ -1,0 +1,52 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:13:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_capture_jammer/xsim_script.tcl
+# xsim {tb_capture_jammer} -wdb {tb_capture_jammer.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+case: jammer 0 Hz ratio 0% -> sim amplitude 0 (signal 4096)
+  [diag] t=47276445000 boundary found at cursor=9001
+  [diag] t=347169305000 LOCK achieved, offset=0 agc=-1
+  result: trad captured=1 lost=0 errors=0 | ai captured=1 lost=0 errors=0 | offset=0
+  diag: boundaries=1 max_zero_blocks=86 timing_rejects=0 sync_rejects=0 locks=1
+case: jammer 1050 Hz ratio 50% -> sim amplitude 2048 (signal 4096)
+  [diag] t=1165779005000 boundary found at cursor=232255
+  [diag] t=1465671865000 LOCK achieved, offset=0 agc=-1
+  result: trad captured=2 lost=0 errors=0 | ai captured=2 lost=0 errors=0 | offset=0
+  diag: boundaries=1 max_zero_blocks=83 timing_rejects=0 sync_rejects=0 locks=1
+case: jammer 1050 Hz ratio 25% -> sim amplitude 1024 (signal 4096)
+  [diag] t=2283650305000 boundary found at cursor=455383
+  [diag] t=2583543165000 LOCK achieved, offset=0 agc=-1
+  result: trad captured=3 lost=0 errors=0 | ai captured=3 lost=0 errors=0 | offset=0
+  diag: boundaries=1 max_zero_blocks=83 timing_rejects=0 sync_rejects=0 locks=1
+case: jammer 1500 Hz ratio 100% -> sim amplitude 4096 (signal 4096)
+  [diag] t=3401236035000 boundary found at cursor=678454
+  [diag] t=3701128895000 LOCK achieved, offset=0 agc=-1
+  result: trad captured=4 lost=0 errors=0 | ai captured=4 lost=0 errors=0 | offset=0
+  diag: boundaries=1 max_zero_blocks=82 timing_rejects=0 sync_rejects=0 locks=1
+case: jammer 1980 Hz ratio 70% -> sim amplitude 2867 (signal 4096)
+  [diag] t=4520209535000 boundary found at cursor=901802
+  [diag] t=4820102395000 LOCK achieved, offset=0 agc=0
+  result: trad captured=5 lost=0 errors=0 | ai captured=5 lost=0 errors=0 | offset=0
+  diag: boundaries=1 max_zero_blocks=83 timing_rejects=0 sync_rejects=0 locks=1
+case: jammer 1050 Hz ratio 100% -> sim amplitude 4096 (signal 4096)
+  [diag] t=5640190045000 boundary found at cursor=1125351
+  [diag] t=5940082905000 LOCK achieved, offset=0 agc=-1
+  result: trad captured=6 lost=0 errors=0 | ai captured=6 lost=0 errors=0 | offset=0
+  diag: boundaries=1 max_zero_blocks=80 timing_rejects=0 sync_rejects=0 locks=1
+case: jammer 1050 Hz ratio 140% -> sim amplitude 5734 (signal 4096)
+  result: trad captured=6 lost=1 errors=0 | ai captured=6 lost=1 errors=0 | offset=0
+  diag: boundaries=0 max_zero_blocks=255 timing_rejects=0 sync_rejects=0 locks=0
+PASS tb_capture_jammer: diagnosis complete (see [diag] lines)
+$finish called at time : 7825835620 ns : File "F:/version4_fix_ai_tone/sim/tb_capture_jammer.sv" Line 150
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:07:49 . Memory (MB): peak = 236.938 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 21396 KB (Peak: 21396 KB), Simulation CPU Usage: 464296 ms
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:21:40 2026...

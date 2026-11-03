@@ -1,0 +1,149 @@
+{
+  "files": [
+    {
+      "source": "four-waveforms.png",
+      "path": "data/hardware/four_waveforms.png",
+      "bytes": 94497,
+      "sha256": "fbc2b67faf78a7b1733af0db62f9abaa63fa26f1809bffc1543d4c6e7e0c0fb8"
+    },
+    {
+      "source": "实测照片.jpg",
+      "path": "data/hardware/measurement_setup.jpg",
+      "bytes": 8717685,
+      "sha256": "f3607d2485155fa54d7319f701918b3df9adbfa40492e12c46d25a5aad2683d0"
+    },
+    {
+      "source": "实物连接图.png",
+      "path": "data/hardware/board_connections.png",
+      "bytes": 1594629,
+      "sha256": "246d67b6cf3fd335bb2668a4146d5ed1fdab538277c1e61aa11d06e0cd0cd55d"
+    },
+    {
+      "source": "fsk.png",
+      "path": "data/hardware/dds_adjustment_fsk.png",
+      "bytes": 1007482,
+      "sha256": "e545fcffa7f33c6cf6ab0aaaf3de546329dec0813314020315f7063eadd4ea3a"
+    },
+    {
+      "source": "单音干扰.png",
+      "path": "data/hardware/tone_200_frames.png",
+      "bytes": 39489,
+      "sha256": "84d87a484d28079b8d4eb9bc70398d79086f67e9f386dfe0dff3478bf0de58ae"
+    },
+    {
+      "source": "1050Hz单音干扰.png",
+      "path": "data/hardware/burst_1050_live_205_frames.png",
+      "bytes": 180936,
+      "sha256": "222dbe969968eda2853d764c09a954a4f3b638895fc7ed00a45781b8209761ec"
+    },
+    {
+      "source": "优化前_大量丢包.png",
+      "path": "data/hardware/before_optimization_packet_loss.png",
+      "bytes": 233865,
+      "sha256": "798acb2137191f6cdaee3c2e2a9b03e011a397f3e59473238d6f5e310378d0b0"
+    },
+    {
+      "path": "data/hardware/dds/sine_100.png",
+      "bytes": 327608,
+      "sha256": "c76e6f2fc628bd5380f0ca4a5c9f585b2df071c589faa56501095160c02bd153",
+      "source": " three-waveform sheet",
+      "source_row": 2,
+      "source_embedded_image": "ID_DCE3C6F4600E41FC9458AF0BC2E97202"
+    },
+    {
+      "path": "data/hardware/dds/sine_500.png",
+      "bytes": 346398,
+      "sha256": "a38898e4e99956b16a35d9c5ad674a2cd335e5fa5575e3a075692e88c9ccfac0",
+      "source": " three-waveform sheet",
+      "source_row": 3,
+      "source_embedded_image": "ID_8FA0081350F94A089C7D64CEB61B8930"
+    },
+    {
+      "path": "data/hardware/dds/sine_1000.png",
+      "bytes": 256146,
+      "sha256": "d1e4975a3bff3ae0ba643edd6babcd867327d857ea1fc1137b93a2fbe63e8250",
+      "source": " three-waveform sheet",
+      "source_row": 4,
+      "source_embedded_image": "ID_638F172CFB194DC38DA9B23E5A0AB49E"
+    },
+    {
+      "path": "data/hardware/dds/sine_2000.png",
+      "bytes": 329437,
+      "sha256": "d4fb5aab1d04f4745f6ca015ccb898e8b67f03ecd35f24e807963d452356e21c",
+      "source": " three-waveform sheet",
+      "source_row": 5,
+      "source_embedded_image": "ID_79E31278A8EC4318A408DE95CBACF6CC"
+    },
+    {
+      "path": "data/hardware/dds/square_100.png",
+      "bytes": 310625,
+      "sha256": "d6c720bf267d602aa732ea987434476c08d9ec4e84d46640c04fe57d7105af82",
+      "source": " three-waveform sheet",
+      "source_row": 6,
+      "source_embedded_image": "ID_79D40EC0DAEA4376BFA75C70A428601C"
+    },
+    {
+      "path": "data/hardware/dds/square_500.png",
+      "bytes": 306224,
+      "sha256": "815aa008a1f633c0a9d3f1e7310905ba3d242d6c737ca8dce2b463939825f7fe",
+      "source": " three-waveform sheet",
+      "source_row": 7,
+      "source_embedded_image": "ID_7A674BB441084D4CB08A67796EDF2566"
+    },
+    {
+      "path": "data/hardware/dds/square_1000.png",
+      "bytes": 297262,
+      "sha256": "46b6bdf3f995ca0ae8881cebfd6fb1b63b83fc21fb2b4880bfdebf5c8722e54f",
+      "source": " three-waveform sheet",
+      "source_row": 8,
+      "source_embedded_image": "ID_7E4C446C79CE4EE99075729192D83371"
+    },
+    {
+      "path": "data/hardware/dds/square_2000.png",
+      "bytes": 311461,
+      "sha256": "56f659b1455a755660d798547ba13a7c4bf01da8de14e68d92a0cc95d6fa66cd",
+      "source": " three-waveform sheet",
+      "source_row": 9,
+      "source_embedded_image": "ID_752058D066474E8B86942D566FABB0CD"
+    },
+    {
+      "path": "data/hardware/dds/triangle_100.png",
+      "bytes": 319095,
+      "sha256": "3cdb4d2acfdc86691f3a9821d4ecb1099d089ab0b51a05d1f14b1707cb28df97",
+      "source": " three-waveform sheet",
+      "source_row": 10,
+      "source_embedded_image": "ID_0CCC018E60384AEB87B252C2EF9D6287"
+    },
+    {
+      "path": "data/hardware/dds/triangle_500.png",
+      "bytes": 315152,
+      "sha256": "9d429c5eb421ba8d39aa0c92f2debccfb7d7457cb7523196a65f86772c779939",
+      "source": " three-waveform sheet",
+      "source_row": 11,
+      "source_embedded_image": "ID_727D1768DB434102883EF818C51D846D"
+    },
+    {
+      "path": "data/hardware/dds/triangle_1000.png",
+      "bytes": 335037,
+      "sha256": "20b5be67737be3e441310b8ea834942c79f750aa725662916c3da83237564172",
+      "source": " three-waveform sheet",
+      "source_row": 12,
+      "source_embedded_image": "ID_A2AF2964E5AF45A5A02FA1010F5A9687"
+    },
+    {
+      "path": "data/hardware/dds/triangle_2000.png",
+      "bytes": 338323,
+      "sha256": "d326bcb02974ca6fe7276625a9938c00c99b2e83a0261c2b898d90edd5034294",
+      "source": " three-waveform sheet",
+      "source_row": 13,
+      "source_embedded_image": "ID_5B0C45C2AC76493F9C11D21487683966"
+    }
+  ],
+  "measurement_table": "data/hardware/dds_measurements.csv",
+  "measurement_scope": "12 measured frequency, Vpp and DC offset records for sine, square and triangle; 100/500/1000/2000 Hz",
+  "frequency_error_definition": "measured - set; percent = (measured - set) / set * 100",
+  "instrument": "RIGOL DHO814",
+  "input_impedance": "1 Mohm",
+  "measurement_point": "J2 / DAC OUT",
+  "rc_filter": false
+}

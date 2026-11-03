@@ -1,0 +1,1639 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Nov  1 00:43:01 2026
+| Host         : WIN-QAKJSN8CL1I running 64-bit major release  (build 9200)
+| Command      : report_timing -to [all_outputs] -max_paths 60 -file F:/version4_fix_ai_tone/build/burst_v7/output_paths.rpt
+| Design       : ego1_control_top
+| Device       : 7a35t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.920ns  (required time - arrival time)
+  Source:                 u_core/u_uart/tx_bits_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            uart_tx
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        9.080ns  (logic 4.119ns (45.359%)  route 4.961ns (54.641%))
+  Logic Levels:           2  (LUT5=1 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y88                                      0.000     0.000 r  u_core/u_uart/tx_bits_reg[0]/C
+    SLICE_X45Y88         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  u_core/u_uart/tx_bits_reg[0]/Q
+                         net (fo=13, routed)          0.864     1.320    u_core/u_uart/tx_bits_reg_n_0_[0]
+    SLICE_X46Y87         LUT5 (Prop_lut5_I3_O)        0.124     1.444 r  u_core/u_uart/tx_INST_0/O
+                         net (fo=1, routed)           4.098     5.541    uart_tx_OBUF
+    T4                   OBUF (Prop_obuf_I_O)         3.539     9.080 r  uart_tx_OBUF_inst/O
+                         net (fo=0)                   0.000     9.080    uart_tx
+    T4                                                                r  uart_tx
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -9.080    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.920    <hidden>
+
+Slack (MET) :             1.636ns  (required time - arrival time)
+  Source:                 led_registered_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            demod_bit_test_pin
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        8.364ns  (logic 4.090ns (48.904%)  route 4.274ns (51.096%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y54                                      0.000     0.000 r  led_registered_reg[8]/C
+    SLICE_X64Y54         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[8]/Q
+                         net (fo=2, routed)           4.274     4.792    demod_bit_test_pin_OBUF
+    A15                  OBUF (Prop_obuf_I_O)         3.572     8.364 r  demod_bit_test_pin_OBUF_inst/O
+                         net (fo=0)                   0.000     8.364    demod_bit_test_pin
+    A15                                                               r  demod_bit_test_pin
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -8.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.636    <hidden>
+
+Slack (MET) :             2.596ns  (required time - arrival time)
+  Source:                 led_registered_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[2]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        7.404ns  (logic 3.989ns (53.878%)  route 3.415ns (46.122%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y71                                      0.000     0.000 r  led_registered_reg[2]/C
+    SLICE_X28Y71         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[2]/Q
+                         net (fo=1, routed)           3.415     3.871    led_pin_OBUF[2]
+    L1                   OBUF (Prop_obuf_I_O)         3.533     7.404 r  led_pin_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     7.404    led_pin[2]
+    L1                                                                r  led_pin[2]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -7.404    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  2.596    <hidden>
+
+Slack (MET) :             3.380ns  (required time - arrival time)
+  Source:                 tx_bit_registered_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            fsk_bit_test_pin
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.620ns  (logic 4.020ns (60.718%)  route 2.600ns (39.282%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y68                                      0.000     0.000 r  tx_bit_registered_reg/C
+    SLICE_X15Y68         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  tx_bit_registered_reg/Q
+                         net (fo=1, routed)           2.600     3.056    fsk_bit_test_pin_OBUF
+    B16                  OBUF (Prop_obuf_I_O)         3.564     6.620 r  fsk_bit_test_pin_OBUF_inst/O
+                         net (fo=0)                   0.000     6.620    fsk_bit_test_pin
+    B16                                                               r  fsk_bit_test_pin
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.620    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.380    <hidden>
+
+Slack (MET) :             3.533ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[6]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.467ns  (logic 4.204ns (65.003%)  route 2.263ns (34.997%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[6]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_data_0_reg[6]/Q
+                         net (fo=2, routed)           2.263     2.741    seg_data_1_pin_OBUF[6]
+    D2                   OBUF (Prop_obuf_I_O)         3.726     6.467 r  seg_data_1_pin_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     6.467    seg_data_1_pin[6]
+    D2                                                                r  seg_data_1_pin[6]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.467    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.533    <hidden>
+
+Slack (MET) :             3.606ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[4]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.394ns  (logic 4.190ns (65.533%)  route 2.204ns (34.467%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[4]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_data_0_reg[4]/Q
+                         net (fo=2, routed)           2.204     2.682    seg_data_1_pin_OBUF[4]
+    F3                   OBUF (Prop_obuf_I_O)         3.712     6.394 r  seg_data_1_pin_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     6.394    seg_data_1_pin[4]
+    F3                                                                r  seg_data_1_pin[4]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.394    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.606    <hidden>
+
+Slack (MET) :             3.647ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.353ns  (logic 4.211ns (66.281%)  route 2.142ns (33.719%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[5]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_data_0_reg[5]/Q
+                         net (fo=2, routed)           2.142     2.620    seg_data_1_pin_OBUF[5]
+    E2                   OBUF (Prop_obuf_I_O)         3.733     6.353 r  seg_data_1_pin_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     6.353    seg_data_1_pin[5]
+    E2                                                                r  seg_data_1_pin[5]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.353    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.647    <hidden>
+
+Slack (MET) :             3.689ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[3]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.311ns  (logic 4.053ns (64.225%)  route 2.258ns (35.775%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[3]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[3]/Q
+                         net (fo=2, routed)           2.258     2.776    seg_data_1_pin_OBUF[3]
+    F4                   OBUF (Prop_obuf_I_O)         3.535     6.311 r  seg_data_1_pin_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     6.311    seg_data_1_pin[3]
+    F4                                                                r  seg_data_1_pin[3]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.311    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.689    <hidden>
+
+Slack (MET) :             3.771ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[1]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.229ns  (logic 4.062ns (65.208%)  route 2.167ns (34.792%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[1]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[1]/Q
+                         net (fo=2, routed)           2.167     2.685    seg_data_1_pin_OBUF[1]
+    E3                   OBUF (Prop_obuf_I_O)         3.544     6.229 r  seg_data_1_pin_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     6.229    seg_data_1_pin[1]
+    E3                                                                r  seg_data_1_pin[1]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.229    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.771    <hidden>
+
+Slack (MET) :             3.853ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[3]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.147ns  (logic 4.198ns (68.293%)  route 1.949ns (31.707%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[3]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_cs_reg[3]/Q
+                         net (fo=1, routed)           1.949     2.427    seg_cs_pin_OBUF[3]
+    H1                   OBUF (Prop_obuf_I_O)         3.720     6.147 r  seg_cs_pin_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     6.147    seg_cs_pin[3]
+    H1                                                                r  seg_cs_pin[3]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.147    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.853    <hidden>
+
+Slack (MET) :             3.858ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[6]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.142ns  (logic 4.212ns (68.585%)  route 1.929ns (31.415%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[6]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_data_0_reg[6]/Q
+                         net (fo=2, routed)           1.929     2.407    seg_data_1_pin_OBUF[6]
+    B2                   OBUF (Prop_obuf_I_O)         3.734     6.142 r  seg_data_0_pin_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     6.142    seg_data_0_pin[6]
+    B2                                                                r  seg_data_0_pin[6]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.142    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.858    <hidden>
+
+Slack (MET) :             3.899ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.101ns  (logic 4.220ns (69.165%)  route 1.881ns (30.835%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[5]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_data_0_reg[5]/Q
+                         net (fo=2, routed)           1.881     2.359    seg_data_1_pin_OBUF[5]
+    B3                   OBUF (Prop_obuf_I_O)         3.742     6.101 r  seg_data_0_pin_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     6.101    seg_data_0_pin[5]
+    B3                                                                r  seg_data_0_pin[5]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.101    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.899    <hidden>
+
+Slack (MET) :             3.900ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[7]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.100ns  (logic 4.189ns (68.662%)  route 1.912ns (31.338%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[7]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_cs_reg[7]/Q
+                         net (fo=1, routed)           1.912     2.390    seg_cs_pin_OBUF[7]
+    G6                   OBUF (Prop_obuf_I_O)         3.711     6.100 r  seg_cs_pin_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     6.100    seg_cs_pin[7]
+    G6                                                                r  seg_cs_pin[7]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.100    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.900    <hidden>
+
+Slack (MET) :             3.909ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[2]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.091ns  (logic 4.061ns (66.678%)  route 2.030ns (33.322%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[2]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[2]/Q
+                         net (fo=2, routed)           2.030     2.548    seg_data_1_pin_OBUF[2]
+    D3                   OBUF (Prop_obuf_I_O)         3.543     6.091 r  seg_data_1_pin_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     6.091    seg_data_1_pin[2]
+    D3                                                                r  seg_data_1_pin[2]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.091    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.909    <hidden>
+
+Slack (MET) :             3.926ns  (required time - arrival time)
+  Source:                 u_adc/adc_convst_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            adc_convst
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.074ns  (logic 4.036ns (66.446%)  route 2.038ns (33.554%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y90                                       0.000     0.000 r  u_adc/adc_convst_reg/C
+    SLICE_X4Y90          FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_adc/adc_convst_reg/Q
+                         net (fo=1, routed)           2.038     2.494    adc_convst_OBUF
+    A13                  OBUF (Prop_obuf_I_O)         3.580     6.074 r  adc_convst_OBUF_inst/O
+                         net (fo=0)                   0.000     6.074    adc_convst
+    A13                                                               r  adc_convst
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.074    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.926    <hidden>
+
+Slack (MET) :             3.928ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[6]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.072ns  (logic 4.197ns (69.110%)  route 1.876ns (30.890%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[6]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_cs_reg[6]/Q
+                         net (fo=1, routed)           1.876     2.354    seg_cs_pin_OBUF[6]
+    E1                   OBUF (Prop_obuf_I_O)         3.719     6.072 r  seg_cs_pin_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     6.072    seg_cs_pin[6]
+    E1                                                                r  seg_cs_pin[6]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.072    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.928    <hidden>
+
+Slack (MET) :             3.961ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[4]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.039ns  (logic 4.210ns (69.724%)  route 1.828ns (30.276%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[4]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_data_0_reg[4]/Q
+                         net (fo=2, routed)           1.828     2.306    seg_data_1_pin_OBUF[4]
+    A1                   OBUF (Prop_obuf_I_O)         3.732     6.039 r  seg_data_0_pin_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     6.039    seg_data_0_pin[4]
+    A1                                                                r  seg_data_0_pin[4]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.039    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.961    <hidden>
+
+Slack (MET) :             3.970ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[2]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.030ns  (logic 4.214ns (69.880%)  route 1.816ns (30.120%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[2]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.478     0.478 r  u_display/seg_cs_reg[2]/Q
+                         net (fo=1, routed)           1.816     2.294    seg_cs_pin_OBUF[2]
+    C1                   OBUF (Prop_obuf_I_O)         3.736     6.030 r  seg_cs_pin_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     6.030    seg_cs_pin[2]
+    C1                                                                r  seg_cs_pin[2]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.030    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.970    <hidden>
+
+Slack (MET) :             3.986ns  (required time - arrival time)
+  Source:                 led_registered_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[11]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        6.014ns  (logic 4.048ns (67.313%)  route 1.966ns (32.687%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y54                                      0.000     0.000 r  led_registered_reg[11]/C
+    SLICE_X64Y54         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[11]/Q
+                         net (fo=2, routed)           1.966     2.484    led_pin_OBUF[10]
+    H4                   OBUF (Prop_obuf_I_O)         3.530     6.014 r  led_pin_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     6.014    led_pin[11]
+    H4                                                                r  led_pin[11]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -6.014    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  3.986    <hidden>
+
+Slack (MET) :             4.037ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[4]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.963ns  (logic 4.058ns (68.052%)  route 1.905ns (31.948%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[4]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_cs_reg[4]/Q
+                         net (fo=1, routed)           1.905     2.423    seg_cs_pin_OBUF[4]
+    G1                   OBUF (Prop_obuf_I_O)         3.540     5.963 r  seg_cs_pin_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     5.963    seg_cs_pin[4]
+    G1                                                                r  seg_cs_pin[4]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.963    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.037    <hidden>
+
+Slack (MET) :             4.042ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_1_pin[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.958ns  (logic 4.064ns (68.214%)  route 1.894ns (31.786%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[0]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[0]/Q
+                         net (fo=2, routed)           1.894     2.412    seg_data_1_pin_OBUF[0]
+    D4                   OBUF (Prop_obuf_I_O)         3.546     5.958 r  seg_data_1_pin_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.958    seg_data_1_pin[0]
+    D4                                                                r  seg_data_1_pin[0]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.958    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.042    <hidden>
+
+Slack (MET) :             4.048ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[1]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.952ns  (logic 4.044ns (67.949%)  route 1.908ns (32.051%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y10                                      0.000     0.000 r  u_dac/dac_data_reg[1]/C
+    SLICE_X64Y10         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  u_dac/dac_data_reg[1]/Q
+                         net (fo=1, routed)           1.908     2.426    dac_data_OBUF[1]
+    R8                   OBUF (Prop_obuf_I_O)         3.526     5.952 r  dac_data_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     5.952    dac_data[1]
+    R8                                                                r  dac_data[1]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.952    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.048    <hidden>
+
+Slack (MET) :             4.073ns  (required time - arrival time)
+  Source:                 u_dac/dac_wr2_n_reg/C
+                            (rising edge-triggered cell FDPE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_wr2_n
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.927ns  (logic 4.119ns (69.488%)  route 1.808ns (30.512%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y10                                      0.000     0.000 r  u_dac/dac_wr2_n_reg/C
+    SLICE_X65Y10         FDPE (Prop_fdpe_C_Q)         0.419     0.419 r  u_dac/dac_wr2_n_reg/Q
+                         net (fo=1, routed)           1.808     2.227    dac_wr2_n_OBUF
+    R6                   OBUF (Prop_obuf_I_O)         3.700     5.927 r  dac_wr2_n_OBUF_inst/O
+                         net (fo=0)                   0.000     5.927    dac_wr2_n
+    R6                                                                r  dac_wr2_n
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.927    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.073    <hidden>
+
+Slack (MET) :             4.082ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.918ns  (logic 4.060ns (68.607%)  route 1.858ns (31.393%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[5]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_cs_reg[5]/Q
+                         net (fo=1, routed)           1.858     2.376    seg_cs_pin_OBUF[5]
+    F1                   OBUF (Prop_obuf_I_O)         3.542     5.918 r  seg_cs_pin_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     5.918    seg_cs_pin[5]
+    F1                                                                r  seg_cs_pin[5]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.918    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.082    <hidden>
+
+Slack (MET) :             4.082ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[2]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.918ns  (logic 4.051ns (68.460%)  route 1.866ns (31.540%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y7                                       0.000     0.000 r  u_dac/dac_data_reg[2]/C
+    SLICE_X64Y7          FDCE (Prop_fdce_C_Q)         0.518     0.518 r  u_dac/dac_data_reg[2]/Q
+                         net (fo=1, routed)           1.866     2.384    dac_data_OBUF[2]
+    T6                   OBUF (Prop_obuf_I_O)         3.533     5.918 r  dac_data_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     5.918    dac_data[2]
+    T6                                                                r  dac_data[2]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.918    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.082    <hidden>
+
+Slack (MET) :             4.088ns  (required time - arrival time)
+  Source:                 led_registered_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[12]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.912ns  (logic 4.046ns (68.445%)  route 1.865ns (31.555%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y54                                      0.000     0.000 r  led_registered_reg[12]/C
+    SLICE_X64Y54         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[12]/Q
+                         net (fo=1, routed)           1.865     2.383    led_pin_OBUF[12]
+    J4                   OBUF (Prop_obuf_I_O)         3.528     5.912 r  led_pin_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     5.912    led_pin[12]
+    J4                                                                r  led_pin[12]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.912    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.088    <hidden>
+
+Slack (MET) :             4.088ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[3]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.912ns  (logic 4.077ns (68.970%)  route 1.834ns (31.030%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[3]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[3]/Q
+                         net (fo=2, routed)           1.834     2.352    seg_data_1_pin_OBUF[3]
+    B1                   OBUF (Prop_obuf_I_O)         3.559     5.912 r  seg_data_0_pin_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     5.912    seg_data_0_pin[3]
+    B1                                                                r  seg_data_0_pin[3]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.912    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.088    <hidden>
+
+Slack (MET) :             4.090ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.910ns  (logic 4.040ns (68.358%)  route 1.870ns (31.642%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y7                                       0.000     0.000 r  u_dac/dac_data_reg[0]/C
+    SLICE_X64Y7          FDCE (Prop_fdce_C_Q)         0.518     0.518 r  u_dac/dac_data_reg[0]/Q
+                         net (fo=1, routed)           1.870     2.388    dac_data_OBUF[0]
+    T8                   OBUF (Prop_obuf_I_O)         3.522     5.910 r  dac_data_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.910    dac_data[0]
+    T8                                                                r  dac_data[0]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.910    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.090    <hidden>
+
+Slack (MET) :             4.093ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[3]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.907ns  (logic 4.052ns (68.596%)  route 1.855ns (31.404%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y7                                       0.000     0.000 r  u_dac/dac_data_reg[3]/C
+    SLICE_X64Y7          FDCE (Prop_fdce_C_Q)         0.518     0.518 r  u_dac/dac_data_reg[3]/Q
+                         net (fo=1, routed)           1.855     2.373    dac_data_OBUF[3]
+    R7                   OBUF (Prop_obuf_I_O)         3.534     5.907 r  dac_data_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     5.907    dac_data[3]
+    R7                                                                r  dac_data[3]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.907    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.093    <hidden>
+
+Slack (MET) :             4.116ns  (required time - arrival time)
+  Source:                 u_adc/adc_sclk_reg/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            adc_sclk
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.884ns  (logic 4.020ns (68.334%)  route 1.863ns (31.666%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y85                                       0.000     0.000 r  u_adc/adc_sclk_reg/C
+    SLICE_X5Y85          FDSE (Prop_fdse_C_Q)         0.456     0.456 r  u_adc/adc_sclk_reg/Q
+                         net (fo=1, routed)           1.863     2.319    adc_sclk_OBUF
+    B18                  OBUF (Prop_obuf_I_O)         3.564     5.884 r  adc_sclk_OBUF_inst/O
+                         net (fo=0)                   0.000     5.884    adc_sclk
+    B18                                                               r  adc_sclk
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.884    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.116    <hidden>
+
+Slack (MET) :             4.136ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.864ns  (logic 4.186ns (71.389%)  route 1.678ns (28.611%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y7                                       0.000     0.000 r  u_dac/dac_data_reg[5]/C
+    SLICE_X64Y7          FDCE (Prop_fdce_C_Q)         0.478     0.478 r  u_dac/dac_data_reg[5]/Q
+                         net (fo=1, routed)           1.678     2.156    dac_data_OBUF[5]
+    U7                   OBUF (Prop_obuf_I_O)         3.708     5.864 r  dac_data_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     5.864    dac_data[5]
+    U7                                                                r  dac_data[5]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.864    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.136    <hidden>
+
+Slack (MET) :             4.141ns  (required time - arrival time)
+  Source:                 led_registered_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[10]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.859ns  (logic 4.038ns (68.916%)  route 1.821ns (31.084%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y54                                      0.000     0.000 r  led_registered_reg[11]/C
+    SLICE_X64Y54         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[11]/Q
+                         net (fo=2, routed)           1.821     2.339    led_pin_OBUF[10]
+    J3                   OBUF (Prop_obuf_I_O)         3.520     5.859 r  led_pin_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     5.859    led_pin[10]
+    J3                                                                r  led_pin[10]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.859    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.141    <hidden>
+
+Slack (MET) :             4.142ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[4]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.858ns  (logic 4.054ns (69.206%)  route 1.804ns (30.794%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y7                                       0.000     0.000 r  u_dac/dac_data_reg[4]/C
+    SLICE_X64Y7          FDCE (Prop_fdce_C_Q)         0.518     0.518 r  u_dac/dac_data_reg[4]/Q
+                         net (fo=1, routed)           1.804     2.322    dac_data_OBUF[4]
+    U6                   OBUF (Prop_obuf_I_O)         3.536     5.858 r  dac_data_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     5.858    dac_data[4]
+    U6                                                                r  dac_data[4]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.858    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.142    <hidden>
+
+Slack (MET) :             4.147ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[6]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.853ns  (logic 4.190ns (71.585%)  route 1.663ns (28.415%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y7                                       0.000     0.000 r  u_dac/dac_data_reg[6]/C
+    SLICE_X64Y7          FDCE (Prop_fdce_C_Q)         0.478     0.478 r  u_dac/dac_data_reg[6]/Q
+                         net (fo=1, routed)           1.663     2.141    dac_data_OBUF[6]
+    V9                   OBUF (Prop_obuf_I_O)         3.712     5.853 r  dac_data_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     5.853    dac_data[6]
+    V9                                                                r  dac_data[6]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.853    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.147    <hidden>
+
+Slack (MET) :             4.179ns  (required time - arrival time)
+  Source:                 u_dac/dac_cs_n_reg/C
+                            (rising edge-triggered cell FDPE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_cs_n
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.821ns  (logic 3.968ns (68.181%)  route 1.852ns (31.819%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y10                                      0.000     0.000 r  u_dac/dac_cs_n_reg/C
+    SLICE_X65Y10         FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  u_dac/dac_cs_n_reg/Q
+                         net (fo=1, routed)           1.852     2.308    dac_cs_n_OBUF
+    N6                   OBUF (Prop_obuf_I_O)         3.512     5.821 r  dac_cs_n_OBUF_inst/O
+                         net (fo=0)                   0.000     5.821    dac_cs_n
+    N6                                                                r  dac_cs_n
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.821    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.179    <hidden>
+
+Slack (MET) :             4.182ns  (required time - arrival time)
+  Source:                 led_registered_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[7]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.818ns  (logic 3.982ns (68.436%)  route 1.836ns (31.564%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y51                                      0.000     0.000 r  led_registered_reg[7]/C
+    SLICE_X63Y51         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[7]/Q
+                         net (fo=1, routed)           1.836     2.292    led_pin_OBUF[7]
+    K1                   OBUF (Prop_obuf_I_O)         3.526     5.818 r  led_pin_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     5.818    led_pin[7]
+    K1                                                                r  led_pin[7]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.818    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.182    <hidden>
+
+Slack (MET) :             4.189ns  (required time - arrival time)
+  Source:                 u_dac/dac_wr1_n_reg/C
+                            (rising edge-triggered cell FDPE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_wr1_n
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.811ns  (logic 3.997ns (68.776%)  route 1.814ns (31.224%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y10                                      0.000     0.000 r  u_dac/dac_wr1_n_reg/C
+    SLICE_X65Y10         FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  u_dac/dac_wr1_n_reg/Q
+                         net (fo=1, routed)           1.814     2.270    dac_wr1_n_OBUF
+    V6                   OBUF (Prop_obuf_I_O)         3.541     5.811 r  dac_wr1_n_OBUF_inst/O
+                         net (fo=0)                   0.000     5.811    dac_wr1_n
+    V6                                                                r  dac_wr1_n
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.811    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.189    <hidden>
+
+Slack (MET) :             4.218ns  (required time - arrival time)
+  Source:                 led_registered_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.782ns  (logic 3.973ns (68.708%)  route 1.809ns (31.292%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y48                                      0.000     0.000 r  led_registered_reg[0]/C
+    SLICE_X65Y48         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[0]/Q
+                         net (fo=1, routed)           1.809     2.265    led_pin_OBUF[0]
+    K3                   OBUF (Prop_obuf_I_O)         3.517     5.782 r  led_pin_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.782    led_pin[0]
+    K3                                                                r  led_pin[0]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.782    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.218    <hidden>
+
+Slack (MET) :             4.232ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.768ns  (logic 4.081ns (70.746%)  route 1.687ns (29.254%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[0]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[0]/Q
+                         net (fo=2, routed)           1.687     2.205    seg_data_1_pin_OBUF[0]
+    B4                   OBUF (Prop_obuf_I_O)         3.563     5.768 r  seg_data_0_pin_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.768    seg_data_0_pin[0]
+    B4                                                                r  seg_data_0_pin[0]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.768    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.232    <hidden>
+
+Slack (MET) :             4.232ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[2]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.768ns  (logic 4.085ns (70.818%)  route 1.683ns (29.182%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[2]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[2]/Q
+                         net (fo=2, routed)           1.683     2.201    seg_data_1_pin_OBUF[2]
+    A3                   OBUF (Prop_obuf_I_O)         3.567     5.768 r  seg_data_0_pin_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     5.768    seg_data_0_pin[2]
+    A3                                                                r  seg_data_0_pin[2]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.768    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.232    <hidden>
+
+Slack (MET) :             4.244ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[1]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.756ns  (logic 4.086ns (70.988%)  route 1.670ns (29.012%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[1]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_cs_reg[1]/Q
+                         net (fo=1, routed)           1.670     2.188    seg_cs_pin_OBUF[1]
+    C2                   OBUF (Prop_obuf_I_O)         3.568     5.756 r  seg_cs_pin_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     5.756    seg_cs_pin[1]
+    C2                                                                r  seg_cs_pin[1]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.756    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.244    <hidden>
+
+Slack (MET) :             4.252ns  (required time - arrival time)
+  Source:                 u_display/seg_data_0_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_data_0_pin[1]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.748ns  (logic 4.079ns (70.964%)  route 1.669ns (29.036%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y84                                      0.000     0.000 r  u_display/seg_data_0_reg[1]/C
+    SLICE_X64Y84         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_data_0_reg[1]/Q
+                         net (fo=2, routed)           1.669     2.187    seg_data_1_pin_OBUF[1]
+    A4                   OBUF (Prop_obuf_I_O)         3.561     5.748 r  seg_data_0_pin_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     5.748    seg_data_0_pin[1]
+    A4                                                                r  seg_data_0_pin[1]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.748    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.252    <hidden>
+
+Slack (MET) :             4.252ns  (required time - arrival time)
+  Source:                 u_display/seg_cs_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            seg_cs_pin[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.748ns  (logic 4.071ns (70.822%)  route 1.677ns (29.178%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y70                                      0.000     0.000 r  u_display/seg_cs_reg[0]/C
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  u_display/seg_cs_reg[0]/Q
+                         net (fo=1, routed)           1.677     2.195    seg_cs_pin_OBUF[0]
+    G2                   OBUF (Prop_obuf_I_O)         3.553     5.748 r  seg_cs_pin_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     5.748    seg_cs_pin[0]
+    G2                                                                r  seg_cs_pin[0]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.748    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.252    <hidden>
+
+Slack (MET) :             4.257ns  (required time - arrival time)
+  Source:                 u_dac/dac_data_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_data[7]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.743ns  (logic 4.060ns (70.693%)  route 1.683ns (29.307%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y10                                      0.000     0.000 r  u_dac/dac_data_reg[7]/C
+    SLICE_X64Y10         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  u_dac/dac_data_reg[7]/Q
+                         net (fo=1, routed)           1.683     2.201    dac_data_OBUF[7]
+    U9                   OBUF (Prop_obuf_I_O)         3.542     5.743 r  dac_data_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     5.743    dac_data[7]
+    U9                                                                r  dac_data[7]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.743    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.257    <hidden>
+
+Slack (MET) :             4.262ns  (required time - arrival time)
+  Source:                 u_adc/adc_cs_n_reg/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            adc_cs_n
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.738ns  (logic 4.061ns (70.773%)  route 1.677ns (29.227%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y89                                       0.000     0.000 r  u_adc/adc_cs_n_reg/C
+    SLICE_X2Y89          FDSE (Prop_fdse_C_Q)         0.518     0.518 r  u_adc/adc_cs_n_reg/Q
+                         net (fo=1, routed)           1.677     2.195    adc_cs_n_OBUF
+    F13                  OBUF (Prop_obuf_I_O)         3.543     5.738 r  adc_cs_n_OBUF_inst/O
+                         net (fo=0)                   0.000     5.738    adc_cs_n
+    F13                                                               r  adc_cs_n
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.738    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.262    <hidden>
+
+Slack (MET) :             4.281ns  (required time - arrival time)
+  Source:                 u_adc/adc_rst_n_reg/C
+                            (rising edge-triggered cell FDSE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            adc_rst_n
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.719ns  (logic 4.025ns (70.379%)  route 1.694ns (29.621%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y91                                       0.000     0.000 r  u_adc/adc_rst_n_reg/C
+    SLICE_X7Y91          FDSE (Prop_fdse_C_Q)         0.456     0.456 r  u_adc/adc_rst_n_reg/Q
+                         net (fo=1, routed)           1.694     2.150    adc_rst_n_OBUF
+    B11                  OBUF (Prop_obuf_I_O)         3.569     5.719 r  adc_rst_n_OBUF_inst/O
+                         net (fo=0)                   0.000     5.719    adc_rst_n
+    B11                                                               r  adc_rst_n
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.719    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.281    <hidden>
+
+Slack (MET) :             4.283ns  (required time - arrival time)
+  Source:                 led_registered_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[1]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.717ns  (logic 4.052ns (70.871%)  route 1.665ns (29.129%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y47                                      0.000     0.000 r  led_registered_reg[1]/C
+    SLICE_X64Y47         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[1]/Q
+                         net (fo=1, routed)           1.665     2.183    led_pin_OBUF[1]
+    M1                   OBUF (Prop_obuf_I_O)         3.534     5.717 r  led_pin_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     5.717    led_pin[1]
+    M1                                                                r  led_pin[1]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.717    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.283    <hidden>
+
+Slack (MET) :             4.283ns  (required time - arrival time)
+  Source:                 led_registered_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[8]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.717ns  (logic 4.042ns (70.706%)  route 1.675ns (29.294%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y54                                      0.000     0.000 r  led_registered_reg[8]/C
+    SLICE_X64Y54         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[8]/Q
+                         net (fo=2, routed)           1.675     2.193    demod_bit_test_pin_OBUF
+    K2                   OBUF (Prop_obuf_I_O)         3.524     5.717 r  led_pin_OBUF[8]_inst/O
+                         net (fo=0)                   0.000     5.717    led_pin[8]
+    K2                                                                r  led_pin[8]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.717    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.283    <hidden>
+
+Slack (MET) :             4.301ns  (required time - arrival time)
+  Source:                 led_registered_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[9]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.699ns  (logic 4.036ns (70.823%)  route 1.663ns (29.177%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y54                                      0.000     0.000 r  led_registered_reg[9]/C
+    SLICE_X64Y54         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  led_registered_reg[9]/Q
+                         net (fo=1, routed)           1.663     2.181    led_pin_OBUF[9]
+    J2                   OBUF (Prop_obuf_I_O)         3.518     5.699 r  led_pin_OBUF[9]_inst/O
+                         net (fo=0)                   0.000     5.699    led_pin[9]
+    J2                                                                r  led_pin[9]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.699    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.301    <hidden>
+
+Slack (MET) :             4.340ns  (required time - arrival time)
+  Source:                 u_dac/dac_xfer_n_reg/C
+                            (rising edge-triggered cell FDPE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            dac_xfer_n
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.660ns  (logic 4.000ns (70.667%)  route 1.660ns (29.333%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y10                                      0.000     0.000 r  u_dac/dac_xfer_n_reg/C
+    SLICE_X65Y10         FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  u_dac/dac_xfer_n_reg/Q
+                         net (fo=1, routed)           1.660     2.116    dac_xfer_n_OBUF
+    V7                   OBUF (Prop_obuf_I_O)         3.544     5.660 r  dac_xfer_n_OBUF_inst/O
+                         net (fo=0)                   0.000     5.660    dac_xfer_n
+    V7                                                                r  dac_xfer_n
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.660    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.340    <hidden>
+
+Slack (MET) :             4.352ns  (required time - arrival time)
+  Source:                 led_registered_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[6]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.648ns  (logic 3.978ns (70.433%)  route 1.670ns (29.567%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y51                                      0.000     0.000 r  led_registered_reg[6]/C
+    SLICE_X63Y51         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[6]/Q
+                         net (fo=1, routed)           1.670     2.126    led_pin_OBUF[6]
+    H6                   OBUF (Prop_obuf_I_O)         3.522     5.648 r  led_pin_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     5.648    led_pin[6]
+    H6                                                                r  led_pin[6]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.648    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.352    <hidden>
+
+Slack (MET) :             4.359ns  (required time - arrival time)
+  Source:                 led_registered_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.641ns  (logic 3.981ns (70.578%)  route 1.660ns (29.422%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y51                                      0.000     0.000 r  led_registered_reg[5]/C
+    SLICE_X63Y51         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[5]/Q
+                         net (fo=1, routed)           1.660     2.116    led_pin_OBUF[5]
+    H5                   OBUF (Prop_obuf_I_O)         3.525     5.641 r  led_pin_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     5.641    led_pin[5]
+    H5                                                                r  led_pin[5]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.641    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.359    <hidden>
+
+Slack (MET) :             4.371ns  (required time - arrival time)
+  Source:                 led_registered_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[4]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.629ns  (logic 3.963ns (70.414%)  route 1.665ns (29.586%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y50                                      0.000     0.000 r  led_registered_reg[4]/C
+    SLICE_X65Y50         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[4]/Q
+                         net (fo=1, routed)           1.665     2.121    led_pin_OBUF[4]
+    J5                   OBUF (Prop_obuf_I_O)         3.507     5.629 r  led_pin_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     5.629    led_pin[4]
+    J5                                                                r  led_pin[4]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.629    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.371    <hidden>
+
+Slack (MET) :             4.386ns  (required time - arrival time)
+  Source:                 led_registered_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_100m  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_pin[3]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        5.614ns  (logic 3.949ns (70.337%)  route 1.665ns (29.663%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y49                                      0.000     0.000 r  led_registered_reg[3]/C
+    SLICE_X65Y49         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  led_registered_reg[3]/Q
+                         net (fo=1, routed)           1.665     2.121    led_pin_OBUF[3]
+    K6                   OBUF (Prop_obuf_I_O)         3.493     5.614 r  led_pin_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     5.614    led_pin[3]
+    K6                                                                r  led_pin[3]
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    <hidden>
+                         output delay                -0.000    10.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         10.000    <hidden>
+                         arrival time                          -5.614    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.386    <hidden>
+
+
+
+

@@ -1,0 +1,18 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:03:36 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_jammer/xsim_script.tcl
+# xsim {tb_jammer} -wdb {tb_jammer.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_jammer: 1500/1000/2100 Hz tones, amplitude and gate verified, no DC bias
+$finish called at time : 161646 ns : File "F:/version4_fix_ai_tone/sim/tb_jammer.sv" Line 81
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 236.742 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:04:08 2026...

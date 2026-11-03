@@ -1,0 +1,402 @@
+{
+  "selected_seed": 0,
+  "assumptions": "Known symbol boundaries; clean acquisition; no ADC/DAC model; payload only",
+  "results": [
+    {
+      "seed": 73001,
+      "rows": [
+        {
+          "cell": "1000Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x4.0",
+          "bits": 2400,
+          "traditional": 320,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x5.0",
+          "bits": 2400,
+          "traditional": 557,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x4.0",
+          "bits": 2400,
+          "traditional": 76,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x5.0",
+          "bits": 2400,
+          "traditional": 582,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x4.0",
+          "bits": 2400,
+          "traditional": 78,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x5.0",
+          "bits": 2400,
+          "traditional": 598,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x4.0",
+          "bits": 2400,
+          "traditional": 253,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x5.0",
+          "bits": 2400,
+          "traditional": 611,
+          "majority": 0,
+          "ai": 0
+        }
+      ],
+      "ranges": {
+        "accumulator_max_abs": [
+          1330027,
+          1537526,
+          1442046
+        ],
+        "activation_max": [
+          32767,
+          32767
+        ],
+        "activation_saturated": [
+          150,
+          553
+        ]
+      }
+    },
+    {
+      "seed": 74001,
+      "rows": [
+        {
+          "cell": "1000Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x4.0",
+          "bits": 2400,
+          "traditional": 328,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x5.0",
+          "bits": 2400,
+          "traditional": 627,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x4.0",
+          "bits": 2400,
+          "traditional": 292,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x5.0",
+          "bits": 2400,
+          "traditional": 539,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x4.0",
+          "bits": 2400,
+          "traditional": 78,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x5.0",
+          "bits": 2400,
+          "traditional": 591,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x4.0",
+          "bits": 2400,
+          "traditional": 316,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x5.0",
+          "bits": 2400,
+          "traditional": 613,
+          "majority": 0,
+          "ai": 0
+        }
+      ],
+      "ranges": {
+        "accumulator_max_abs": [
+          1355621,
+          1507080,
+          1451576
+        ],
+        "activation_max": [
+          32767,
+          32767
+        ],
+        "activation_saturated": [
+          148,
+          605
+        ]
+      }
+    },
+    {
+      "seed": 75001,
+      "rows": [
+        {
+          "cell": "1000Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x4.0",
+          "bits": 2400,
+          "traditional": 314,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1000Hz_x5.0",
+          "bits": 2400,
+          "traditional": 576,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x4.0",
+          "bits": 2400,
+          "traditional": 313,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1050Hz_x5.0",
+          "bits": 2400,
+          "traditional": 526,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x4.0",
+          "bits": 2400,
+          "traditional": 262,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "1950Hz_x5.0",
+          "bits": 2400,
+          "traditional": 535,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x0.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x3.0",
+          "bits": 2400,
+          "traditional": 0,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x4.0",
+          "bits": 2400,
+          "traditional": 274,
+          "majority": 0,
+          "ai": 0
+        },
+        {
+          "cell": "2000Hz_x5.0",
+          "bits": 2400,
+          "traditional": 553,
+          "majority": 0,
+          "ai": 0
+        }
+      ],
+      "ranges": {
+        "accumulator_max_abs": [
+          1325316,
+          1521458,
+          1434522
+        ],
+        "activation_max": [
+          32767,
+          32767
+        ],
+        "activation_saturated": [
+          120,
+          556
+        ]
+      }
+    }
+  ]
+}

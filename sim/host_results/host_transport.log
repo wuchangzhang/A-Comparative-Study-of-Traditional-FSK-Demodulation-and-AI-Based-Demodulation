@@ -1,0 +1,1 @@
+PASS pyserial socket, CLI DDS, Worker connect/command/close, reconnect records and session IDs; local protocol fixture only

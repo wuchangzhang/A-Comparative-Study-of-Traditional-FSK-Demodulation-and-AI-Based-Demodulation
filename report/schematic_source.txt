@@ -1,0 +1,977 @@
+      TABLE OF CONTENTS                                                                          REVISION RECORD
+
+PAGE  DESCRIPTION                                                                       LTR ECO NO:               APPROVED:  DATE:
+
+1 TITLE PAGE
+2 SYSTEM
+3 BANK14_15
+4 BANK34_35
+
+5 SRAM_AUDIO                           JTAG   PROG#    CLK
+6 IO                                          RESET#
+                                              USER IO
+7 DISPLAY_UART_BT
+8 PIC_USB                                                                     USB-PS2
+9 FPGA_POWER                                                               USB-UART
+
+10 POWER                 BUTTON X5                                           XADC
+                         USER LED X16                                         audio
+                                              XC7A50T
+                           DIP                CSG324
+
+                           SW8
+
+                          VGA
+                           DB15
+
+                                              N25Q32A SRAM
+
+              5.0V Regulator           +3.3V                TITLE:
+                                       +1.8V
+                                       +1.0V                             TITLE_PAGE
+
+                                                                           DRAWING NO:
+
+                                                            Design :
+
+                                                            CHECKED:       VERSION:     SIZE:    SCALE:           SHEET: 1 OF 10
+                                                            STANDARDIZED:
+                                                            RELEASED:                        A3
+
+                                                                           E-ELEMENTS
+                                                                                                                                                                                                                                                                                                                                                                                                        REVISION RECORD
+
+                                                                                                                                                                                                                            LTR ECO NO:                                                                                                                                                                                  APPROVED:  DATE:
+
+                                                                          FB15                            +3.3V
+                                                                          60R
+
+                                        C63        C62               L9   DXN_0                VCCO_0 R9
+                                                    0.1uF           H10   VCCADC_0
+                                        4.7uF      25V                    GNDADC_0
+                                        6.3V           R60           H9   DXP_0
+                                                        DNP         L10   VREFN_0
+                      +1.8V      FB14                                     VREFP_0                         C64
+                                 60R                    R61           J9  VP_0                            47uF
+                      +3.3V                             DNP         K10   VN_0                            6.3V
+                                        R62                         J10   VCUC1-BAATT_0
+                          +1.8V         4.7K          R8 0                CCLK_0
+[2,8] FPGA_CCLK                         5%                           K9   TCK_0
+                                                                     E8   TMS_0
+  [2] FPGA_TCK                                                       E9   TDO_0                                                         +3.3V
+  [2] FPGA_TMS                                                      E10   TDI_0
+  [2] FPGA_TDO                                                      E12   INIT_B_0                                                            R27
+  [2] FPGA_TDI                                                      E13   PROGRAM_B_0                                                         4.7K
+                                              R5 10K 5%21           E11   CFGBVS_0
+                        +3.3V                 R6 0                                                                                                                                                                                                                                                                                                                                     JP2INITP7DONE_0FPGA_PROG_B [2,8]
+[2,8] FPGA_PROG_B                                                    P9   M2_0
+                                                                                                                                                                                                                                                                                                                                                                                          2P8M1_0              +3.3V
+                        +3.3V                                       P10   M0_0
+[2,8] FPGA_DONE                                                     P11                                                 S5                                                                                                         13
+[2,8] FPGA_M2                                                       P13                                                  TL3304AF160QJ
+[2,8] FPGA_M1                                                       P12                                                                                                             [2,8] FPGA_M2                                                                                                                                                                                            R159       4.7K
+                                                                                                                                                                                    [2,8] FPGA_M1
+  [2] FPGA_M0
+                                                                                                                                                                                      [2] FPGA_M0
+                                                                                                                                                                                                                                                                                                                                                                                             R127       4.7K
+
+                                                       R7           XC7A15TCSG324
+                                                       NC
+
+                                                                                                                                                                                                                            R125   R126
+                                                                                                                                                                                                                               0R     0R
+
+                                                                                +3.3V VREF
+
+                                                                                         R117    J3                                                 +3.3V
+                                                                                               1
+                                                                                         0R    2                                                          R28
+                                                                                         5%    3                                                          4.7K
+                                                                                               4
+                                                   [2] FPGA_TCK                                5                        S6                                      FPGA_RESET [3]
+                                                   [2] FPGA_TDO                                6                         TL3304AF160QJ
+                                                   [2] FPGA_TDI
+                                                   [2] FPGA_TMS                                SIP-6
+
+                                                                                                                                                                                                                     +3.3V
+
+                                 +3.3V             +3.3V                                                                                                                            R26 R25                                          C84
+                                                                                                                                                                                                                            R24 0.1uF
+                                                                                                                                                                                    10K 10K             U9                  10K
+
+                                                        R14                                                                                                       [3] FPGA_SPI_CS#          1      CS#     VCC    8                                                                                                                                                                          FLASH_D3     [3]
+                                                       330R 5%                                                                                                  [3,8] FLASH_D1              2      SO   HOLD#     7                                                                                                                                                                          FPGA_CCLK
+                                                                                                                                                                                            3      WP#            6                                                                                                                                                                          FLASH_D0   [2,8]
+                                                           D24                                                                                                    [3] FLASH_D2              4      GND   SCLK     5                                                                                                                                                                                       [3]
+                                                            Blue                                                                                                                                              SI
+                                                            "DONE"                                                      +3.3V
+
+                                 R13                   D                                                       OSC2     C102
+                                 10K 5%                      Q1                                                 100Mhz   0.47uF
+                                                                                                                         6.3V
+                                            R15 G      S NDS331                                       14
+                                            330R                                                           NC VCC
+                                            5%
+                                                                                                      23
+                                                                                                           GND CLK
+
+                                                                                                                                 SYS_CLK [3]
+
+[2,8] FPGA_DONE
+
+                                                                                                                                                                TITLE:              SYSTEM
+
+                                                                                                                                                                                    DRAWING NO:
+
+                                                                                                                                                                Design :
+
+                                                                                                                                                                CHECKED:            VERSION:                         SIZE:                                                                                                                                                                   SCALE:                      SHEET: 2 OF 10
+                                                                                                                                                                STANDARDIZED:
+                                                                                                                                                                RELEASED:                                                 A3
+
+                                                                                                                                                                                            E-ELEMENTS
+                                                                                                                                                                                                                                 REVISION RECORD
+
+                                                                                                                                                                                                                    LTR ECO NO:                   APPROVED:  DATE:
+
+                                                                            +3.3V                                                                                         +3.3V
+                                                                     L17
+[6] PB0           R116          IO_0_14                     VCCO_14  N13           [6]     IO_L1P_T0_AD0P_15                 G13  IO_0_15                  VCCO_15  A17
+[2] FLASH_D0                                                         P16           [6]     IO_L1P_T0_AD0N_15                 D14  IO_L1P_T0_AD0P_15        VCCO_15  C13
+[2,8] FLASH_D1    1K            IO_L1P_T0_D00_MOSI_14       VCCO_14  T12           [6]     IO_L2P_T0_AD8P_15                 C14  IO_L1N_T0_AD0N_15        VCCO_15  D16
+[2] FLASH_D2      1%                                                 U15           [6]     IO_L2N_T0_AD8N_15                 B13  IO_L2P_T0_AD8P_15        VCCO_15  G15
+[2] FLASH_D3                    IO_L1N_T0_D01_DIN_14        VCCO_14  V18           [7]                                       B14  IO_L2N_T0_AD8N_15        VCCO_15  H18
+[5] MEM_A18               R11                                                                                VOL_IN          C12  IO_L3P_T0_DQS_AD1P_15    VCCO_15  K14
+[5] MEM_A17               K17   IO_L2P_T0_D02_14            VCCO_14  U1-B          [6]                                       B12  IO_L3N_T0_DQS_AD1N_15
+[5] MEM_A16               K18                                                      [6]              IO_L4P_T0_15             B11  IO_L4P_T0_15
+[5] MEM_A15                L14  IO_L2N_T0_D03_14            VCCO_14                [6]              IO_L4N_T0_15             A11  IO_L4N_T0_15
+[5] MEM_A14               M14                                                      [6]     IO_L5P_T0_AD9P_15                 F13  IO_L5P_T0_AD9P_15
+[5] MEM_A13                L15  IO_L3P_T0_DQS_PUDC_B_14 VCCO_14                            IO_L5N_T0_AD9N_15                 F14  IO_L5N_T0_AD9N_15
+[2] FPGA_SPI_CS#           L16                                                     [6]                                       D12  IO_L6P_T0_15
+[5] MEM_A12                L18  IO_L3N_T0_DQS_EMCCLK_14                            [6]     IO_L7P_T1_AD2P_15                 D13  IO_L6N_T0_VREF_15
+[5] MEM_A11               M18                                                      [6]     IO_L7N_T1_AD2N_15                 B16  IO_L7P_T1_AD2P_15
+[5] MEM_A10               R12   IO_L4P_T0_D04_14                                   [6]   IO_L8P_T1_AD10P_15                  B17  IO_L7N_T1_AD2N_15
+[5] MEM_A9                R13                                                      [6]   IO_L8N_T1_AD10N_15                  A15  IO_L8P_T1_AD10P_15
+[5] MEM_A8                 L13  IO_L4N_T0_D05_14                                   [6]     IO_L9P_T1_AD3P_15                 A16  IO_L8N_T1_AD10N_15
+[5] MEM_A7                M13                                                      [6]     IO_L9N_T1_AD3N_15                 A13  IO_L9P_T1_DQS_AD3P_15
+[5] MEM_A6                R18   IO_L5P_T0_D06_14                                   [6]  IO_L10N_T1_AD11P_15                  A14  IO_L9N_T1_DQS_AD3N_15
+[5] MEM_A5                 T18                                                     [6]  IO_L10P_T1_AD11N_15                  B18  IO_L10P_T1_AD11P_15
+[5] MEM_A4                N14   IO_L5N_T0_D07_14                                   [6]   IO_L11P_T1_SRCC_15                  A18  IO_L10N_T1_AD11N_15
+[5] MEM_A3                P14                                                      [6]   IO_L11N_T1_SRCC_15                  E15  IO_L11P_T1_SRCC_15
+[5] MEM_A2                N17   IO_L6P_T0_FCS_B_14                                 [6]  IO_L12P_T1_MRCC_15                   E16  IO_L11N_T1_SRCC_15
+[2] SYS_CLK               P18                                                      [6]  IO_L12N_T1_MRCC_15                   D15  IO_L12P_T1_MRCC_15
+[6] PB1                   M16   IO_L6N_T0_D08_VREF_14                              [6]  IO_L13P_T2_MRCC_15                   C15  IO_L12N_T1_MRCC_15
+[2] FPGA_RESET            M17                                                      [6]  IO_L13N_T2_MRCC_15                   H16  IO_L13P_T2_MRCC_15
+[6] PB2                   N15   IO_L7P_T1_D09_14                                   [6]   IO_L14P_T2_SRCC_15                  G16  IO_L13N_T2_MRCC_15
+[5] MEM_A1                N16                                                      [6]   IO_L14N_T2_SRCC_15                  F15  IO_L14P_T2_SRCC_15
+[5] MEM_A0                P17   IO_L7N_T1_D10_14                                   [6]    IO_L15P_T2_DQS_15                  F16  IO_L14N_T2_SRCC_15
+[5] SRAM_UB               R17                                                      [6]    IO_L15N_T2_DQS_15                  H14  IO_L15P_T2_DQS_15
+[5] SRAM_OE#              P15   IO_L8P_T1_D11_14                                   [6]                                       G14  IO_L15N_T2_DQS_ADV_B_15
+[5] SRAM_CE#              R15                                                      [6]            IO_L16P_T2_15              E17  IO_L16P_T2_A28_15
+[5] SRAM_WE#               T14  IO_L8N_T1_D12_14                                   [6]            IO_L16N_T2_15              D17  IO_L16N_T2_A27_15
+[5] MEM_D0                 T15                                                     [6]            IO_L17P_T2_15              K13  IO_L17P_T2_A26_15
+[5] MEM_D1                R16   IO_L9P_T1_DQS_14                                   [6]            IO_L17N_T2_15              J13  IO_L17N_T2_A25_15
+[5] MEM_D2                 T16                                                                    IO_L18P_T2_15              H17  IO_L18P_T2_A24_15
+[5] MEM_D3                V15   IO_L9N_T1_DQS_D13_14                               [7]            IO_L18N_T2_15              G17  IO_L18N_T2_A23_15
+[5] MEM_D4                V16                                                      [7]                                       J14  IO_L19P_T3_A22_15
+[5] MEM_D5                U17   IO_L10P_T1_D14_14                                  [7]                     BT_P0_7           H15  IO_L19N_T3_A21_VREF_15
+[5] MEM_D6                U18                                                      [7]                     BT_P0_6           C16  IO_L20P_T3_A20_15
+[5] MEM_D7                U16   IO_L10N_T1_D15_14                                  [7]                    MCU_INT            C17  IO_L20N_T3_A19_15
+[5] MEM_D8                V17                                                                              BT_P1_3           E18  IO_L21P_T3_DQS_15
+[5] MEM_D9                 T11  IO_L11P_T1_SRCC_14                                                 FPGA_BT_3V3               D18  IO_L21N_T3_DQS_A18_15
+[5] MEM_D10               U11                                                                        PMBUS_SDA               G18  IO_L22P_T3_A17_15
+[5] MEM_D11               U12   IO_L11N_T1_SRCC_14                                                   PMBUS_SCL               F18  IO_L22N_T3_A16_15
+[5] MEM_D12               V12                                                                                                J17  IO_L23P_T3_FOE_B_15
+[5] MEM_D13               V10   IO_L12P_T1_MRCC_14                                                                           J18  IO_L23N_T3_FWE_B_15
+[5] MEM_D14               V11                                                                                                K15  IO_L24P_T3_RS1_15
+[5] MEM_D15               U14   IO_L12N_T1_MRCC_14                                                                           J15  IO_L24N_T3_RS0_15
+[5] SRAM_LB               V14                                                                                                K16  IO_25_15
+                           T13  IO_L13P_T2_MRCC_14
+                          U13
+                                IO_L13N_T2_MRCC_14
+                            T9
+                           T10  IO_L14P_T2_SRCC_14
+                          R10
+                                IO_L14N_T2_SRCC_14
+
+                                IO_L15P_T2_DQS_RDWR_B_14
+
+                                IO_L15N_T2_DQS_DOUT_CSO_B_14
+
+                                IO_L16P_T2_CSI_B_14
+
+                                IO_L16N_T2_A15_D31_14
+
+                                IO_L17P_T2_A14_D30_14
+
+                                IO_L17N_T2_A13_D29_14
+
+                                IO_L18P_T2_A12_D28_14                                                                                                                                                                            +3.3V
+
+                                IO_L18N_T2_A11_D27_14
+
+                                IO_L19P_T3_A10_D26_14
+
+                                IO_L19N_T3_A09_D25_VREF_14
+
+                                IO_L20P_T3_A08_D24_14                                                                                                                                      D10                      VCCO_16 B10
+                                                                                                                                                                                            D9
+                                IO_L20N_T3_A07_D23_14                                                                                                                                       C9  IO_L19N_T3_VREF_16
+                                                                                                                                                                                            B9  IO_L6N_T0_VREF_16
+                                IO_L21P_T3_DQS_14                                                                                                                                           B8  IO_L11P_T1_SRCC_16                      C133      C134
+                                                                                                                                                                                            A8  IO_L11N_T1_SRCC_16
+                                IO_L21N_T3_DQS_A06_D22_14                                                                                                                                       IO_L12P_T1_MRCC_16               C105     4.7uF    0.47uF
+                                                                                                                                                                                           C11  IO_L12N_T1_MRCC_16               47uF    6.3V      16V
+                                IO_L22P_T3_A05_D21_14                                                                                                                                      C10  IO_L13P_T2_MRCC_16               10V
+                                                                                                                                                                                           A10  IO_L13N_T2_MRCC_16
+                                IO_L22N_T3_A04_D20_14                                                                                                                                           IO_L14P_T2_SRCC_16
+                                                                                                                                                                                            A9  IO_L14N_T2_SRCC_16
+                                IO_L23P_T3_A03_D19_14
+
+                                IO_L23N_T3_A02_D18_14
+
+                                IO_L24P_T3_A01_D17_14
+
+                                IO_L24N_T3_A00_D16_14
+
+                                IO_25_14
+
+                  XC7A15TCSG324                                                                                              XC7A15TCSG324                          U1-C                   XC7A15TCSG324            U1-D
+
+                                +3.3V                                                                                +3.3V
+
+                                         C115      C116     C119     C120                                            C117    C118     C121     C122
+                                          100uF                                                                       100uF
+                                          6.3V       4.7uF   0.47uF   0.47uF                                          6.3V     4.7uF   0.47uF   0.47uF
+                                                    6.3V     16V      16V                                                     6.3V     16V      16V
+
+                                                                                                                                               TITLE:
+
+                                                                                                                                                            BANK_14_15
+
+                                                                                                                                                                                 DRAWING NO:
+
+                                                                                                                                               Design :
+
+                                                                                                                                               CHECKED:                          VERSION:                 SIZE:     SCALE:                        SHEET: 3 OF 10
+                                                                                                                                               STANDARDIZED:
+                                                                                                                                               RELEASED:                                                       A3
+
+                                                                                                                                                                                 E-ELEMENTS
+                                                                                                                                                                          REVISION RECORD
+
+                                                                                                                                                                 LTR ECO NO:               APPROVED:  DATE:
+
+                                                                     +3.3V
+
+                                                                                                                                             +3.3V
+
+[7] LD1_3                       K6  IO_0_34             VCCO_34  K4         [7] VGA_R0            F5  IO_0_35                VCCO_35   A7
+[7] LD1_2                       L1  IO_L1P_T0_34        VCCO_34  N3         [7] VGA_R1            C6  IO_L1P_T0_AD4P_35      VCCO_35   C3
+[7] LD1_1                       M1  IO_L1N_T0_34        VCCO_34  P6         [7] VGA_R2            C5  IO_L1N_T0_AD4N_35      VCCO_35   D6
+[7] LD1_0                       K3  IO_L2P_T0_34        VCCO_34  T2         [7] VGA_R3            B7  IO_L2P_T0_AD12P_35     VCCO_35   F2
+[7] BT_TX                       L3  IO_L2N_T0_34        VCCO_34  U5         [7] VGA_G0            B6  IO_L2N_T0_AD12N_35     VCCO_35   G5
+[7] BT_RX                       N2  IO_L3P_T0_DQS_34    VCCO_34  V8         [7] VGA_G1            A6  IO_L3P_T0_DQS_AD5P_35  VCCO_35   J1
+[7] BT_SDA                      N1  IO_L3N_T0_DQS_34                        [7] VGA_G2            A5  IO_L3N_T0_DQS_AD5N_35
+[7] BT_SCL        R161  200R    M3  IO_L4P_T0_34                            [7] VGA_G3            D8  IO_L4P_T0_35
+[7] BT_RESET#     R162  200R    M2  IO_L4N_T0_34                            [7] VGA_B0            C7  IO_L4N_T0_35
+[8] PS2_CLK       R163  200R    K5  IO_L5P_T0_34                            [7] VGA_B1            E6  IO_L5P_T0_AD13P_35
+[8] PS2_DATA      R164  200R    L4  IO_L5N_T0_34                            [7] VGA_B2            E5  IO_L5N_T0_AD13N_35
+                  R165  200R    L6  IO_L6P_T0_34                            [7] VGA_B3            E7  IO_L6P_T0_35
+[6] PB3           R166  200R    L5  IO_L6N_T0_VREF_34                       [7] VGA_HSYNC         D7  IO_L6N_T0_VREF_35
+[6] PB4           R167  200R    U1  IO_L7P_T1_34                            [7] VGA_VSYNC         C4  IO_L7P_T1_AD6P_35
+[6] SW_7          R168  200R    V1  IO_L7N_T1_34                            [7] CA0               B4  IO_L7N_T1_AD6N_35
+[6] SW_6          R169  200R    U4  IO_L8P_T1_34                            [7] CB0               A4  IO_L8P_T1_AD14P_35
+[6] SW_5          R170  200R    U3  IO_L8N_T1_34                            [7] CC0               A3  IO_L8N_T1_AD14N_35
+[6] SW_4          R171          U2  IO_L9P_T1_DQS_34                        [7] CD0               B1  IO_L9P_T1_DQS_AD7P_35
+[6] SW_3          R172  200R    V2  IO_L9N_T1_DQS_34                        [7] CE0               A1  IO_L9N_T1_DQS_AD7N_35
+[6] SW_2          R173  200R    V5  IO_L10P_T1_34                           [7] CF0               B3  IO_L10P_T1_AD15P_35
+[6] SW_1                200R    V4  IO_L10N_T1_34                           [7] CG0               B2  IO_L10N_T1_AD15N_35
+[6] SW_0                        R3  IO_L11P_T1_SRCC_34                      [7] DP0               D5  IO_L11P_T1_SRCC_35
+                                T3  IO_L11N_T1_SRCC_34                      [7] CA1               D4  IO_L11N_T1_SRCC_35
+        UART_RXD                T5  IO_L12P_T1_MRCC_34                      [7] CB1               E3  IO_L12P_T1_MRCC_35
+        UART_TXD                T4  IO_L12N_T1_MRCC_34                      [7] CC1               D3  IO_L12N_T1_MRCC_35
+[6] SW7                         N5  IO_L13P_T2_MRCC_34                      [7] CD1               F4  IO_L13P_T2_MRCC_35
+[6] SW6                         P5  IO_L13N_T2_MRCC_34                      [7] CE1               F3  IO_L13N_T2_MRCC_35
+[6] SW5                         P4  IO_L14P_T2_SRCC_34                      [7] CF1               E2  IO_L14P_T2_SRCC_35
+[6] SW4                         P3  IO_L14N_T2_SRCC_34                      [7] CG1               D2  IO_L14N_T2_SRCC_35
+[6] SW3                         P2  IO_L15P_T2_DQS_34                       [7] DP1               H2  IO_L15P_T2_DQS_35
+[6] SW2                         R2  IO_L15N_T2_DQS_34                       [7] LED_BIT1          G2  IO_L15N_T2_DQS_35
+[6] SW1                         M4  IO_L16P_T2_34                           [7] LED_BIT2          C2  IO_L16P_T2_35
+[6] SW0                         N4  IO_L16N_T2_34                           [7] LED_BIT3          C1  IO_L16N_T2_35
+[5] AUDIO_PWM                   R1  IO_L17P_T2_34                           [7] LED_BIT4          H1  IO_L17P_T2_35
+[5] AUDIO_SD#                   T1  IO_L17N_T2_34                           [7] LED_BIT5          G1  IO_L17N_T2_35
+[5] DAC_CS#                     M6  IO_L18P_T2_34                           [7] LED_BIT6          F1  IO_L18P_T2_35
+[5] DAC_WR2#                    N6  IO_L18N_T2_34                           [7] LED_BIT7          E1  IO_L18N_T2_35
+[5] DAC_BYTE2                   R6  IO_L19P_T3_34                           [7] LED_BIT8          G6  IO_L19P_T3_35
+[5] DAC_XFER#                   R5  IO_L19N_T3_VREF_34                      [7] LD2_7             F6  IO_L19N_T3_VREF_35
+[5] DAC_WR1#                    V7  IO_L20P_T3_34                           [7] LD2_6             G4  IO_L20P_T3_35
+[5] DAC_D7                      V6  IO_L20N_T3_34                           [7] LD2_5             G3  IO_L20N_T3_35
+[5] DAC_D6                      U9  IO_L21P_T3_DQS_34                       [7] LD2_4             J4  IO_L21P_T3_DQS_35
+[5] DAC_D5                      V9  IO_L21N_T3_DQS_34                       [7] LD2_3             H4  IO_L21N_T3_DQS_35
+[5] DAC_D4                      U7  IO_L22P_T3_34                           [7] LD2_2             J3  IO_L22P_T3_35
+[5] DAC_D3                      U6  IO_L22N_T3_34                           [7] LD2_1             J2  IO_L22N_T3_35
+[5] DAC_D2                      R7  IO_L23P_T3_34                           [7] LD2_0             K2  IO_L23P_T3_35
+[5] DAC_D1                      T6  IO_L23N_T3_34                           [7] LD1_7             K1  IO_L23N_T3_35
+[5] DAC_D0                      R8  IO_L24P_T3_34                           [7] LD1_6             H6  IO_L24P_T3_35
+                                T8  IO_L24N_T3_34                           [7] LD1_5             H5  IO_L24N_T3_35
+                                U8  IO_25_34                                [7] LD1_4             J5  IO_25_35
+
+                                XC7A15TCSG324                    U1-E
+
+                                                                                                  XC7A15TCSG324                        U1-F
+
+                        +3.3V                                                              +3.3V
+
+                        C124        C125     C128       C129                               C94    C95     C96     C97
+                         100uF                                                             100uF
+                         6.3V         4.7uF   0.47uF     0.47uF                            6.3V    4.7uF  0.47uF  0.47uF
+                                     6.3V     16V        16V                                      6.3V    16V     16V
+
+                                                                                                                             TITLE:
+
+                                                                                                                                          BANK_34_35
+
+                                                                                                                                                    DRAWING NO:
+
+                                                                                                                             Design :
+
+                                                                                                                             CHECKED:               VERSION:     SIZE:    SCALE:           SHEET: 4 OF 10
+                                                                                                                             STANDARDIZED:
+                                                                                                                             RELEASED:                                A3
+
+                                                                                                                                                    E-ELEMENTS
+                                                                                                                                                                                                                                                                                                               REVISION RECORD
+
+                                                                                                                                                                                                                                                                                 LTR ECO NO:                                        APPROVED:  DATE:
+
+                                                                                    +3.3V                         +3.3V
+
+                                                      U4
+
+                  MEM_A0           A3  A0                          VDD       E1                                         C35 C36
+                  MEM_A1           A4  A1                          VDD       D6                                         4.7uF 4.7uF
+                  MEM_A2           A5  A2
+                  MEM_A3           B3  A3                           I/O0     B6             MEM_D0  MEM_D[0:15]                      +5.0V
+                  MEM_A4           B4  A4                           I/O1     C5             MEM_D1
+                  MEM_A5           C3  A5                           I/O2     C6             MEM_D2                                                                                                                                L3 2.2uH
+                  MEM_A6           C4  A6                           I/O3     D5             MEM_D3
+                  MEM_A7           D4  A7                           I/O4     E5             MEM_D4                                                                          R228                         U48                      AK                                             +5.0V                         +5.0V
+                  MEM_A8           H2  A8                           I/O5     F5             MEM_D5                                                                       0.22R/1W             8 DRV_C SW_C 1                             D31
+                  MEM_A9           H3  A9                           I/O6     F6             MEM_D6
+                  MEM_A10          H4  A10                          I/O7     G6             MEM_D7                                                                                R227        7 I_SEN SW_E 2                                         -5V0
+                  MEM_A11          H5  A11                          I/O8     B1             MEM_D8                                                                                  3K
+                  MEM_A12          G3  A12                          I/O9     C1             MEM_D9                                                                                            6 VCC         CAP 3       C85
+                  MEM_A13          G4  A13                         I/O10     C2            MEM_D10                                                                                                                      47pF
+                  MEM_A14          F3  A14                         I/O11     D2            MEM_D11                                                                                            5 IN          GND 4                                              -5.0V                      C44 C45                      C46 C48
+                  MEM_A15          F4  A15                         I/O12     E2            MEM_D12                                                                                                                                                                                        4.7uF 0.1uF                  4.7uF 0.1uF
+                  MEM_A16          E4  A16                         I/O13     F2            MEM_D13                                                                                              MC34063A
+                  MEM_A17          D3  A17                         I/O14     F1            MEM_D14
+MEM_A[0:18]       MEM_A18          H1  A18                         I/O15     G1            MEM_D15                                                                                                          R226             C86 C99          C98
+                                   G2  NC                                                                                                                                                                     1K                              0.1uF
+                                                                                                                                                                                                                             100uF 0.1uF
+                                                                                                                                                                                                                             6.3V
+
+[3] SRAM_OE#                       A2  OE                          GND       D1
+[3] SRAM_CE#                       B5  CE                          GND       E6
+[3] SRAM_WE#                       G5  WE
+[3] SRAM_UB
+[3] SRAM_LB                        B2  UB                                NC  A6                                                                                                                                         +5.0V
+                                   A1  LB                                NC  H6
+                                                                         NC  E3
+
+                                                                                                                                                                                                     U20
+
+                                              IS61WV51216BLL-10MI                                                                                                                                                                                                                         -5.0V         +5.0V
+
+                                                                                                                              [4] DAC_CS#                                               1  CS                VCC    20                    DAC_BYTE2                      [4]     R231            R124
+                                                                                                                              [4] DAC_WR1#                                              2  WR1       ILE(BYTE2)     19                    DAC_WR2#                       [4]                      0 nc
+                                                                                                                              [4] DAC_D3                                                3  GND                      18                    DAC_XFER#                      [4]     1.2K              1%
+                                                                                                                              [4] DAC_D2                                                4  DI3               WR2    17                    DAC_D4                         [4]       1%
+                                                                                                                              [4] DAC_D1                                                5  DI2             XFER     16                    DAC_D5                         [4]                     R229
+                                                                                                                              [4] DAC_D0                                                                            15                    DAC_D6                         [4]                     4.7K
+                                                                                                                              [5] DAC_VREF                                         6       DI1                 DI4  14                    DAC_D7                         [4]                                           DAC_VREF     [5]
+                                                                                                                                                                                  7        DI0(LSB)            DI5  13                                                                             1%
+                                                                                                                                           VOUT_0832                              8        VREF                DI6  12            R230        0
+                                                                                                                                                                                  9        RFB         DI7(MSB)     11
+                                                                                                                                                                                 10        GND             IOUT2
+                                                                                                                                                                                                           IOUT1
+
+                            +3.3V                                                                                                                                                             DAC0832-S020                     3  +           LM324            J2
+                                                                                                                                                                                                                               2  U11-A
+                     R128                                        +5.0V                                                                                             +5.0V                                                          -           1 VOUT_0832             1       +
+                  1.3K NC                                                                                                                                                                                                                                             2       -
+                                                                                     TP1
+
+AUDIO_PWM         R42        R41                                         C9                       R45                                                                    C15                                                                                                                            5+             7
+             [4]  1.3K       10K                                         1000pF                   26.1K                                                                  1000pF
+                                                                                                                                                                                                                                                                                                                U11-B
+                                                                                     U5                AUDIO_SD#                                                                       OUT 1                                                                                                            6      -
+
+                        R43            R38                                                                             R71                                                                                  AUDIO_SD#        [4,5]                      J12                                                            LM324
+                        2K             10.7K                                                                      [4,5]26.1K                                                                                                                         3 S2
+                                                                   V+ 6                                                                                            V+ 6                                                            R47
+                                       C8                 3 +IN              SD# 5                                  C14              U7 3 +IN                             SD# 5                                                   100K               2 S1                                        +5.0V
+                                       820pF              4 -IN                                                     150pF            AD8591ART-REEL                                                                                                  1 GND
+                                                                                      OUT 1                                                                                                          C16                R44                                                                             10 +           8
+                                                                                  AD8591ART-REEL                                                            4 -IN                                    100uF              33R                             Barrel Jack
+                                                                                                                                                                                                                                                        SJ-3523-SMT
+                                                                                                                                                                                                                                                        1012591                                         9       U11-C
+                                                                                                                                                                                                                                                                                                               -
+                                                                                                                                                                                                                                                                                                                       LM324
+                                                          0R                                                                                                       2 V-
+                                                              R40                                                                                                                                    R46
+                                                                                                                                                                                                     2K                                                                                          -5.0V
+                                                                   2 V-
+
+                                                 R39                                                                                                                                                                                                                                                    13     -         14
+                                              10K NC                                                                                                                                                                                                                                                    12     U11-D   LM324
+                                                                                                                                                                                                                                                                                                               +
+
+                                   +5.0V                           +5.0V                                                                                                                                            TITLE:
+
+                                        C24 C26                         C27 C28                                                                                                                                                  SRAM_AUDIO
+                                        4.7uF 0.1uF                     4.7uF 0.1uF
+                                                                                                                                                                                                                                                     DRAWING NO:
+
+                                                                                                                                                                                                            Design :
+
+                                                                                                                                                                                                            CHECKED:                                 VERSION:                    SIZE:                  SCALE:                      SHEET: 5 OF 10
+                                                                                                                                                                                                            STANDARDIZED:
+                                                                                                                                                                                                            RELEASED:                                                                 A3
+
+                                                                                                                                                                                                                                                           E-ELEMENTS
+                                                                                                                                                                                                                                                                                               REVISION RECORD
+
++3.3V                                       +3.3V                                                                    [3] IO_L1P_T0_AD0P_15         R134                                                        AD0P_15        [6]
+                                                                                                                     [3] IO_L1P_T0_AD0N_15         100R                                                        AD0N_15        [6]
+                                                                                                                     [3] IO_L2P_T0_AD8P_15                                              C40                    AD8P_15        [6]                                             LTR ECO NO:                                   APPROVED:     DATE:
+                                                                                                                     [3] IO_L2N_T0_AD8N_15         R135                                 NC                     AD8N_15        [6]
+SW0 31                    SW7                    SW4 31  R75                                   SW3         [4]       [3] IO_L5P_T0_AD9P_15         100R                                                        AD9P_15        [6]
+          2 R77                             [4] 2        10K                                                         [3] IO_L5N_T0_AD9N_15                                              C37                    AD9N_15        [6]
+                 10K  1%                                               1%                                            [3] IO_L7P_T1_AD2P_15         R120                                 NC                     AD2P_15        [6]
+                                                                                                                     [3] IO_L7N_T1_AD2N_15         100R                                                        AD2N_15        [6]
++3.3V                                       +3.3V                                                                    [3] IO_L8P_T1_AD10P_15                                             C34                    AD10P_15       [6]           [3] IO_L18P_T2_15                      R129  200R                      IO_L18P  [6]
+                                                                                                                     [3] IO_L8N_T1_AD10N_15        R131                                 NC                     AD10N_15       [6]           [3] IO_L18N_T2_15                      R130  200R                      IO_L18N  [6]
+SW1       31  R72         SW6                    SW5 31  R76                                   SW2         [4]       [3] IO_L9P_T1_AD3P_15         100R                                                        AD3P_15        [6]           [3] IO_L17P_T2_15
+         2    10K                           [4] 2        10K                                                         [3] IO_L9N_T1_AD3N_15                                              C41                    AD3N_15        [6]           [3] IO_L17N_T2_15                      R142  200R                      IO_L17P  [6]
+                      1%                                               1%                                            [3] IO_L10N_T1_AD11P_15       R118                                 NC                     AD11P_15       [6]           [3] IO_L16P_T2_15                      R143  200R                      IO_L17N  [6]
+                                                                                                                     [3] IO_L10P_T1_AD11N_15       100R                                                        AD11N_15       [6]           [3] IO_L16N_T2_15
++3.3V                                       +3.3V                                                                                                                                       C43                                                 [3] IO_L15P_T2_DQS_15                  R144  200R                      IO_L16P  [6]
+                                                                                                                                                   R119                                 NC                                                  [3] IO_L15N_T2_DQS_15                  R145  200R                      IO_L16N  [6]
+                                                                                                                                                   100R                                                                                     [3] IO_L14P_T2_SRCC_15
+                                                                                                                                                                                        C42                                                 [3] IO_L14N_T2_SRCC_15                 R146  200R                      IO_L15P  [6]
+                                                                                                                                                   R136                                 NC                                                  [3] IO_L13P_T2_MRCC_15                 R147  200R                      IO_L15N  [6]
+                                                                                                                                                   100R                                                                                     [3] IO_L13N_T2_MRCC_15
+                                                                                                                                                                                        C38                                                 [3] IO_L12P_T1_MRCC_15                 R148  200R                      IO_L14P  [6]
+                                                                                                                                                   R137                                 NC                                                  [3] IO_L12N_T1_MRCC_15                 R149  200R                      IO_L14N  [6]
+                                                                                                                                                   100R                                                                                     [3] IO_L11P_T1_SRCC_15
+                                                                                                                                                                                                                                            [3] IO_L11N_T1_SRCC_15                 R150  200R                      IO_L13P  [6]
+                                                                                                                                                   R140                                                                                     [3] IO_L4P_T0_15                       R151  200R                      IO_L13N  [6]
+                                                                                                                                                   100R                                                                                     [3] IO_L4N_T0_15
+                                                                                                                                                                                                                                                                                   R152  200R                      IO_L12P  [6]
+                                                                                                                                                   R141                                                                                                                            R153  200R                      IO_L12N  [6]
+                                                                                                                                                   100R
+                                                                                                                                                                                                                                                                                   R154  200R                      IO_L11P  [6]
+                                                                                                                                                   R138                                                                                                                            R155  200R                      IO_L11N  [6]
+                                                                                                                                                   100R
+                                                                                                                                                                                                                                                                                   R156  200R                      IO_L4P   [6]
+                                                                                                                                                   R139                                                                                                                            R157  200R                      IO_L4N   [6]
+                                                                                                                                                   100R
+
+                                                                                                                                                   R132
+                                                                                                                                                   100R
+
+                                                                                                                                                   R133
+                                                                                                                                                   100R
+
+SW2       31  R73         SW5                     SW631  R78                                   SW1              [4]                                2X18P-B
+         2    10K                           [4] 2        10K
+                      1%                                               1%                                                                             36                                35
+                                                                                                                                    +3.3V             34                                33                      +3.3V
++3.3V                                       +3.3V                                                                                                     32                                31                               [6]
+                                                                                                                     [6] IO_L18N                      30                                29                     IO_L18P   [6]
+SW3       31                                     SW7 31                                                              [6] IO_L17N                      28                                27                     IO_L17P   [6]            D23               IO4  5    IO_L4P    [6]        D25               IO4  5                IO_L18P  [6]
+         2                                  [4] 2 R79                                                                [6] IO_L16N                      26                                25                     IO_L16P   [6]            TPD4E002DRLR      IO3  4    IO_L4N    [6]        TPD4E002DRLR      IO3  4                IO_L18N  [6]
+                                                                                                                     [6] IO_L15N                      24                                23                     IO_L15P   [6]                              IO2  3    AD0P_15   [6]                          IO2  3                IO_L17P  [6]
+                                                                  10K                                                [6] IO_L14N                      22                                21                     IO_L14P   [6]                       2 GND  IO1  1    AD0N_15   [6]                   2 GND  IO1  1                IO_L17N  [6]
+                                                                                                                     [6] IO_L13N                      20                                19                     IO_L13P   [6]                                                             D26
+              R74                                                                                                    [6] IO_L12N                      18                                17                     IO_L12P   [6]            D22                                              TPD4E002DRLR
+              10K                                                                                                    [6] IO_L11N                      16                                15                     IO_L11P   [6]            TPD4E002DRLR
+                                                                                                                     [6] IO_L4N                       14                                13                     IO_L4P    [6]                                                                        2 GND
+                                                                                                                     [6] AD0N_15                      12                                11                     AD0P_15   [6]                       2 GND                                 D27
+                                                                                                                     [6] AD8N_15                      10                                9                      AD8P_15   [6]                                                             TPD4E002DRLR
+                                                                                                                     [6] AD9N_15                                                        7                      AD9P_15                  D21
+                                                                                                                     [6] AD11N_15                       8                               5                      AD11P_15  [6]            TPD4E002DRLR                                                2 GND
+                                                                                                                     [6] AD3N_15                        6                               3                                                                                                D28
+                                                                                                                     [6] AD10N_15                       4                               1                      AD3P_15   [6]                       2 GND                                 TPD4E002DRLR
+                                                                                                                     [6] AD2N_15                        2                                                      AD10P_15  [6]
+                                                                                                                [4]                                                                                            AD2P_15   [6]            D20                                                         2 GND
+                                                                                                                                                       J5                                                                               TPD4E002DRLR
+                      1%  SW4                                          1%                      SW0
+                                                                                                                                                                                                                                                   2 GND
+                                                                                                                                                                                                        +3.3V                                             IO4  5    AD8P_15   [6]                          IO4  5                IO_L15P  [6]
+                                                                                                                                                                                                                                                          IO3  4    AD8N_15   [6]                          IO3  4                IO_L16N  [6]
+                                                                                                                                                                                                 1                                                        IO2  3    AD9P_15   [6]                          IO2  3                IO_L16P  [6]
+                                                                                                                                                                                                 2                                                        IO1  1    AD9N_15   [6]                          IO1  1                IO_L15N  [6]
+                                                                                                                                                                                                 3
+                                                                                                      [4]            SW_7                                                        16 ON           4                                                        IO4  5    AD2P_15   [6]                          IO4  5                IO_L14P  [6]
+                                                                                                      [4]            SW_6                                                        15              5                                                        IO3  4    AD2N_15   [6]                          IO3  4                IO_L14N  [6]
+                                                                                                      [4]            SW_5                                                        14              6                                                        IO2  3    AD10P_15  [6]                          IO2  3                IO_L13P  [6]
+                                                                                                      [4]            SW_4                                                        13              7                                                        IO1  1    AD10N_15  [6]                          IO1  1                IO_L13N  [6]
+                                                                                                      [4]            SW_3                                                        12              8
+                                                                                                      [4]            SW_2                                                        11
+                                                                                                      [4]            SW_1                                                        10
+                                                                                                      [4]            SW_0
+                                                                                                                                                                                  9
+                                                                                                                     +3.3V
+                                                                                                                     S3                    R2                                                                                                             IO4  5    AD3P_15   [6]                          IO4  5                IO_L12P  [6]
+                                                                                                                                                       R3                                                                                                 IO3  4    AD3N_15   [6]                          IO3  4                IO_L12N  [6]
+                                                                                                                                                          R410K                                                                                           IO2  3    AD11P_15  [6]                          IO2  3                IO_L11P  [6]
+                                                                                                                                                             R91%                                                                                         IO1  1    AD11N_15  [6]                          IO1  1                IO_L11N  [6]
+                                                                                                                                                                 R10
+                                                                                                                                                                    R17          +3.3V
+                                                                                                                                                                       R18
+    +3.3V                      +3.3V                                                           +3.3V                                                                       R19
+
+                                                                                                                                                                             S4                                          TITLE:         IO
+
+S0                             S1
+                                                                                           S2
+
+                                                                                                                                                                                                                                            DRAWING NO:
+
+                                                                                                                                                                                                                         Design :
+
+            R80       1%  PB0 [3]           R49                            PB1 [3]                    R51            PB2 [3]               R82     PB3 [4]                                  R84  1%            PB4 [4]   CHECKED:
+             10K                            10K 1%                                                    10K 1%                               10K 1%                                           10K                          STANDARDIZED:
+                                       R48                                       R50                                       R81                        R83                                                                RELEASED:
+R52                                    10K                                       10K                                       10K                        10K                                                                                   VERSION:                SIZE:                      SCALE:                       SHEET: 6 OF 10
+10K                                    1%                                        1%                                        1%                         1%
+1%                                                                                                                                                                                                                                                                       A3
+
+                                                                                                                                                                                                                                                          E-ELEMENTS
+[4] VGA_R0     R53 4K 1%                                                                                                                                                                                                                                                                                              REVISION RECORD
+[4] VGA_R1     R54 2K 1%
+[4] VGA_R2     R55 1K 1%                                               J1                                                                                                                            [4] LD2_7                     R93       560R 1%        LD2_7                            LTR ECO NO:                                        APPROVED:  DATE:
+[4] VGA_R3     R56 510R 1%                                                                                                                                                                           [4] LD2_6                     R97       560R 1%        LD2_6
+[4] VGA_G0     R57 4K 1%                                1    RED                                                                                                                                     [4] LD2_5                     R98       560R 1%        LD2_5                                              +1.0V
+[4] VGA_G1     R58 2K 1%                                2    GREEN                                                                                                                                   [4] LD2_4                     R99       560R 1%        LD2_4
+[4] VGA_G2     R59 1K 1%                                3    BLUE                                                                                                                                    [4] LD2_3                     R100      560R 1%        LD2_3                                                     T_W1
+[4] VGA_G3     R63 510R 1%                              4    ID2/RES                                                                                                                                 [4] LD2_2                     R101      560R 1%        LD2_2
+[4] VGA_B0     R65 4K 1%                                5    GND                                                                                                                                     [4] LD2_1                     R102      560R 1%        LD2_1
+[4] VGA_B1     R66 2K 1%                                6    GND-R                                                                                                                                   [4] LD2_0                     R103      560R 1%        LD2_0
+[4] VGA_B2     R67 1K 1%                                7    GND-G                                                                                                                                   [4] LD1_7                     R104      560R 1%        LD1_7
+[4] VGA_B3     R68 510R 1%                              8    GND-B                                                                                                                                   [4] LD1_6                     R105      560R 1%        LD1_6
+[4] VGA_HSYNC  R69 49.9R 1%                             9    KEY/PWR                                                                                                                                 [4] LD1_5                     R106      560R 1%        LD1_5
+[4] VGA_VSYNC  R70 49.9R 1%                            10    GND-SYNC                                                                                                                                [4] LD1_4                     R107      560R 1%        LD1_4
+                                                       11    ID0/RES                                                                                                                                 [4] LD1_3                     R108      560R 1%        LD1_3
+                                         +3.3V         12    ID1/SDA                                                                                                                                 [4] LD1_2                     R109      560R 1%        LD1_2
+                                                       13    H-SYNC                                                                                                                                  [4] LD1_1                     R33       560R 1%        LD1_1
+                                                       14    V-SYNC                                                                                                                                  [4] LD1_0                     R64       560R 1%        LD1_0
+                                                       15    ID3/SCL
+                                                       16    GND                                                                                                                                                                                          NC
+                                                       17    GND
+
+                                                       FB1     VGA_HD15_0                                                                                                                                                                                                                    W1
+                                                       100R                                                                                                                                                                                                                                  VR-B103
+                                                                                                                                                                                                                                                                                                                                R110            VOL_IN            [3]
+                                                                                                                                                                                                                                                                                             10K                                1K 1%
+
+                                                                                                                                  +3.3V
+
+                  C6                            RN2-A                                                                         C7         RN1-A
+               0.1uF                            10K                                                                        0.1uF         10K
+
+                                                                                       DN0_K1  [7]                                                                                                                                           R121
+                                                                                       DN0_K2  [7]
+                                                                                       DN0_K3  [7]                                                                          [7]              DN1_K1                       +3.3V              SD                                              BT_3V3
+                                                                                       DN0_K4  [7]                                                                          [7]              DN1_K2  FPGA_BT_3V3
+                                                                                                                                                                            [7]              DN1_K3                                              MOSFET-P_T
+                                                                                                                                                                            [7]              DN1_K4                                                                C30
+                                                                                                                                                                                                                                                                  0.1uF
+                                                                                                                                                                   Q7             Q6                                                                               16V
+                                               Q17     Q16             Q15     Q14                                                        Q9      Q8                                                                                   R191SD
+                                              2N5551   2N5551          2N5551  2N5551                                                    2N5551  2N5551           2N5551         2N5551                                               100K                           G
+               R85 4.7K 1%                                                                                                                                                                                                              1%                                 Q5
+[4] LED_BIT1   R86 4.7K 1%                                                             [4] LED_BIT5                        R89 4.7K 1%
+[4] LED_BIT2   R87 4.7K 1%                                                             [4] LED_BIT6                        R90 4.7K 1%                                                                                                 R192
+[4] LED_BIT3   R88 4.7K 1%                                                             [4] LED_BIT7                        R91 4.7K 1%                                                                                                  10K
+[4] LED_BIT4                                                                           [4] LED_BIT8                        R92 4.7K 1%                                                                                                  1%
+
+                                                                                                                                                                                 [3]                                                    Q4
+
+                                                                                                                                                                                                                                 G
+
+[4,7] CG0             10 G                        E1                           CE0 [4,7] [4,7] CG1                                10 G   E1                                      CE1 [4,7]
+[4,7] CF0              9F                        D2                            CD0 [4,7] [4,7] CF1
+                       88                         33                                                                              9F     D2                                      CD1 [4,7]                                                   T_2_B
+  [7] DN0_K1           7A                        C4                                                            [7] DN1_K1
+[4,7] CA0              6B                       DP 5                           CC0 [4,7] [4,7] CA1                                88     33
+[4,7] CB0                                                                      DP0 [4,7] [4,7] CB1
+                                                                                                                                  7A     C4                                      CC1 [4,7]                                                                                                                            BT_3V3
+[4,7] CG0
+[4,7] CF0                                                                                                                         6B     DP 5                                    DP1 [4,7]                     [4] BT_TX                                                        1  UART_TX   P0_0              34
+                                                                                                                                                                                                               [4] BT_RX                                                        2  UART_RX   P0_1              33
+  [7] DN0_K2                                          LED4_HLS_2011AX                                                                            LED4_HLS_2011AX                                                                                                                3  UART_CTS  P0_2              32     R114
+[4,7] CA0                                             DK1                                                                                        DK5                                                           [4] BT_RESET#                                                    4  UART_RTS  P0_3              31      10K
+[4,7] CB0                                                                                                                                                                                                                  BT_3V3                                               5  NC        P0_4              30
+                      10 G                      E1                             CE0 [4,7] [4,7] CG1                                10 G   E1                                      CE1 [4,7]                                                   BT_3V3                             6  NC        P0_5              29                               BT_P0_6    [3]
+[4,7] CG0                                                                                                                                                                                                                                                                       7  P2_2      P0_6              28                               BT_P0_7    [3]
+[4,7] CF0             9F                        D2                             CD0 [4,7] [4,7] CF1                                9F     D2                                      CD1 [4,7]                                                      R113                            8  P2_1      P0_7              27                               MCU_INT
+                      88                        33                                                             [7] DN1_K2                                                                                                                       4.7K                            9  P2_0      P1_0              26                               BT_P1_3    [3]
+  [7] DN0_K3                                                                                                                                                                                                                                                                   10  NC        P1_1              25
+[4,7] CA0                                                                                                                         88     33                                                                                                                                    11  RESETB    P1_2              24                                 4.7K     [3]
+[4,7] CB0                                                                                                                                                                                                                                                                      12  VCC       P1_3              23                                 4.7K
+                      7A                        C4                             CC0 [4,7] [4,7] CA1                                7A     C4                                      CC1 [4,7]                                                                                     13  GND       GND               22
+[4,7] CG0
+[4,7] CF0             6B                        DP 5                           DP0 [4,7] [4,7] CB1                                6B     DP 5                                    DP1 [4,7]                                                                                         GND                           B1             R175
+                                                                                                                                                                                                                                                                                      SDA                      BLE-CC41-A       330R R158
+  [7] DN0_K4                                                                                                                                                                                                                                                                             NC
+[4,7] CA0                                                                                                                                                                                                                                                                                    NC                                           R115
+[4,7] CB0                                                                                                                                                                                                                                                                                       NC                                D17
+                                                                                                                                                                                                                                                                                                   NC                             blue
+                                                                                                                                                                                                                                                                                                       SCL
+                                                                                                                                                                                                                                                                                                          GND
+
+                                                      LED4_HLS_2011AX                                                                            LED4_HLS_2011AX                                                                                 1K 1K                             14
+                                                      DK2                                                                                        DK6                                                                                           R111 R112                              15
+                                                                                                                                                                                                                                                1% 1%                                    16
+                                                                                                                                                                                                                                                                                             17
+                                                                                                                                                                                                               [4] BT_SDA                                                                       18
+                                                                                                                                                                                                               [4] BT_SCL                                                                          19
+                                                                                                                                                                                                                                                                                                       20
+                                                                                                                                                                                                                                                                                                          21
+
+                                                                                                                                                                                                                                                                                                                            21
+
+                      10 G                      E1                             CE0 [4,7] [4,7] CG1                                10 G   E1                                      CE1 [4,7]
+
+                      9F                        D2                             CD0 [4,7] [4,7] CF1                                9F     D2                                      CD1 [4,7]
+
+                      88                        33                                             [7] DN1_K3                         88     33
+
+                      7A                        C4                             CC0 [4,7] [4,7] CA1                                7A     C4                                      CC1 [4,7]
+
+                      6B                        DP 5                           DP0 [4,7] [4,7] CB1                                6B     DP 5                                    DP1 [4,7]           TITLE:
+
+                                                      LED4_HLS_2011AX                                                                            LED4_HLS_2011AX                                                  DISPLAY_UART_BT
+                                                      DK3                                                                                        DK7
+
+                                                                                                                                                                                                                                             DRAWING NO:
+
+                      10 G                      E1                             CE0 [4,7] [4,7] CG1                                10 G   E1                                      CE1 [4,7]           Design :
+
+                      9F                        D2                             CD0 [4,7] [4,7] CF1                                9F     D2                                      CD1 [4,7]           CHECKED:
+                      88                        33                                                             [7] DN1_K4                                                                            STANDARDIZED:
+                                                                                                                                  88     33                                                          RELEASED:
+
+                      7A                        C4                             CC0 [4,7] [4,7] CA1                                7A     C4                                      CC1 [4,7]                                                   VERSION:                              SIZE:                           SCALE:                       SHEET: 7 OF 10
+
+                      6B                        DP 5                           DP0 [4,7] [4,7] CB1                                6B     DP 5                                    DP1 [4,7]                                                                                              A3
+
+                                                      LED4_HLS_2011AX                                                                            LED4_HLS_2011AX                                                                             E-ELEMENTS
+                                                      DK4                                                                                        DK8
+                                                                                                                                                                                                                                                                                                                                             REVISION RECORD
+
+                                                                                                              +3.3V                                                                                                                                                                                                      LTR ECO NO:                          APPROVED:                 DATE:
+
+                                                                                                                C65 C66
+                                                                                                              10uF 0.1uF
+
+                                                                     PMD4/CN62/RE4 64                                                                                                                                                                                                                   PIC_12M     [8]
+                                                                           PMD3/CN61/RE3 63
+                                               1 PMD5/CN63/RE5                    PMD2/CN60/RE2 62
+                                                                                         PMD1/CN59/RE1 61
+                                               2 SCL3/PMD6/CN64/RE6                            PMD0/CN58/RE0 60
+                                                                                                      VCMPST2/CN69/RF1 59
+                                                                                                             VBUSST/VCMPST1/CN68/RF0 58
+
+                                                                                                                   ENVREG 57
+                                                                                                                          VCAP/VDDCORE 56
+                                                                                                                                 C3INA/CN16/RD7 55
+                                                                                                                                       C3INB/CN15/RD6 54
+                                                                                                                                              RP20/PMRD/CN14/RD5 53
+                                                                                                                                                     RP25/PMWR/CN13/RD4 52
+                                                                                                                                                            RP22/PMBE/CN52/RD3 51
+                                                                                                                                                                  DPH/RP23/CN51/RD2 50
+                                                                                                                                                                         VCPCON/RP24/CN50/RD1 49
+                                               3 SDA3/PMD7/CN65/RE7                                                                                                                                SOSCO/T1CLK/C3INC/RPI37/CN0/RC14 48                        R232                                                                                        +3.3V
+                                                                                                                                                                                                                      SOSCI/C3IND/CN1/RC13 47                      0
+
+                                               4 C1IND/RP21/PMA5/CN8/RG6                                                                                                                                           DMH/RP11/INT0/CN49/RD0 46                                                                                                    U10
+                                                                                                                                                                                                                    RP12/PMCS1/CN56/RD11 45
+                                               5 C1INC/RP26/PMA4/CN9/RG7                                                                                                                                      SCL1/RP3/PMCS2/CN55/RD10 44                                     1 Y1     GND 4                                                 1 OE VCC 4       C100
+                                                                                                                                                                                                                 DPLN/SDA1/RP4/CN54/RD9 43                                    3 Y2     GND 2                                                 2 GND CLK 3       0.47uF
+                                               6 C2IND/RP19/PMA3/CN10/RG8                                                                                                                                        RTCC/DMLN/RP2/CN53/RD8 42                                                                                                                     6.3V
+
+[8] PIC_MCLR                                   7 /MCLR                                                                                                                                                                                         VSS 41         C49 C51             U13                                                                                               PIC_12M [8]
+                                                                                                                                                                                                                     OSCO/CLKO/CN22/RC15 40
+                                               8 RP27/PMA2/C2INC/CN11/RG9                                                                                                                                                                                     20pF NC 20pF NC 8Mhz NC
+                                                                                                                                                                                                                        OSCI/CLKI/CN23/RC12 39
+                                               9 VSS                                                                                                                                                                                           VDD 38
+
+                 +3.3V                         10 VDD                                                                                                                                                                                      D+/RG2 37
+                                                                                                                                                                                                                                            D-/RG3 36
+[2]              INIT         R176  100R       11 PGEC3/AN5/C1INA/VBUSON/RP18/CN7/RB5
+                                                                                                                                                                                                                                             VUSB 35
+[4] PS2_DATA                                   12 PGED3/AN4/C1INB/USBOEN/RP28/CN6/RB4                                                                                                                                                        VBUS 34   +3.3V
+                                                                                                                                                                                                                       RP16/USBID/CN71/RF3 33          +3.3V
+                                               13 AN3/C2INA/VPIO/CN5/RB3                                                                                                                                                                                      USB0_D+                  [8]
+                                                                                                                                                                                                                                                              USB0_D-                  [8]
+                                               14 AN2/C2INB/VMIO/RP13/CN4/RB2
+
+[4] PS2_CLK                                    15 PGEC1/AN1/VREF-/RP1/CN3/RB117 PGEC2/AN6/RP6/CN24/RB6
+                                               16 PGED1/AN0/VREF+/RP0/PMA6/CN2/RB018 PGED2/AN7/RP7/RCV/CN25/RB7
+     +3.3V                    R174 330R                                           19 AVDD
+                                                                                         20 AVSS
+                                          D29                                                  21 AN8/RP8/CN26/RB8
+                                                                                                      22 AN9/RP9/PMA7/CN27/RB9
+                                                                                                             23 TMS/CVREF/AN10/PMA13/CN28/RB10                                                                                                                                                                           USB0_VBUS_SEL
+                                                                                                                   24 TDO/AN11/PMA12/CN29/RB11
+                                                                                                                          25 VSS                                                                                                                                                            R183 NL
+                                                                                                                                 26 VDD
+                                                                                                                                       27 TCK/AN12/PMA11/CTED2/CN30/RB12                                                                                                                    SD                                               FB4              1        5 GND GND 6
+                                                                                                                                              28 TDI/AN13/PMA10/CTED1/CN31/RB13                                                                                                                                                              100R             2
+                                                                                                                                                     29 AN14/CTPLS/RP14/PMA1/CN32/RB14                                                                                                                                                                        3
+                                                                                                                                                            30 AN15/RP29/REFO/PMA0/CN12/RB15                                                                  +5.0V_IN        R184          MOSFET-P_TG                        [8]  USB0_D-                   4  VBUS
+                                                                                                                                                                  31 SDA2/RP10/PMA9/CN17/RF4                                                                                  100K                         Q3                  [8]  USB0_D+                      DM
+                                                                                                                                                                         32 SCL2/RP17/PMA8/CN18/RF5                                                                 +5.0V      1%                                                                                DP
+                                                                                                                                                                                                     U12                                                                                                     C68    R185                                         GND
+                                                                                                                                                                                                     PIC24FJ128GB106                                          R233            R186                                   47K
+                                                                                                                                                                                                                                                                10K            10K                           0.1uF                                   C67                            J4
+                                                                                                                                                                                                                                                                 1%            1%                            16V
+                                                                                                                                                                                                                                                                                                                                                     1uF
+                                                                                                                                                                                                                                                              R234                                                                                   16V
+                                                                                                                                                                                                                                                               3.3K
+                                                                                         R177                 R178  R179R180R181R182                                                                                                                             1%
+                                                                                         100R                 100R  100R
+                                                                                                              5%
+                                                                                           5%                         5%
+
+                                                                                                                                                                                                                                                                              Q2  SD
+
+                                                                                                                                                                                                                                                                           G
+
+                 +3.3V                                               PIC_PGC2                  FPGA_M1              +3.3V
+                                                                           PIC_PGD2                  FPGA_M2                FPGA_DONE
+                                                                                                                                  FPGA_PROG_B
+                                                                                  +3.3V
+                                                                                                                                         FLASH_D1
+                                                                                                                                                FPGA_CCLK
+
+                                                                     [8]                       [2]                        [2]
+                                                                           [8]                       [2]                        [2]
+                                                                                                                                       [2,3]
+                                                                                                                                              [2]
+
+           R190                                                                                                                                                                                                                                               TITLE:
+           100R
+      J10                                                                                                                                                                                                                                                                  PIC_USB
+          1
+          2             R189  100R             PIC_MCLR  [8]                                                        +3.3V                                                                                                                                                                   DRAWING NO:
+          3             R188  100R             PIC_PGD2  [8]
+          4             R187  100R             PIC_PGC2  [8]                                                    C53 C54 C57 C58 C60 C61                                                                                                                Design :
+          5                                                                                                   0.1uF 0.1uF 0.1uF 0.1uF 0.1uF 0.1uF
+          6                                                                                                                                                                                                                                            CHECKED:
+                                                                                                                                                                                                                                                       STANDARDIZED:
+     SIP-6                                                                                                                                                                                                                                             RELEASED:
+
+                                                                                                                                                                                                                                                                                            VERSION:                SIZE:                    SCALE:           SHEET: 8 OF 10
+
+                                                                                                                                                                                                                                                                                                                         A3
+
+                                                                                                                                                                                                                                                                                              E-ELEMENTS
+                                                                                                                                                                                       REVISION RECORD
+
+                                                                                                                                                                                  LTR ECO NO:           APPROVED:  DATE:
+
+                                                                                             +1.0V_PS
+
+                                                                                                            ( Capacitor for VCCint )
+
++1.0V_PS    F8  VCCINT  VCCAUX                                     F12               +1.8V
+           G9   VCCINT  VCCAUX                                     H12             +1.0V_PS
+           G7   VCCINT  VCCAUX                                     K12                       C1             C2      C3      C4      C5
+           H8   VCCINT  VCCAUX                                     M12
+          J11   VCCINT                                                                       100uF           4.7uF   4.7uF   4.7uF   4.7uF
+            J7  VCCINT                                                                       6.3V           6.3V    6.3V    6.3V    6.3V
+           K8   VCCINT
+          L11   VCCINT  VCCBRAM                                    F10
+            L7  VCCINT  VCCBRAM                                    G11
+          M10   VCCINT
+           M8   VCCINT                                                                       +1.0V_PS
+          N11   VCCINT
+           N9   VCCINT                                                                                      ( Capacitor for VCCint )
+           N7   VCCINT
+
+                             U1-H                                                                   C17     C18     C19     C20               C21     C22     C23     C25
+                        XC7A15TCSG324
+                                                                                                    0.47uF  0.47uF  0.47uF  0.47uF            0.47uF  0.47uF  0.47uF  0.47uF
+                                                                                                    16V     16V     16V     16V               16V     16V     16V     16V
+
+                     N18
+                        M5
+                           M7
+                               M9
+                                  M11
+                                     M15
+                                         L2
+                                            L8
+                                               L12
+                                                   K7
+                                                      K11
+                                                         J6
+
+                     GND                                                                     +1.0V_PS ( Capacitor for VCCBRAM)
+                        GND
+                           GND
+                               GND
+                                  GND
+                                     GND
+                                         GND
+                                            GND
+                                               GND
+                                                   GND
+                                                      GND
+                                                         GND
+
+          A12   GND                                           GND  F9                               C39     C47     C50
+           A2   GND                                           GND  F7
+                GND                                           GND  G12                               4.7uF  0.47uF  0.47uF
+          B15   GND                                           GND  G10                              6.3V    16V     16V
+           B5   GND                                           GND  G8
+                GND                                           GND  H13
+          C18   GND                                           GND  H11
+           C8   GND                                           GND  H7
+                GND                                           GND  H3
+          D11   GND                                           GND  J16
+           D1   GND                                           GND  J12
+          E14   GND                                           GND  J8
+           E4
+          F17
+          F11
+
+                        GND                                        U1-G
+                           GND                                      XC7A15TCSG324
+                              GND
+                                  GND
+                                     GND
+                                        GND
+                                            GND
+                                               GND
+                                                  GND
+                                                      GND
+                                                         GND
+
+                     V3
+                        V13
+                           U10
+
+                               T7
+                                  T17
+                                     R4
+                                         R14
+                                            P1
+                                               N8
+                                                   N10
+                                                      N12
+
+                                                                                             +1.8V
+
+                                                                                                         ( Capacitor for VCCaux)
+
+                                                                                                    C59     C52     C55     C56
+                                                                                                    47uF
+                                                                                                    10V      4.7uF  0.47uF  0.47uF
+                                                                                                            6.3V    16V     16V
+
+                                                                                                                                    TITLE:
+
+                                                                                                                                                 FPGA_POWER
+
+                                                                                                                                                              DRAWING NO:
+
+                                                                                                                                    Design :
+
+                                                                                                                                    CHECKED:                  VERSION:        SIZE:    SCALE:           SHEET: 9 OF 10
+                                                                                                                                    STANDARDIZED:
+                                                                                                                                    RELEASED:                                      A3
+
+                                                                                                                                                                      E-ELEMENTS
+                                                                                                                                                                                                                                                                                     REVISION RECORD
+
+                                                     +5.0V_IN                              5V0                                                                                                                                                                                    LTR ECO NO:         APPROVED:  DATE:
+
+                                                                                                     +5.0V
+
+J7                                                   21                     1       3
+                                                                                      2SW12
+          1        D19
+          2        B340A                                                                                                    1
+                                                                                                                                             1
+                                        C32                                                                                                                   1C33
+                                                                                                                                                                               1
+                                        0.1uF               22uF
+                                        25V                 10V
+
+                                                                                                                                                                                                                       3V3
+
+                                                                                               U2                                                                                         L1                                JP14
+                                                                                        3 VIND1                                                                                           1uH
++5.0V                                                                                   4 VIND1      SW1                                                                        5                     +3.3V_IN                           +3.3V
+                                                                                                     FB1                                                                        8                                                       +1.0V
+             C77   C78   C123   R12                  R11 R30                           17 VIND2      PG1                                                                        9          R34                  C11         C12
+             47uF  47uF  0.1uF  3.3R                 22K 22K                           18 VIND2                                                                                             31.6K     1% 100uF              0.1uF
+             10V                                     1% 1%                                                                                                                      16
+                   10V 1%                                                                                                                                                       13        R35                    6.3V
+                                                                [10]                                                                                                            12        10K
+                   PG_1V0                                                   PG_1V0      1  VINC                                                                                 20        1%                           1V0
+                                                                                        2  EN1
+                                   C10                                                 19  EN2                                                                                      GND
+                                   1uF
+                                                                                       6 PGND1                                                                                            L2                                      JP15
+                                                                                       7 PGND1 SW2                                                                                        1uH                               C76
+                                                                                                                                                                                                                            0.1uF
+                                                                                       14 PGND2 FB2                                                                                                   R32 C13
+                                                                                       15 PGND2                                                                                                        3.16K 100uF
+                                                                                                                                                                                                      1% 6.3V
+                                                                                                       PG2                                                                                R31
+                                                                                    10 TH            AGND                                                                                 10K
+                                                                                    11 TH                                                                                                 1%
+                                                                                    TH TH
+
+                                                                                           LM26420X                                                                                 GND
+
+                                                                      [10] PG_1V0                                 R16
+                                                                                                                  0R
+
+                                                                                                  U6                                                                            L6         1V8                  +1.8V
+                                                                                                         SW 3                                                                       2.2uH             JP1
+                                                                                                        VFB 1
+                                                     +5.0V                                 6 EN         VSS 2
+                                                                                           4 VIN
+                                                                                           5 VIN                                                                                          R123
+
+                                                                      C80                                                                                                                 20K 1%
+                                                                      22uF
+                                                                      6.3V                                                                                                          R122        C79
+                                                                                                                                                                                                22uF
+                                                                                                  XRP6657IHBTR-F                                                                    10K         6.3V
+                                                                                                                                                                                    1%
+
+                                                                                                                                                                                                                                                TITLE:         POWER
+
+                                        +3.3V_IN                                                                                                                    GND                                                                                        DRAWING NO:
+                                                                                                            X1 X2 X3 X4
+                                                  R1                                                                                                                                                                                            Design :
+                                                 330R
+                                                 1%                                                                                                                                                                                             CHECKED:
+                                                 D18                                                                                                                                                                                            STANDARDIZED:
+                                                                                                                                                                                                                                                RELEASED:
+                                                                                                                                                                                                                                                               VERSION:     SIZE:    SCALE:           SHEET: 10OF 10
+
+                                                                                                                                                                                                                                                                                 A3
+
+                                                                                                                                                                                                                                                                      E-ELEMENTS
+

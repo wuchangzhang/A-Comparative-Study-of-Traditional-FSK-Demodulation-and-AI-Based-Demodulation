@@ -1,0 +1,25 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 22:48:23 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_fsk_receiver/xsim_script.tcl
+# xsim {tb_fsk_receiver} -wdb {tb_fsk_receiver.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+receiver case 0: offset=-100 gain=2 trad_bits=256 trad_errors=0 ai_bits=256 ai_errors=0 peak=1745
+receiver case 1: offset=0 gain=-1 trad_bits=512 trad_errors=1 ai_bits=512 ai_errors=1 peak=5326
+receiver case 2: offset=100 gain=-3 trad_bits=768 trad_errors=1 ai_bits=768 ai_errors=1 peak=25233
+receiver case 3: offset=50 gain=-1 trad_bits=1024 trad_errors=1 ai_bits=1024 ai_errors=1 peak=6931
+receiver case 4: offset=-50 gain=-1 trad_bits=1280 trad_errors=1 ai_bits=1280 ai_errors=1 peak=6408
+receiver case 5: offset=-50 gain=0 trad_bits=1280 trad_errors=1 ai_bits=1280 ai_errors=1 peak=5329
+PASS tb_fsk_receiver: offsets, AGC, 18 dB noise, +/-100 ppm, sync tolerance/rejection, CRC, true BER, loss, statistics, tags
+$finish called at time : 6095929870 ns : File "F:/version4_fix_ai_tone/sim/tb_fsk_receiver.sv" Line 142
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:06:07 . Memory (MB): peak = 236.590 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 21336 KB (Peak: 21336 KB), Simulation CPU Usage: 363078 ms
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 22:54:32 2026...

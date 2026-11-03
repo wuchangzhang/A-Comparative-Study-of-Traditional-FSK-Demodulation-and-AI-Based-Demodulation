@@ -1,0 +1,2 @@
+-r ../src/requirements-receiver.txt
+matplotlib==3.11.2

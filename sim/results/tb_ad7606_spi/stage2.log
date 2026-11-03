@@ -1,0 +1,17 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sat Oct 31 23:08:59 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_ad7606_spi/xsim_script.tcl
+# xsim {tb_ad7606_spi} -wdb {tb_ad7606_spi.wdb} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS tb_ad7606_spi: 50 kSPS, 128 clocks, signed codes, delayed DOUT, clip, missing/stuck BUSY recovery
+$finish called at time : 233710 ns : File "F:/version4_fix_ai_tone/sim/tb_ad7606_spi.sv" Line 72
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 23:09:18 2026...

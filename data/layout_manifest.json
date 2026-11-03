@@ -1,0 +1,847 @@
+{
+  "source_files": 210,
+  "project_hardware_status": "board_and_instrument_results_included",
+  "hardware_evidence": "data/hardware_results.json",
+  "mapping": {
+    "launch_gui.ps1": {
+      "path": "board/launch_gui.ps1",
+      "original_sha256": "491f949e6abc03a54022c8573f1d71a60ed92d52b061cf9eaef81badac4e0ddf"
+    },
+    "Start_GUI.cmd": {
+      "path": "board/start_gui.cmd",
+      "original_sha256": "2c9d72c5b54078e2c65821529be55ba98917a2eb6535f38d014ab4ad513e5bcc"
+    },
+    "requirements.txt": {
+      "path": "src/requirements.txt",
+      "original_sha256": "0b81718d1cbe8a7696e45a9388c9205272b5e345cd79d0cf1ccfb7a9fd1925e9"
+    },
+    "requirements-receiver.txt": {
+      "path": "src/requirements-receiver.txt",
+      "original_sha256": "11f0ace8116fda31a5202d85c803f8afc89122ecbaef47e617a6cd7f1d4f8185"
+    },
+    "README.md": {
+      "path": "README.md",
+      "original_sha256": "9f7c52dea62a43a4ea202d8c36fffcaa64ec041b1b3329d7b46f9ebbbd366169"
+    },
+    "rtl/gaussian_q8.mem": {
+      "path": "src/rtl/gaussian_q8.mem",
+      "original_sha256": "442d7bec019d3988bcf01c563e296703fc3860e7f46b990da8174c3af65ca096"
+    },
+    "rtl/ego1_control_top.sv": {
+      "path": "src/rtl/ego1_control_top.sv",
+      "original_sha256": "ea46937d4b1fc60bb34a62078ba93e6a72cc1da36a74b042ab69ec8171c6b746"
+    },
+    "rtl/rom_sawtooth.v": {
+      "path": "src/rtl/rom_sawtooth.v",
+      "original_sha256": "39c9baab3dce156d501b5e7c58cd4a0d3c6db83bb9ec6801ace0d1b35ef56f79"
+    },
+    "rtl/xadc_knob.sv": {
+      "path": "src/rtl/xadc_knob.sv",
+      "original_sha256": "c30579a2c9eace20fc9e58dc446f25f6a93431e20409c79f6bd16663e09c160f"
+    },
+    "rtl/fcw_100ksps.mem": {
+      "path": "src/rtl/fcw_100ksps.mem",
+      "original_sha256": "ef4aa972e676549a0b80e1c607841683498b368814fe774a10f78e7f1c9ceecb"
+    },
+    "rtl/dac0832_driver.v": {
+      "path": "src/rtl/dac0832_driver.v",
+      "original_sha256": "ed1ec2abfed7d9ab8a706843ba3b75df2389fcfe1e8675614aa5bd7cc05ba76e"
+    },
+    "rtl/dds_display.v": {
+      "path": "src/rtl/dds_display.v",
+      "original_sha256": "6fc30d2e1b69d28a7181d972409cd776b1d28e517f267c51e47cb354112a897f"
+    },
+    "rtl/ai_mlp.mem": {
+      "path": "src/rtl/ai_mlp.mem",
+      "original_sha256": "faec9bfb8b4a0fc030127e3749b4c2b0f63c3fcf506cbb9eeaa41f6227956b81"
+    },
+    "rtl/telemetry.sv": {
+      "path": "src/rtl/telemetry.sv",
+      "original_sha256": "80d18954fa9b9909d7622f788d1a41c304db57d84372c70cd3e4d4bec7d0504f"
+    },
+    "rtl/command_engine.sv": {
+      "path": "src/rtl/command_engine.sv",
+      "original_sha256": "af79a1709c74d8e94fb89e50bea1c5c0c477fc7773c9aafff203b2ac29b6c2f2"
+    },
+    "rtl/knob_control.sv": {
+      "path": "src/rtl/knob_control.sv",
+      "original_sha256": "cfc41cd9150dcf623d2a85da22dd2ce67a18d08d81fedaa6481ab83ffd9be701"
+    },
+    "rtl/sample_tick.v": {
+      "path": "src/rtl/sample_tick.v",
+      "original_sha256": "049fb48456c294f49f4dafef175d5fabf75957d2e28aaa7d523dc4cf6c54e362"
+    },
+    "rtl/rom_sin.v": {
+      "path": "src/rtl/rom_sin.v",
+      "original_sha256": "64a8c26db3653bd05851463f195ca6b3f99301a1b40a5c105bae61c39b873fbe"
+    },
+    "rtl/statistics.sv": {
+      "path": "src/rtl/statistics.sv",
+      "original_sha256": "51fb17dc04724d29a3329486772deb3295bb6bd232ac285785aa9113cb90be5e"
+    },
+    "rtl/phase_acc_ce.v": {
+      "path": "src/rtl/phase_acc_ce.v",
+      "original_sha256": "f1ac912ec9213989d7913f51167e60c876695498977c3a56518a4c4e8ddb5956"
+    },
+    "rtl/packet_codec.sv": {
+      "path": "src/rtl/packet_codec.sv",
+      "original_sha256": "abf3e8815b32d2f4376da8deed5d6d58dacd216fe4ac46d9bfaad156b1d92d78"
+    },
+    "rtl/button_event.v": {
+      "path": "src/rtl/button_event.v",
+      "original_sha256": "add865d6120516233359649de5e5ff61768f9dfac3f020e3b471b44d8d5e554d"
+    },
+    "rtl/fsk_correlator.sv": {
+      "path": "src/rtl/fsk_correlator.sv",
+      "original_sha256": "c038bc41d1c5f774bc549599862f07dc5f5de7b460a3c389b0853bacd5bbdd4a"
+    },
+    "rtl/ad7606_spi_rx.sv": {
+      "path": "src/rtl/ad7606_spi_rx.sv",
+      "original_sha256": "c43eb53fe4c565eee5addaad2ab482d7599ec2bead4920df7a85a9c9febfe825"
+    },
+    "rtl/parameter_manager.sv": {
+      "path": "src/rtl/parameter_manager.sv",
+      "original_sha256": "77ecd0760f6d44559306094bbff29afccca97fdc208a9e4df8a2bbfe8e16284e"
+    },
+    "rtl/report_history.sv": {
+      "path": "src/rtl/report_history.sv",
+      "original_sha256": "463a3c93afcf168c7aac253bb56b82041fc6799afbcf24ab058a087ca8f35032"
+    },
+    "rtl/bias_scale.v": {
+      "path": "src/rtl/bias_scale.v",
+      "original_sha256": "0be59b397dc64055522987d85ae711b35a7f076e8c84a09ab2a11e0090e1fd1a"
+    },
+    "rtl/fsk_frame_tx.sv": {
+      "path": "src/rtl/fsk_frame_tx.sv",
+      "original_sha256": "21e1cf9b89ba2b586019270a1c2cd49baebf0cacee25a9d0d10a1373df2104ab"
+    },
+    "rtl/fsk_receiver.sv": {
+      "path": "src/rtl/fsk_receiver.sv",
+      "original_sha256": "4a9e459faf548f958d21ca818d580c6ee48ced312011900834c0edfd3edfd1fc"
+    },
+    "rtl/amplitude_scale.v": {
+      "path": "src/rtl/amplitude_scale.v",
+      "original_sha256": "28208fd5166119d8b394f40ee3caf4ab9c7139a7d49a6fd18af630d4324588a3"
+    },
+    "rtl/control_pkg.sv": {
+      "path": "src/rtl/control_pkg.sv",
+      "original_sha256": "2c0bfbabdf24507b187ba5d8ab362e821e23b877cafda4b072711c586216f58a"
+    },
+    "rtl/rx_steps.mem": {
+      "path": "src/rtl/rx_steps.mem",
+      "original_sha256": "ddb3847818f3683fda059dc3426ea1eb1079560953fcf9b1158fe7b6011b97b0"
+    },
+    "rtl/rom_triangle.v": {
+      "path": "src/rtl/rom_triangle.v",
+      "original_sha256": "806c7594fd705ed1e8aad4ca38655fc7ec6bcd44b5b7e103b8fc1701b515f4ef"
+    },
+    "rtl/control_core.sv": {
+      "path": "src/rtl/control_core.sv",
+      "original_sha256": "1777f9d2bca83a13433dc80427b086cc2085055944059db5e5a2ad7037f86a49"
+    },
+    "rtl/rom_square.v": {
+      "path": "src/rtl/rom_square.v",
+      "original_sha256": "11cfd17e2c8465531fc937bf52b9bcc71d1906446c54e2b50e63f9739c989f62"
+    },
+    "rtl/rx_sine.mem": {
+      "path": "src/rtl/rx_sine.mem",
+      "original_sha256": "ba197dc70df7f40a7e617f5317e4cb340126328b9a2fa72ee226fadaa835312c"
+    },
+    "rtl/uart_bytes.sv": {
+      "path": "src/rtl/uart_bytes.sv",
+      "original_sha256": "03c1f9b824ad9f68901f39d9c27f3b8cfc7c3c7a48410700191d015ca936330f"
+    },
+    "rtl/sample_path.sv": {
+      "path": "src/rtl/sample_path.sv",
+      "original_sha256": "3cc3a13a79c7e5a56cae2c110c773aea9130c4ceca374a7550c1b94b540b9655"
+    },
+    "rtl/ai_mlp.sv": {
+      "path": "src/rtl/ai_mlp.sv",
+      "original_sha256": "2337615f25583a70655a47eb537bff5162135eaf7907e64337b8da372124cef0"
+    },
+    "rtl/tone_jammer.sv": {
+      "path": "src/rtl/tone_jammer.sv",
+      "original_sha256": "d3dd47fc428cf12b9c9374bb5ee641fb094ae307a656d83a3207e3906c935cb0"
+    },
+    "constraints/board.xdc": {
+      "path": "board/constraints/board.xdc",
+      "original_sha256": "1b499b51b25f2028abd5510fe2e270c274a9f10c80487590a8ecc60630b89912"
+    },
+    "host/client.py": {
+      "path": "src/host/client.py",
+      "original_sha256": "f64af95b3e3fd54284bf0e61f90807d034e04bb5bf1cb9cae9817b38b05e90f0"
+    },
+    "host/protocol.py": {
+      "path": "src/host/protocol.py",
+      "original_sha256": "fd0e19a9596e87b63a6e93ea1ebd6b258586e7039365a0fca0163eab00f440e8"
+    },
+    "host/gui.py": {
+      "path": "src/host/gui.py",
+      "original_sha256": "06fcdba40db276435aac677e475f71a673e5f9c6c46fdf2e8d4098b12cd1084c"
+    },
+    "host/cli.py": {
+      "path": "src/host/cli.py",
+      "original_sha256": "920cb628a88285e5f79b72b617bf99bf5e4cfc69074c83f59e5c626428c79349"
+    },
+    "host/reference.py": {
+      "path": "src/host/reference.py",
+      "original_sha256": "008719e99caa00afb24cc18a5565c98e6a9db72978ffdaf2e09f0c6ae9df2a10"
+    },
+    "sim/tb_arithmetic.sv": {
+      "path": "sim/tb_arithmetic.sv",
+      "original_sha256": "c4cb4befc7f8f78c92dc1b06d3c10ed3b57185edf65e2134b6cba529a38fbbe9"
+    },
+    "sim/ai_feature_golden.txt": {
+      "path": "sim/ai_feature_golden.txt",
+      "original_sha256": "0d09430e2cdf9ad7697f998130841052eb52214de373da7a33cfb97b614abbbd"
+    },
+    "sim/tb_noise.sv": {
+      "path": "sim/tb_noise.sv",
+      "original_sha256": "37eeb7148739c78a294a8866714bb498c8718827cf4a947b435286378035526e"
+    },
+    "sim/tb_frame.sv": {
+      "path": "sim/tb_frame.sv",
+      "original_sha256": "fec9920db984344d82acfcc23162c2951ef7a50c2f5bb7d04eecc07aabc747a7"
+    },
+    "sim/tb_ad7606_spi.sv": {
+      "path": "sim/tb_ad7606_spi.sv",
+      "original_sha256": "f892df5dc436a1ef10d7b4f736cd9e9f4d4596cc8a2307e7bbb7c43499d49547"
+    },
+    "sim/tb_frame_gate.sv": {
+      "path": "sim/tb_frame_gate.sv",
+      "original_sha256": "13e99c0a36516c0480546af05ec1ed3756f1bbefe3c05b574a14a807a39fe60b"
+    },
+    "sim/tb_ai_mlp.sv": {
+      "path": "sim/tb_ai_mlp.sv",
+      "original_sha256": "62c6e02190e929c6a40e1036803ba284d93b99b273786a8e8cdb41e27b4f90eb"
+    },
+    "sim/tb_history.sv": {
+      "path": "sim/tb_history.sv",
+      "original_sha256": "0d9f8fe5df84e87fd65cefa4f2db6f6e73d5656a619ce836292212c97fddb365"
+    },
+    "sim/tb_dac.sv": {
+      "path": "sim/tb_dac.sv",
+      "original_sha256": "c1b205d87f8c8397bdda4361905e3ccc8abfb29a22c66bd5389c23be4ad93a6f"
+    },
+    "sim/frames.mem": {
+      "path": "sim/frames.mem",
+      "original_sha256": "9bbd72dd6c49a0313132029e4cefa1e57ac91b8868746b344494bbc603742492"
+    },
+    "sim/tb_statistics.sv": {
+      "path": "sim/tb_statistics.sv",
+      "original_sha256": "9aa169debf78bc51d7c3cfbadc68331ffb380f16aae4fe59602e7028a351a8c5"
+    },
+    "sim/tb_fsk_receiver.sv": {
+      "path": "sim/tb_fsk_receiver.sv",
+      "original_sha256": "8a08c1b80544f2e931582c8e22a3141b3a905c17573589e30409487f4296485d"
+    },
+    "sim/tb_phase_reset.sv": {
+      "path": "sim/tb_phase_reset.sv",
+      "original_sha256": "c3df1f3d18354198c0361be7630559d23876c6944f5346ac00b1674d1c6a1e1e"
+    },
+    "sim/tb_samples.sv": {
+      "path": "sim/tb_samples.sv",
+      "original_sha256": "d6159ae3738a1508a31747d9ae4e55a98219656e84ba09510c2d01fa430d8cb2"
+    },
+    "sim/tb_parameters.sv": {
+      "path": "sim/tb_parameters.sv",
+      "original_sha256": "7de19b717caa437c415c5b50635b16226276fa768fa6567e3e9db9fe4c292cfc"
+    },
+    "sim/tb_telemetry.sv": {
+      "path": "sim/tb_telemetry.sv",
+      "original_sha256": "7a31b61ad86f4037320279a8a73d43395f073eb52db54bebdbccd17bd99a5bd2"
+    },
+    "sim/tb_fsk_lowamp.sv": {
+      "path": "sim/tb_fsk_lowamp.sv",
+      "original_sha256": "1b4f7752c2b258ca752714d1d7fad8761d844e94e60807c57161e55d914fdd0d"
+    },
+    "sim/ai_golden.txt": {
+      "path": "sim/ai_golden.txt",
+      "original_sha256": "6f4ee8c8ff4d80140e9010cdf992ad7e6c0373b160d0e5a39079961ae19840b4"
+    },
+    "sim/tb_ai_features.sv": {
+      "path": "sim/tb_ai_features.sv",
+      "original_sha256": "5202472450940c6b60e9ed11758f0fa57e94aab4cade5a65a9f16a46c5378968"
+    },
+    "sim/tb_knob.sv": {
+      "path": "sim/tb_knob.sv",
+      "original_sha256": "4b85462b87ab75940d04a6b91866c4da6e71d60aa916f3493d5d160e2bad97e3"
+    },
+    "sim/tb_uart_system.sv": {
+      "path": "sim/tb_uart_system.sv",
+      "original_sha256": "9f2bd2a5383e15670ac5e5df9d501861b84b41c87fa8c7397a72ab2f06a33246"
+    },
+    "sim/tb_test_control.sv": {
+      "path": "sim/tb_test_control.sv",
+      "original_sha256": "687fe0f77eadb3942c1a7881ffda78831d8a5ab1ec9fc465c40b4e271f76742b"
+    },
+    "sim/tb_jammer.sv": {
+      "path": "sim/tb_jammer.sv",
+      "original_sha256": "fe0804299f70288387826b4a2dfc84e2c5cfdea3d119cd7eb21526d3236f71d0"
+    },
+    "sim/tb_capture_jammer.sv": {
+      "path": "sim/tb_capture_jammer.sv",
+      "original_sha256": "f6919c55bd71662205627d5db02887f2b0e521cffa5587d9111e7eff847f0c7d"
+    },
+    "sim/tb_dc_tail.sv": {
+      "path": "sim/tb_dc_tail.sv",
+      "original_sha256": "f8563c22406937bd274da5e483366b04647671310869eebcce9a90ec6792c78b"
+    },
+    "sim/tb_burst_tx.sv": {
+      "path": "sim/tb_burst_tx.sv",
+      "original_sha256": "c487673419516622cbe9449aa08ec0b6f517f5e063268e11e099a2dc4863f002"
+    },
+    "sim/tb_burst_receiver.sv": {
+      "path": "sim/tb_burst_receiver.sv",
+      "original_sha256": "3e3777c3d744cc6949c32af96948bab9da4a5f3afb42d9a4a4edbc5e9365dbc4"
+    },
+    "sim/ai_golden_inputs.txt": {
+      "path": "sim/ai_golden_inputs.txt",
+      "original_sha256": "2f536150367fde167d04e27d06b832c072a8290854c63400e61eba112769c32e"
+    },
+    "scripts/generate_vectors.py": {
+      "path": "build/scripts/generate_vectors.py",
+      "original_sha256": "98db2050847465a19f73977206a50f1260d6c38d09c23bc2090def0337cf62f9"
+    },
+    "scripts/generate_receiver_tables.py": {
+      "path": "build/scripts/generate_receiver_tables.py",
+      "original_sha256": "c6c59b6ed72ac45b7b0a0e051873f552075f1789d599fc5d9f94ffd4bbbb0826"
+    },
+    "scripts/run_checks.py": {
+      "path": "build/scripts/run_checks.py",
+      "original_sha256": "54d99c192ea9c618f8ca2a0c4581972e42241e0fa056e2a4dc55a5d60b43f6ad"
+    },
+    "scripts/verify_host.py": {
+      "path": "build/scripts/verify_host.py",
+      "original_sha256": "8c94ffa8a99ca884df32d53a27624d311311177f8b474fb46a5266475103596e"
+    },
+    "scripts/common.tcl": {
+      "path": "build/scripts/common.tcl",
+      "original_sha256": "0c7f4e517ff5c3be3964b5875371336a9694a1a98127a2fc72d4012e902b3131"
+    },
+    "scripts/check_ai_reference.py": {
+      "path": "build/scripts/check_ai_reference.py",
+      "original_sha256": "08f7d3d416b869c2585a946683c39f1d6ddf7faa6a2b66350e25cbaea2bf0c5f"
+    },
+    "scripts/check_serial_host.py": {
+      "path": "build/scripts/check_serial_host.py",
+      "original_sha256": "f78048fc7a24ba3d383c9b0bc71f13cf193c5280f8ec6c72c15f51166e7d0fd8"
+    },
+    "scripts/export_ai_golden.py": {
+      "path": "build/scripts/export_ai_golden.py",
+      "original_sha256": "c1635e04cd97eb2286a7af9754aa68424eccf4adbfa58217b2723108c8b545a7"
+    },
+    "scripts/export_ai_features.py": {
+      "path": "build/scripts/export_ai_features.py",
+      "original_sha256": "3c46a143b71b1215af6dd923f8a5c7b7ac5b1185c14ab465b935b89e41211a13"
+    },
+    "scripts/check_gui.py": {
+      "path": "build/scripts/check_gui.py",
+      "original_sha256": "56e342410c6ffbc0f702675901853fbceb9b8bf16639c8c3a1e13b7c3449cb23"
+    },
+    "scripts/check_receiver_reference.py": {
+      "path": "build/scripts/check_receiver_reference.py",
+      "original_sha256": "883b94f48c625a361a6834e5fcd51dca22c5ae3418c9baa0564c1ba49e8706d4"
+    },
+    "scripts/create_project.tcl": {
+      "path": "build/scripts/create_project.tcl",
+      "original_sha256": "7a59b91655a5e1c8ae072eb02b01548aff33914f89d16ba6108f0a7fb1f1c2a5"
+    },
+    "scripts/check_uart_capture.py": {
+      "path": "build/scripts/check_uart_capture.py",
+      "original_sha256": "1901ace12feb5b4e4623f6bc38442b782b8f4cb10405cad6330a013f38f3add8"
+    },
+    "scripts/burst_experiment.py": {
+      "path": "build/scripts/burst_experiment.py",
+      "original_sha256": "6bfd8b2e2ce0f21238aab72d49c920bbcef3a17eb98ec5d3adb31e914b4190af"
+    },
+    "scripts/build_burst.tcl": {
+      "path": "build/scripts/build_burst.tcl",
+      "original_sha256": "1c17b8b3f912733e16fcb4533f1b50ca91a48bcdba1e41c001204e6c193682bb"
+    },
+    "scripts/check_burst_host.py": {
+      "path": "build/scripts/check_burst_host.py",
+      "original_sha256": "e0c4ebd867fd5d77aebd634d51e1b44fc5cc49518d44af5379203dbf3daddbaf"
+    },
+    "scripts/report_burst.py": {
+      "path": "build/scripts/report_burst.py",
+      "original_sha256": "d2d851a64056d9e720910ef24a0887e12d1104d9209e27dab15e5af8497f876d"
+    },
+    "scripts/finish_burst.tcl": {
+      "path": "build/scripts/finish_burst.tcl",
+      "original_sha256": "60cc755194fa756ef51f09e83da8cf8523d1c91938ebd6b0cbe6200a2564ebc6"
+    },
+    "scripts/check_gui_busy.py": {
+      "path": "build/scripts/check_gui_busy.py",
+      "original_sha256": "ab4ccb89fba92fa7dacfb72a546426f88d099ca7783850a90bb3647102ebfd8b"
+    },
+    "scripts/capture_final_gui.py": {
+      "path": "build/scripts/capture_final_gui.py",
+      "original_sha256": "b4efda0eeab4db563cdc3bc1a02c8b34abca369627892e41dbcb0cdcc274523f"
+    },
+    "scripts/package_final.py": {
+      "path": "build/scripts/package_final.py",
+      "original_sha256": "b0fdc6bf64e1ace10df1d7ca57e75fd1d2944702c583d310dd337059b8271e3f"
+    },
+    "docs/AD7606_INTEGRATION.md": {
+      "path": "report/ad7606_integration.md",
+      "original_sha256": "35e4de1852445ca63b260f72850f7a487c228fd8849684742aee2a3225613ed2"
+    },
+    "docs/BOARD.md": {
+      "path": "report/board.md",
+      "original_sha256": "5209f62ec3dc00de6bfe7ea3996977fd9c91ec4a5311dd2a01ae43051a202326"
+    },
+    "docs/PROTOCOL.md": {
+      "path": "report/protocol.md",
+      "original_sha256": "5e0c4604c7c9fc9bed0ffda245b23c04a5520a8ea94ba6a983d2f090de153fe5"
+    },
+    "docs/ADC_DIAGNOSTICS.md": {
+      "path": "report/adc_diagnostics.md",
+      "original_sha256": "cddfe851a8a1f1c21403f93bcc63ef9a13f2558c540f9b0e51dd5012318cd0b2"
+    },
+    "docs/schematic_source.txt": {
+      "path": "report/schematic_source.txt",
+      "original_sha256": "36b2dc5c6f46ef174f268da3ed4e14b374f236ad41500856d835f0701d31d10b"
+    },
+    "docs/BURST_PAYLOAD_V7.md": {
+      "path": "report/burst_payload_v7.md",
+      "original_sha256": "cd805410e755bed29a5242015a79f794b56cbacbddc084bc380c056fa2d8b859"
+    },
+    "docs/FINAL_DEMODULATION_GUIDE_ZH.md": {
+      "path": "report/final_demodulation_guide_zh.md",
+      "original_sha256": "88d70c080fd0d2f7fc0530e5ad013274e2000212f5b0128c900152b5f9c0126a"
+    },
+    "docs/FINAL_USER_GUIDE_ZH.md": {
+      "path": "report/final_user_guide_zh.md",
+      "original_sha256": "91fabc547d37c7717d2ac132588d6a309e3fdd171d3625fabed6652ff18d89f1"
+    },
+    "ai/model.py": {
+      "path": "src/ai/model.py",
+      "original_sha256": "3e9606bd8fbe99d6588a0ba0371071e9f226bd779cce6a5d064a7148fe6ad846"
+    },
+    "ai/reference.py": {
+      "path": "src/ai/reference.py",
+      "original_sha256": "39729f63cb1371709a9a152c919340a1e0121d7d6a3dd550799b6a0c1abc7bab"
+    },
+    "ai/model.npz": {
+      "path": "src/ai/model.npz",
+      "original_sha256": "d8765349f2eed039389b32b3819bc5a28979fe0ac8f41a83abf988d485cc9507"
+    },
+    "ai/qat.py": {
+      "path": "src/ai/qat.py",
+      "original_sha256": "3c15c52d76eeba1806e4b41dc330c1333e597ef7580b6a00dcc93b24193b702d"
+    },
+    "build/gui_busy_check.log": {
+      "path": "sim/host_results/gui_busy_check.log",
+      "original_sha256": "3e80b45a3fcf9430318f921d0cdc51108b9b16b6756eccc103e2289afd815248"
+    },
+    "build/gui_check.log": {
+      "path": "sim/host_results/gui_check.log",
+      "original_sha256": "47db78aa1fced0c07e20ffdb401cc86f3852702947a824604f24dc4c0ddfb94f"
+    },
+    "build/host_transport.log": {
+      "path": "sim/host_results/host_transport.log",
+      "original_sha256": "bad002003d342f368b4fd85a4f0aa0948a696328b91ff052d1c8219fb6158d36"
+    },
+    "build/burst_host.log": {
+      "path": "sim/host_results/burst_host.log",
+      "original_sha256": "8dde071a70cdbf970173b7961d9076ec29e767ecc1beaf4a8c29f89528ac2812"
+    },
+    "build/host_decode.log": {
+      "path": "sim/host_results/host_decode.log",
+      "original_sha256": "0cbdd93d921f40ecf4530b61c510a3710419ef83c09a755329a243aec9ae3726"
+    },
+    "build/gui_verify.log": {
+      "path": "sim/host_results/gui_verify.log",
+      "original_sha256": "8c6250b9370107ee431361eacc7fa59c1f27c710ff2d7c3cd68e20056e056033"
+    },
+    "build/cli_transport.log": {
+      "path": "sim/host_results/cli_transport.log",
+      "original_sha256": "49dca1d14ed7a99f742426a6b008848a44f00a0975f9b15ac7434fd714bbb3e1"
+    },
+    "build/serial_verify.log": {
+      "path": "sim/host_results/serial_verify.log",
+      "original_sha256": "79863607177a860869e8013464da9c4f4d1fffa200f71247d42a7364ee481e2a"
+    },
+    "build/burst_v7/ego1_control_v3_jammer.bit": {
+      "path": "board/burst_v7/ego1_control_v3_jammer.bit",
+      "original_sha256": "49b01e1e3a146384246fb4b714988e47766c0f0fb7e4ac291a6d64325f0ca761"
+    },
+    "build/burst_v7/routed.dcp": {
+      "path": "board/burst_v7/routed.dcp",
+      "original_sha256": "fc819fa40b6008565e91ff3c16225a6f8f7026991523e95d923c4e8acaadb5be"
+    },
+    "build/burst_v7/validation.json": {
+      "path": "build/burst_v7/validation.json",
+      "original_sha256": "1f56468ac8e95bb8d0d387cb27b3f38570f08176462fdfd2c98e7eabe33ae509"
+    },
+    "build/burst_v7/timing_summary.rpt": {
+      "path": "build/burst_v7/timing_summary.rpt",
+      "original_sha256": "0f577ebfc784211b41d45fa3197affc7ff938ccae0c11997855cc02a66513b84"
+    },
+    "build/burst_v7/utilization.rpt": {
+      "path": "build/burst_v7/utilization.rpt",
+      "original_sha256": "7a0a25e498c823f61db14a30d0cadcf241e35fc696bba7e42d4719c617967504"
+    },
+    "build/burst_v7/hierarchical_utilization.rpt": {
+      "path": "build/burst_v7/hierarchical_utilization.rpt",
+      "original_sha256": "5e31e1df3d2ae741022570e85c5bb3e26e5a153e44350f09283913c42702fc74"
+    },
+    "build/burst_v7/drc.rpt": {
+      "path": "build/burst_v7/drc.rpt",
+      "original_sha256": "69ec61c8b1c4610cc4c45a91e8e564c2f7726fe7af9027c9c943dc93170bfc69"
+    },
+    "build/burst_v7/final_paths.rpt": {
+      "path": "build/burst_v7/final_paths.rpt",
+      "original_sha256": "d4ad9e3e8a17dd88acdab602dc893e221b31f1e855b055a1b8d0c0f2fff1a37e"
+    },
+    "build/burst_v7/output_paths.rpt": {
+      "path": "build/burst_v7/output_paths.rpt",
+      "original_sha256": "03d28971d8de85b8b659510fa074db1ca1def7727b081e532dc292a2d7cd320e"
+    },
+    "build/burst_v7/finish.log": {
+      "path": "build/burst_v7/finish.log",
+      "original_sha256": "9ad653b5a230dc7a7fd3a3406e0d533cfb8b8b19914361f2f63b8bca57289a51"
+    },
+    "build/burst_experiment/evaluation.json": {
+      "path": "data/burst_experiment/evaluation.json",
+      "original_sha256": "126bcc209818eac7d6fb4f391404bb6b35eb4e2bba5b910d4f9c98274e71d3ae"
+    },
+    "build/burst_experiment/frames.json": {
+      "path": "data/burst_experiment/frames.json",
+      "original_sha256": "be056b0724f754e37d541a916248f9ab7d0f6857adf24ac73bbe3792fc8fe146"
+    },
+    "build/burst_experiment/rtl_capture.npz": {
+      "path": "data/burst_experiment/rtl_capture.npz",
+      "original_sha256": "de4e05da7228a4287a7828c44ff04528a86b51bc8eefec5db5c82becd4c59b1d"
+    },
+    "build/burst_experiment/heldout.json": {
+      "path": "data/burst_experiment/heldout.json",
+      "original_sha256": "4a7356a63d9fb491d9a670365767e1f9d74ca174afb9cc0de2eec958373ed1df"
+    },
+    "build/burst_experiment/frames_metadata.json": {
+      "path": "data/burst_experiment/frames_metadata.json",
+      "original_sha256": "d9e4a06143fb6baa0ce2adccf832e03c4d945d57f495b4a967084d603cc292ca"
+    },
+    "build/gui_preview/gui_980x740.png": {
+      "path": "data/gui_preview/gui_980x740.png",
+      "original_sha256": "fcd81e2b3e6680fdedd22b337a65cf643d52784fff3022e4b79ed4275bc4e0a3"
+    },
+    "build/gui_preview/gui_800x640.png": {
+      "path": "data/gui_preview/gui_800x640.png",
+      "original_sha256": "cda007564b57985c84e933e84cd95529cec77085e3878c52137f321ae8397f08"
+    },
+    "build/gui_preview/interference_980x740.png": {
+      "path": "data/gui_preview/interference_980x740.png",
+      "original_sha256": "be76d31a494b5c65371f10d7c415cb300d5475d310398af6e363803ac3a37361"
+    },
+    "build/gui_preview/interference_800x640.png": {
+      "path": "data/gui_preview/interference_800x640.png",
+      "original_sha256": "90fe05d8def37746a8b00ff6ee159614e8fa7c6808dfc25d5234e6f6941c1209"
+    },
+    "build/simulation/tb_jammer/stage0.log": {
+      "path": "sim/results/tb_jammer/stage0.log",
+      "original_sha256": "2f53a2a55e5232ce8b0e7e228aa43e9a82f64068689aadf230351522f3ac571c"
+    },
+    "build/simulation/tb_jammer/stage1.log": {
+      "path": "sim/results/tb_jammer/stage1.log",
+      "original_sha256": "c9d4f6f771325d27a70e104ca10b169ccfd2605902c88b8da85b602976c91389"
+    },
+    "build/simulation/tb_jammer/stage2.log": {
+      "path": "sim/results/tb_jammer/stage2.log",
+      "original_sha256": "f978527fe63f0c4cbefe33caec3dfd6d927af6e2a602de7e74dcc90ff8740008"
+    },
+    "build/simulation/tb_frame/stage0.log": {
+      "path": "sim/results/tb_frame/stage0.log",
+      "original_sha256": "cedf60e64ec5707bc5c3de87c2581f90f6b1d9da8bc5082486e638a0420db11f"
+    },
+    "build/simulation/tb_frame/stage1.log": {
+      "path": "sim/results/tb_frame/stage1.log",
+      "original_sha256": "15cc9869e2048c4f821df1de806c1909fd16fba3e58e574102f1b1e8ed06d0d9"
+    },
+    "build/simulation/tb_frame/stage2.log": {
+      "path": "sim/results/tb_frame/stage2.log",
+      "original_sha256": "9726411029266028a4f723fffb406949c587150286e33a0ba63279351c3007cf"
+    },
+    "build/simulation/tb_parameters/stage0.log": {
+      "path": "sim/results/tb_parameters/stage0.log",
+      "original_sha256": "ad96b9c1a34b408ed44a277c819f03820175d11153f6eed622db50947912b054"
+    },
+    "build/simulation/tb_parameters/stage1.log": {
+      "path": "sim/results/tb_parameters/stage1.log",
+      "original_sha256": "77a5ebda7859b0bbf634d3cc0d9fbbd1ad7a79e520391e7735839bcd57555ed1"
+    },
+    "build/simulation/tb_parameters/stage2.log": {
+      "path": "sim/results/tb_parameters/stage2.log",
+      "original_sha256": "4dfff286836f4ea4464e6789b8d8c59e1c2544a135c5c8b82c68ee7d74bf00ed"
+    },
+    "build/simulation/tb_knob/stage0.log": {
+      "path": "sim/results/tb_knob/stage0.log",
+      "original_sha256": "84351e93f8225c6ee41ad8062aa9b51b628bf5ffedaa142bec30cfbc410d56f6"
+    },
+    "build/simulation/tb_knob/stage1.log": {
+      "path": "sim/results/tb_knob/stage1.log",
+      "original_sha256": "7536affd812b5575c75e91e6a8643d9f14415852e8d96ed87842efdff6721de0"
+    },
+    "build/simulation/tb_knob/stage2.log": {
+      "path": "sim/results/tb_knob/stage2.log",
+      "original_sha256": "744535b3ced71f163d79da275958d025555608890a6ce863bbbc37a8e07e9d76"
+    },
+    "build/simulation/tb_uart_system/stage0.log": {
+      "path": "sim/results/tb_uart_system/stage0.log",
+      "original_sha256": "7ea8a88f14b4e9ab453adabbe74b7f8e7741fb5e59da619915669ce566ff13f1"
+    },
+    "build/simulation/tb_uart_system/stage1.log": {
+      "path": "sim/results/tb_uart_system/stage1.log",
+      "original_sha256": "e1be21127fb1c52c9c2cdb29814824d5d48b78229520b6b1de042089f17e55c1"
+    },
+    "build/simulation/tb_uart_system/uart_tx.hex": {
+      "path": "data/simulation/tb_uart_system/uart_tx.hex",
+      "original_sha256": "4a982ee116c3871f3e4a76a94319c889be6a7597b4ad47b9005283189a60eeed"
+    },
+    "build/simulation/tb_uart_system/stage2.log": {
+      "path": "sim/results/tb_uart_system/stage2.log",
+      "original_sha256": "69a4533fa51507aa357138dd353b6d386b7a42a7427422c2e83bebaa67a04f58"
+    },
+    "build/simulation/tb_uart_system/rtl_statistics.csv": {
+      "path": "data/simulation/tb_uart_system/rtl_statistics.csv",
+      "original_sha256": "f2dea7b259d88864ca8aeb6ffc058af285cf5ca5c3af847d31bf1324cc643dd8"
+    },
+    "build/simulation/tb_uart_system/host_decode.log": {
+      "path": "sim/results/tb_uart_system/host_decode.log",
+      "original_sha256": "31472e3b1da08cb3511223d363224f1a444a568601c2d4a9305e87dc96800160"
+    },
+    "build/simulation/tb_statistics/stage0.log": {
+      "path": "sim/results/tb_statistics/stage0.log",
+      "original_sha256": "8705ac9ba018de318b31bba2fa3f43bbe6d77e7a3defa100b85839c7e40a0236"
+    },
+    "build/simulation/tb_statistics/stage1.log": {
+      "path": "sim/results/tb_statistics/stage1.log",
+      "original_sha256": "714fd6aaeb91f11e2a7ecebb1541a7ada8d1d5995bf2bd3fa19a8f9d89282764"
+    },
+    "build/simulation/tb_statistics/stage2.log": {
+      "path": "sim/results/tb_statistics/stage2.log",
+      "original_sha256": "9aa5a2fad456f5639090e16329645e0b6a2976f82edfea9174e17b0bc9db409f"
+    },
+    "build/simulation/tb_samples/stage0.log": {
+      "path": "sim/results/tb_samples/stage0.log",
+      "original_sha256": "a22ad55a7bc6583783cc159b531858d4db8b13677eada6d91aa41047b7a4c411"
+    },
+    "build/simulation/tb_samples/stage1.log": {
+      "path": "sim/results/tb_samples/stage1.log",
+      "original_sha256": "1b34407b21029d3b390400d6c98a6a9a715208d12cbbcfcb3bec9d84344f4f82"
+    },
+    "build/simulation/tb_samples/stage2.log": {
+      "path": "sim/results/tb_samples/stage2.log",
+      "original_sha256": "933b3ff491bbfb7ee438527d968b978ccc5b1f9c2cd36cbd608f57b0dba9b6c4"
+    },
+    "build/simulation/tb_telemetry/stage0.log": {
+      "path": "sim/results/tb_telemetry/stage0.log",
+      "original_sha256": "f56609f50ac3c8faecd6a69d32ee108ed5304d6eb59d32444eee4fad0ceecb98"
+    },
+    "build/simulation/tb_telemetry/stage1.log": {
+      "path": "sim/results/tb_telemetry/stage1.log",
+      "original_sha256": "35cb81f0cac96346a3d1ea2afd4e43a1b79419aa4f21399079b7fe205f389b12"
+    },
+    "build/simulation/tb_telemetry/stage2.log": {
+      "path": "sim/results/tb_telemetry/stage2.log",
+      "original_sha256": "289f34c648e6a166848862fb98320de5be797c81e0a7b9fb2d3d7e228f4ddf1b"
+    },
+    "build/simulation/tb_dac/stage0.log": {
+      "path": "sim/results/tb_dac/stage0.log",
+      "original_sha256": "7b719e3cc9177dbc95c1a7d656463f62f6f767a3a3d7df30787f8c720aa6763a"
+    },
+    "build/simulation/tb_dac/stage1.log": {
+      "path": "sim/results/tb_dac/stage1.log",
+      "original_sha256": "7f1803b006992742cf0f17a578c440e8ef045a58e489d8b2a47e06ca069e0bad"
+    },
+    "build/simulation/tb_dac/stage2.log": {
+      "path": "sim/results/tb_dac/stage2.log",
+      "original_sha256": "bfab17b4b66aea4632858fec0109a4016ea4dad7a51d9e2ec487edde39786d21"
+    },
+    "build/simulation/tb_arithmetic/stage0.log": {
+      "path": "sim/results/tb_arithmetic/stage0.log",
+      "original_sha256": "6f0260903c943572ea9ca60d092667fa7159033e707def5f91d45ea420969ddc"
+    },
+    "build/simulation/tb_arithmetic/stage1.log": {
+      "path": "sim/results/tb_arithmetic/stage1.log",
+      "original_sha256": "76600ef40830c4e999553680ce55e0abda008affae2df61e6ce15f3e0a23ea4f"
+    },
+    "build/simulation/tb_arithmetic/stage2.log": {
+      "path": "sim/results/tb_arithmetic/stage2.log",
+      "original_sha256": "db5762ae2bca8ca659e2639cd21542e828c8b6bfca97214b998d5fa0fb802326"
+    },
+    "build/simulation/tb_history/stage0.log": {
+      "path": "sim/results/tb_history/stage0.log",
+      "original_sha256": "3458482f431d56eedc4d214cf6efae3fa06ad39d92a1564a48d9003293b1ac76"
+    },
+    "build/simulation/tb_history/stage1.log": {
+      "path": "sim/results/tb_history/stage1.log",
+      "original_sha256": "7e39821bf0217f9c76b8c8406dcaa13bc4eb86e4b5f2e377a45b93d749e02a87"
+    },
+    "build/simulation/tb_history/stage2.log": {
+      "path": "sim/results/tb_history/stage2.log",
+      "original_sha256": "590363d0b978c1558057d9dc299caa625c4ebfcc42574fc2738eddb34b9989e0"
+    },
+    "build/simulation/tb_noise/stage0.log": {
+      "path": "sim/results/tb_noise/stage0.log",
+      "original_sha256": "9c731ecb51ece7146c55742fdec0d225370618b3f3e65d256a99563539c18c3f"
+    },
+    "build/simulation/tb_noise/stage1.log": {
+      "path": "sim/results/tb_noise/stage1.log",
+      "original_sha256": "e32100f42f1dce4a66b8685f1985b0962f5251ce0bacb72d9c95428af630e05f"
+    },
+    "build/simulation/tb_noise/stage2.log": {
+      "path": "sim/results/tb_noise/stage2.log",
+      "original_sha256": "1df22b7f8a2ec33136628fa4e40897618162b752f3f490fef2bfb9b08de2f70d"
+    },
+    "build/simulation/tb_test_control/stage0.log": {
+      "path": "sim/results/tb_test_control/stage0.log",
+      "original_sha256": "3c87171dbb06702ee2859e7289ea9ecd9ba347c84aa2140c24c76b8392c2f545"
+    },
+    "build/simulation/tb_test_control/stage1.log": {
+      "path": "sim/results/tb_test_control/stage1.log",
+      "original_sha256": "14b761d8898cb0733c0385a49efc51336db887d972f943132d0fa1f946ff0c87"
+    },
+    "build/simulation/tb_test_control/stage2.log": {
+      "path": "sim/results/tb_test_control/stage2.log",
+      "original_sha256": "0e639200a1c34eafc3464cf8c99fd0f1b7021401914015963dcef979e51b2159"
+    },
+    "build/simulation/tb_frame_gate/stage0.log": {
+      "path": "sim/results/tb_frame_gate/stage0.log",
+      "original_sha256": "fc53d5e2b412a33feb349b0e14a689852fe7352c98d5acdd039e88782b7dac45"
+    },
+    "build/simulation/tb_frame_gate/stage1.log": {
+      "path": "sim/results/tb_frame_gate/stage1.log",
+      "original_sha256": "43c7a952cb5319e82f47b716c774c64d40d07937028c1a36da82a00447d12f0e"
+    },
+    "build/simulation/tb_frame_gate/stage2.log": {
+      "path": "sim/results/tb_frame_gate/stage2.log",
+      "original_sha256": "0817399b2ab1017996058a17fca12d1d763ff5a3a31a64871e3ec73434aae50b"
+    },
+    "build/simulation/tb_phase_reset/stage0.log": {
+      "path": "sim/results/tb_phase_reset/stage0.log",
+      "original_sha256": "141b883e2865c1b6f0e88418dd06e394c84be550820c5cfe6180cec18a472899"
+    },
+    "build/simulation/tb_phase_reset/stage1.log": {
+      "path": "sim/results/tb_phase_reset/stage1.log",
+      "original_sha256": "30585f9168dc1b8a51728736816224fa033d077f8aa701231b37e4f00ee284c0"
+    },
+    "build/simulation/tb_phase_reset/stage2.log": {
+      "path": "sim/results/tb_phase_reset/stage2.log",
+      "original_sha256": "3b52479c6fb8e74e2c9447a50d8f17c6f33344ccacf14324c6b99ea3b40bb504"
+    },
+    "build/simulation/tb_ad7606_spi/stage0.log": {
+      "path": "sim/results/tb_ad7606_spi/stage0.log",
+      "original_sha256": "963da4650367289ea0ce3b0bde6b76246a32d879cf5722c1262f95cbe9253230"
+    },
+    "build/simulation/tb_ad7606_spi/stage1.log": {
+      "path": "sim/results/tb_ad7606_spi/stage1.log",
+      "original_sha256": "7138d17a2e7452a90dd32ddd5c5f74e08cd3226916b519cd1a72d8fed0f69552"
+    },
+    "build/simulation/tb_ad7606_spi/stage2.log": {
+      "path": "sim/results/tb_ad7606_spi/stage2.log",
+      "original_sha256": "a47d1a6371247616aa7d295f04f6e3c23db46c535035f724fb5aa8bebd195868"
+    },
+    "build/simulation/tb_ai_mlp/stage0.log": {
+      "path": "sim/results/tb_ai_mlp/stage0.log",
+      "original_sha256": "ccc3918ab3c3c83701743ea1f10b9ec2d93acd4a729cf588fb1e2e0e41d4a146"
+    },
+    "build/simulation/tb_ai_mlp/stage1.log": {
+      "path": "sim/results/tb_ai_mlp/stage1.log",
+      "original_sha256": "fd7c7d7f5868a9bf4b1205fa8c2119e4ec2a20c2fd0a91ccf468165d408be1a7"
+    },
+    "build/simulation/tb_ai_mlp/stage2.log": {
+      "path": "sim/results/tb_ai_mlp/stage2.log",
+      "original_sha256": "bc3410cfc6473390584066efb59f58554d3dc5f2eebdd49c9a9c0ce2c04df240"
+    },
+    "build/simulation/tb_ai_features/stage0.log": {
+      "path": "sim/results/tb_ai_features/stage0.log",
+      "original_sha256": "15cb03957e88649238ccf2e6eba77cf1f77b330c4852c2c2bec50a602fbd3a0d"
+    },
+    "build/simulation/tb_ai_features/stage1.log": {
+      "path": "sim/results/tb_ai_features/stage1.log",
+      "original_sha256": "b5b9cd6e6dcfd333a4dfa65eb31ac2da1ca509ef4b3ca21777049cdcacef92de"
+    },
+    "build/simulation/tb_ai_features/stage2.log": {
+      "path": "sim/results/tb_ai_features/stage2.log",
+      "original_sha256": "e28852569f22efad5946575850c732cd30c548d35121b7b5fca1c3c4de538795"
+    },
+    "build/simulation/tb_fsk_receiver/stage0.log": {
+      "path": "sim/results/tb_fsk_receiver/stage0.log",
+      "original_sha256": "dcc91f689db1c49697359389d65ff86c60fdb0dbb911379b08fbb237dd24fc0b"
+    },
+    "build/simulation/tb_fsk_receiver/stage1.log": {
+      "path": "sim/results/tb_fsk_receiver/stage1.log",
+      "original_sha256": "ab77f796b5caec1eb6b74fc9ccf1ba2a602d4fdefb4760e59087d50aa741a092"
+    },
+    "build/simulation/tb_fsk_receiver/stage2.log": {
+      "path": "sim/results/tb_fsk_receiver/stage2.log",
+      "original_sha256": "90b082fc250f9106176bb07d0f298d165a5d43cdc0590e41d83d23ec57067db0"
+    },
+    "build/simulation/tb_fsk_lowamp/stage0.log": {
+      "path": "sim/results/tb_fsk_lowamp/stage0.log",
+      "original_sha256": "52b91dc9c5d24d1920da6cb1e8a4b8b37df574ce36eb4904b9c182efd18293b2"
+    },
+    "build/simulation/tb_fsk_lowamp/stage1.log": {
+      "path": "sim/results/tb_fsk_lowamp/stage1.log",
+      "original_sha256": "315ed2c195c3036bf5957718c36633f66ac38c59ae61736025ced4c35f7fe8b7"
+    },
+    "build/simulation/tb_fsk_lowamp/stage2.log": {
+      "path": "sim/results/tb_fsk_lowamp/stage2.log",
+      "original_sha256": "60f28e812aba71993ac1cc0d2e1a3205d49a8a137d24b90324016c210d7a4af9"
+    },
+    "build/simulation/tb_capture_jammer/stage0.log": {
+      "path": "sim/results/tb_capture_jammer/stage0.log",
+      "original_sha256": "bd51e0b78bfaf8514c0c3b79814ad6b17e7f88bcf0a28b11cb805c2f3f99b2d7"
+    },
+    "build/simulation/tb_capture_jammer/stage1.log": {
+      "path": "sim/results/tb_capture_jammer/stage1.log",
+      "original_sha256": "3b09cf9813114146f6d5790f429f7eefad3ae839d82720473cb56a3db1478daa"
+    },
+    "build/simulation/tb_capture_jammer/stage2.log": {
+      "path": "sim/results/tb_capture_jammer/stage2.log",
+      "original_sha256": "80f336c38bb8efbf7c320101d1a812ac9bfb3127bca7d473a5836bc46111a020"
+    },
+    "build/simulation/tb_dc_tail/stage0.log": {
+      "path": "sim/results/tb_dc_tail/stage0.log",
+      "original_sha256": "8ecdae1bfcae4f550180fc36064a770f30b7d2a2404a611eb8203c59d96d84f4"
+    },
+    "build/simulation/tb_dc_tail/stage1.log": {
+      "path": "sim/results/tb_dc_tail/stage1.log",
+      "original_sha256": "aecdc94d7db07e2e01792bf2733e6a5757c4f93626de738967f8f5810974c3ec"
+    },
+    "build/simulation/tb_dc_tail/stage2.log": {
+      "path": "sim/results/tb_dc_tail/stage2.log",
+      "original_sha256": "1c17dfe9021d9c914c713d1774502427cbd9ad0893675702d5b19f66d0dea2fe"
+    },
+    "build/simulation/tb_burst_tx/stage0.log": {
+      "path": "sim/results/tb_burst_tx/stage0.log",
+      "original_sha256": "edbf8e35b2d20f3f5d16d690df273613767fb12103594d9b27e8ec10ab504ad4"
+    },
+    "build/simulation/tb_burst_tx/stage1.log": {
+      "path": "sim/results/tb_burst_tx/stage1.log",
+      "original_sha256": "4b501630f0975ba7715a8b0ecb0f95854b26b5c0694702b972774f154a5740fa"
+    },
+    "build/simulation/tb_burst_tx/burst_adc.txt": {
+      "path": "data/simulation/tb_burst_tx/burst_adc.txt",
+      "original_sha256": "7ff881148bb33511ce524755752ccf68fe49ea98d7f10f0d82af4d1c2963fd7f"
+    },
+    "build/simulation/tb_burst_tx/stage2.log": {
+      "path": "sim/results/tb_burst_tx/stage2.log",
+      "original_sha256": "10fb320045b69cb686b89373632fec9b01814a2b8a18a598fe0522d3668d2f54"
+    },
+    "build/simulation/tb_burst_receiver/stage0.log": {
+      "path": "sim/results/tb_burst_receiver/stage0.log",
+      "original_sha256": "8f9f852456aa70e855da527ac0057dbbf6a390ddd854ba2c183e8e63682c47a6"
+    },
+    "build/simulation/tb_burst_receiver/stage1.log": {
+      "path": "sim/results/tb_burst_receiver/stage1.log",
+      "original_sha256": "fe6bfbbd8e63e6554b6f711c69c8298e6565a999c1deccba359b988d47e3ffbf"
+    },
+    "build/simulation/tb_burst_receiver/stage2.log": {
+      "path": "sim/results/tb_burst_receiver/stage2.log",
+      "original_sha256": "fa0fa73c38d411deb022b0c05adf3774532a93ba1938dea2d580938dd7b66b06"
+    }
+  }
+}
